@@ -17,7 +17,7 @@ FOOTER = re.search(r'  <footer>.*?</footer>', TEMPLATE, re.S)[0]
 def page(path, title, description, content, hub=False):
     schema = {'@context': 'https://schema.org', '@type': 'CollectionPage' if hub else 'Article',
               'name': title, 'description': description, 'url': ORIGIN + path,
-              'datePublished': '2026-09-12', 'dateModified': '2026-09-14',
+              'datePublished': '2026-09-12', 'dateModified': '2026-10-27',
               'author': {'@type': 'Person', 'name': 'Arij Asad', 'url': ORIGIN+'about.html'}}
     if not hub:
         schema['headline'] = title
@@ -33,11 +33,11 @@ def page(path, title, description, content, hub=False):
 </head><body class="resource-page topic-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
 {HEADER}<main id="main-content">{content}</main>{FOOTER}
-<script src="site.js?v=20260914-1" defer></script></body></html>''', path)
+<script src="site.js?v=20261027-1" defer></script></body></html>''', path)
 
 
 def tuition():
-    return '''<aside class="topic-tuition"><div><h2>Specialist tuition and guided practice</h2><p>Individual online lessons, tailored problem sheets and structured practice between lessons, focused on the areas you need to strengthen.</p></div><a class="resource-button" href="contact.html#enquiry-form">Discuss your tuition package</a></aside>'''
+    return '''<aside class="topic-tuition"><div><h2>Specialist tuition and guided practice</h2><p>We start with a problem you find difficult, work out where the reasoning breaks down, then use hints and related questions to help the idea make sense.</p></div><a class="resource-button" href="contact.html#enquiry-form">Discuss maths tuition</a></aside>'''
 
 
 def links(items):
@@ -56,7 +56,7 @@ for t in DATA:
 <section id="worked-example"><p class="topic-kicker">Worked example</p><h2>{e(t['exampleTitle'])}</h2><div class="topic-question">{t['exampleQuestion']}</div><div class="topic-solution">{t['exampleSolution']}</div></section>
 <section id="try-it"><p class="topic-kicker">Your turn</p><h2>{e(t['practiceTitle'])}</h2><div class="topic-question">{t['practiceQuestion']}</div><details class="topic-reveal"><summary>Show a hint</summary><div>{t['hint']}</div></details><details class="topic-reveal"><summary>Show the full solution</summary><div>{t['solution']}</div></details><p class="topic-review">{e(t['review'])}</p></section>
 <section id="next-practice"><h2>What to practise next</h2><p>{e(t['sequence'])}</p>{links(t['resources'])}<p class="topic-credit">The examples and explanations on this page are part of Arij Asad’s teaching guides. Linked papers and worksheets belong to their named creators and publishers. PMT’s topic collections include exam-board questions and other credited materials.</p></section>
-</article><aside class="topic-sidebar"><h2>Choose another topic</h2><nav aria-label="Other topic guides">{''.join(f'<a href="{e(x["slug"])}.html"'+(' aria-current="page"' if x is t else '')+f'>{e(x["title"])}</a>' for x in DATA)}<a href="tmua-logic-proof.html">Logic and proof</a></nav><p>These guides develop mathematical skills. For the scope of a particular test, use its current official specification.</p><a href="https://esat-tmua.ac.uk/prepare/">Current TMUA and ESAT guidance</a></aside></div>
+</article><aside class="topic-sidebar"><h2>Choose another topic</h2><nav aria-label="Other topic guides">{''.join(f'<a href="{e(x["slug"])}.html"'+(' aria-current="page"' if x is t else '')+f'>{e(x["title"])}</a>' for x in DATA)}<a href="tmua-logic-proof.html">Logic and proof</a><a href="negation-and-contrapositive.html">Negation and contrapositive worksheets</a><a href="teacher-resources.html">Printable teaching resources</a></nav><p>These guides develop mathematical skills. For the scope of a particular test, use its current official specification.</p><a href="https://esat-tmua.ac.uk/prepare/">Current TMUA and ESAT guidance</a></aside></div>
 <div class="container">{tuition()}</div>'''
     (ROOT/path).write_text(page(path,t['title'],t['description'],content))
 

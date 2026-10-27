@@ -68,14 +68,15 @@ def filter_attributes(year, types):
 def filter_controls():
     return '''<form class="archive-filters" id="archive-filters" aria-label="Filter archive resources" aria-describedby="archive-filter-help" hidden>
       <div class="archive-filter-fields">
+        <label for="archive-search">Search resources<input id="archive-search" type="search" name="search" placeholder="Provider, topic or paper" autocomplete="off"></label>
         <label for="archive-year">Year<select id="archive-year" name="year"><option value="all" selected>All years</option></select></label>
         <label for="archive-type">Entries with<select id="archive-type" name="type"><option value="all" selected>All resource types</option></select></label>
         <button class="archive-filter-reset" type="button" data-clear-filters>Clear filters</button>
       </div>
-      <p id="archive-filter-help">Choose a year and resource type. Matching entries keep their papers, solutions, credits and score information together.</p>
+      <p id="archive-filter-help">Search the titles and descriptions, or choose a year and resource type. Each result keeps its papers, solutions, credits and scores together.</p>
       <p class="archive-filter-count" id="archive-filter-count" role="status" aria-live="polite" aria-atomic="true"></p>
     </form>
-    <p class="archive-filter-empty" id="archive-filter-empty" hidden>No entries match these filters. Try another year or clear the filters.</p>'''
+    <p class="archive-filter-empty" id="archive-filter-empty" hidden>No entries match. Try fewer search words, another year, or clear the filters.</p>'''
 
 
 def file_link(item, context):
@@ -208,6 +209,10 @@ def table(rows, exam, caption):
 
 
 def practice_guidance(exam):
+    if exam == 'bmo':
+        return '''<section class="archive-guidance archive-section" id="practice-guidance"><h2>From an idea to a complete proof</h2><p>Choose a problem and give yourself time to explore it. If you get stuck, write down exactly what you need to show next before opening a solution. Use the <a href="bmo1-preparation.html">BMO1 preparation guide</a> for proof-writing practice, hints and a short plan for the weeks before the competition.</p><p>For work on individual skills, try <a href="algebra-and-factorisation.html">factorisation</a>, <a href="geometry-and-trigonometry.html">geometry</a> and <a href="counting-and-overlap.html">counting without overlap</a>. Return to the original problem afterwards and see whether you can finish the argument yourself.</p></section>'''
+    if exam == 'aime':
+        return '''<section class="archive-guidance archive-section" id="practice-guidance"><h2>How to get more from an AIME paper</h2><p>Keep a few papers unseen for timed practice. With the others, work on a small number of problems and record the point where you needed help. A correct integer answer is a useful check, but make sure you can explain the reasoning that produced it.</p><h3>A short counting check</h3><p>How many three-digit positive integers are divisible by 6 but not by 9?</p><details><summary>Show a hint</summary><p>Count the multiples of 6 first. Which numbers in that list must you remove? Being divisible by both 6 and 9 is the same as being divisible by 18.</p></details><details><summary>Show the solution</summary><p>There are 166 − 16 = 150 multiples of 6 from 100 to 999. Of these, 55 − 5 = 50 are multiples of 18. The answer is 150 − 50 = 100.</p><p>Now replace 9 by 12. Explain why the number to remove changes before calculating it. There are 83 − 8 = 75 multiples of 12, so the new answer is 75.</p></details><p>If the overlap was the difficult step, try <a href="counting-and-overlap.html">counting and inclusion-exclusion</a>. For other recurring difficulties, use the <a href="algebra-and-factorisation.html">algebra</a>, <a href="sequences-and-series.html">sequences</a> and <a href="geometry-and-trigonometry.html">geometry</a> guides. Then choose a fresh problem from the archive.</p></section>'''
     if exam == 'mat':
         return '''<section class="archive-guidance archive-section" id="practice-guidance"><h2>Using historical MAT questions</h2><p>For shorter practice, use the multiple-choice part of a paper or one of the additional tests below. For interview preparation, take a longer question and explain why each step works. Follow the instructions on the original paper: formats and the questions required for different courses changed over time.</p><p>Start untimed, record the point where you became stuck, then redo the question without the solution. Use the <a href="maths-topic-practice.html">maths topic-practice guides</a> to strengthen the underlying skill before another attempt. These papers provide extra practice; use <a href="tmua-paper-archive.html">TMUA papers and current official guidance</a> for TMUA-specific preparation.</p></section>'''
     if exam == 'step':
@@ -219,7 +224,7 @@ def practice_guidance(exam):
       <p class="community-description">A paper is most useful when it changes what you practise next. Look for gaps in knowledge, inefficient methods, misread questions and problems with timing. Preparation advice by <a href="about.html">Arij Asad</a>.</p>
       <ol class="archive-guidance-grid">
         <li><h3>1. Start with a diagnosis</h3><p>Attempt an earlier official paper before working through lots of mocks. Mark questions you guessed or solved slowly as well as those you got wrong. Keep some complete paper pairs unseen for later timed practice. Use the <a href="tmua-study-plan.html">TMUA study plan</a> to turn your first attempt into a preparation schedule.</p></li>
-        <li><h3>2. Repair the recurring weakness</h3><p>If logic is causing difficulty, write the direction of each implication explicitly. A counterexample must satisfy the premise while breaking the conclusion: for “if x² = 9, then x = 3”, x = −3 works. Use my <a href="tmua-logic-proof.html">logic and proof guide</a>, then practise with the <a href="#jz-maths-logic-worksheets">JZ Maths logic worksheets</a>.</p></li>
+        <li><h3>2. Repair the recurring weakness</h3><p>If logic is causing difficulty, write the direction of each implication explicitly. A counterexample must satisfy the premise while breaking the conclusion: for “if x² = 9, then x = 3”, x = −3 works. Use my <a href="tmua-logic-proof.html">logic and proof guide</a> and <a href="negation-and-contrapositive.html">negation and contrapositive questions with solutions</a>, then try the <a href="#jz-maths-logic-worksheets">JZ Maths logic worksheets</a>.</p></li>
         <li><h3>3. Find the decision that cost you marks</h3><p>Before opening a worked solution or video, note where your approach stopped working. Would a sketch, a special case or eliminating an option have helped? Close the solution and redo the question after a few days. Review correct answers reached through guesswork too. My <a href="tmua-past-papers.html">past-paper study guide</a> explains how to keep a useful error log.</p></li>
         <li><h3>4. Practise timing and working on screen</h3><p>Use complete official papers for timed practice, then use the <a href="https://www.pearsonvue.com/us/en/uatuk.html">official computer-based practice tests</a> to get used to reading on screen and navigating the test. <a href="#community-papers">Community mocks</a> provide more unfamiliar questions; use them to identify weaknesses and treat suggested score conversions as estimates.</p></li>
       </ol>
@@ -334,9 +339,22 @@ def render(data):
     intro = data.get('intro') or 'Question papers, solutions and historical thresholds, together in one place. Choose the year and paper you are practising.'
     service = {'tmua':'TMUA%20preparation', 'mat':'TMUA%20preparation', 'step':'STEP%20preparation', 'esat':'ESAT%20mathematics%20preparation'}.get(exam, 'Maths%20challenges%20and%20Olympiads')
     enquiry_label = 'admissions preparation' if exam == 'mat' else 'ESAT maths' if exam == 'esat' else name
-    css_version = '20260910-filters1'
+    css_version = '20261027-search1'
     paper_heading = 'practice papers' if exam == 'esat' else 'past papers'
     curator = '<p class="archive-curator">Curated by <a href="about.html">Arij Asad</a>. Papers, worked solutions and videos are credited to their original creators.</p>' if exam == 'tmua' else ''
+    jumps_html = '<nav class="archive-jumps" aria-label="Jump to archive sections"><strong>Jump to:</strong>' + jumps + '</nav>'
+    if exam == 'tmua':
+        jumps_html = '<details class="archive-directory"><summary>Find a particular provider or collection</summary>' + jumps_html + '</details>'
+        notes_html = '<details class="archive-directory"><summary>About these papers and score conversions</summary>' + notes_html + '</details>'
+    boundaries_html = ''
+    if exam == 'smc':
+        boundary_rows = [r for r in rows if isinstance(r['year'], int) and r.get('boundaries')]
+        boundaries_html = '<section class="archive-section" id="award-boundaries"><h2>SMC award and qualification boundaries</h2><p>Find the minimum score for your year. Senior Kangaroo and BMO1 entry also depends on eligibility. The 2026 Senior Kangaroo threshold applies to UK schools.</p><div class="archive-table-wrap"><table class="archive-table"><caption>Historical SMC award and qualification thresholds</caption><thead><tr><th>Year</th><th>Bronze</th><th>Silver</th><th>Gold</th><th>Qualification</th></tr></thead><tbody>'
+        for r in sorted(boundary_rows, key=lambda r: r['year'], reverse=True):
+            b = r['boundaries']
+            boundaries_html += f'<tr><th scope="row">{r["year"]}</th>' + ''.join(f'<td data-label="{k.title()}">{e(b.get(k, "N/A"))}</td>' for k in ('bronze','silver','gold')) + '<td data-label="Qualification">' + e(b.get('qualification','N/A')) + '</td></tr>'
+        boundaries_html += '</tbody></table></div><p class="source-note">Source: <a href="https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge-awards">UKMT awards and historical thresholds</a>. Older figures are also cited beside the papers below.</p></section>'
+        nav = '<nav class="archive-nav" aria-label="SMC archive shortcuts"><a href="#2020s">Latest papers and solutions</a><a href="#award-boundaries">Award boundaries by year</a><a href="bmo1-preparation.html">Preparing for BMO1</a></nav>'
     return install_archive_navigation(f'''<!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -368,23 +386,25 @@ def render(data):
     <div class="container">
 {nav}
       {notes_html}
-      <aside class="archive-tuition" aria-label="{e(enquiry_label)} tuition packages">
-        <div><h2>Individual {e(enquiry_label)} tuition packages</h2><p>One-to-one online lessons, tailored problem sheets and structured practice between lessons, planned around your goals and the areas you need to strengthen.</p></div>
-        <a class="resource-button" href="contact.html?service={service}#enquiry-form">Discuss your tuition package</a>
-      </aside>
+      <p class="archive-help">Need help with a particular step? <a href="contact.html?service={service}#enquiry-form">Discuss {e(enquiry_label)} preparation</a>.</p>
       {filter_controls()}
-      <nav class="archive-jumps" aria-label="Jump to archive sections"><strong>Jump to:</strong>{jumps}</nav>
+      {jumps_html}
       {''.join(sections)}
 {'' if section_order else practice_guidance(exam)}
       {''.join(communities)}{chr(10) + practice_guidance(exam) if section_order else ''}
+      {boundaries_html}
+      <aside class="archive-tuition" aria-label="{e(enquiry_label)} tuition">
+        <div><h2>Work through the difficult step together</h2><p>In lessons, I start by finding out where your approach gets stuck. We use carefully chosen hints and follow-up problems to understand the idea, then practise applying it somewhere unfamiliar.</p></div>
+        <a class="resource-button" href="contact.html?service={service}#enquiry-form">Discuss {e(enquiry_label)} preparation</a>
+      </aside>
       <aside class="archive-sources"><h2>Sources &amp; archive notes</h2><ul>{sources}</ul>
       <p class="source-note">{e(source_note)}</p></aside>
       <div class="archive-bottom"><p><a href="{hub}">Back to {e(hub_label.lower())}</a></p><a class="resource-button" href="contact.html?service={service}#enquiry-form">Enquire about {e(enquiry_label)} tuition</a></div>
     </div>
   </main>
 {footer}
-  <script src="site.js?v=20260914-1" defer></script>
-  <script src="archive-filters.js?v=20260910-1" defer></script>
+  <script src="site.js?v=20261027-1" defer></script>
+  <script src="archive-filters.js?v=20261027-search1" defer></script>
 </body>
 </html>
 ''', path)
@@ -396,5 +416,5 @@ if __name__ == '__main__':
         if not data.get('years'):
             continue
         path = ROOT / page_path(data['exam'])
-        path.write_text(render(data))
+        path.write_text('\n'.join(line.rstrip() for line in render(data).splitlines()) + '\n')
         print(path.name, len(data['years']), 'rows')

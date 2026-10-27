@@ -4,6 +4,7 @@
 
   const yearSelect = form.querySelector('#archive-year');
   const typeSelect = form.querySelector('#archive-type');
+  const searchInput = form.querySelector('#archive-search');
   const count = form.querySelector('#archive-filter-count');
   const empty = document.querySelector('#archive-filter-empty');
   const entries = Array.from(document.querySelectorAll('[data-archive-entry]'));
@@ -11,6 +12,12 @@
   const headings = document.querySelectorAll('[data-community-heading]');
   const shortcuts = document.querySelectorAll('.archive-jumps a, .archive-nav a');
   const jumps = document.querySelector('.archive-jumps');
+  const searchText = new Map(entries.map(entry => {
+    const group = entry.closest('[data-archive-group]');
+    const context = Array.from(group?.children || [])
+      .filter(node => /^(H2|P)$/.test(node.tagName)).map(node => node.textContent).join(' ');
+    return [entry, (context + ' ' + entry.textContent).toLowerCase().replace(/\s+/g, ' ')];
+  }));
   const types = [
     ['papers', 'Question papers'],
     ['written', 'Written solutions / mark schemes'],
@@ -34,11 +41,13 @@
     .forEach(([value, label]) => addOption(typeSelect, value, label));
 
   const applyFilters = () => {
+    const words = (searchInput?.value || '').toLowerCase().trim().split(/\s+/).filter(Boolean);
     let visible = 0;
     entries.forEach(entry => {
       const yearMatches = yearSelect.value === 'all' || entry.dataset.year === yearSelect.value;
       const typeMatches = typeSelect.value === 'all' || entry.dataset.types.split(' ').includes(typeSelect.value);
-      entry.hidden = !(yearMatches && typeMatches);
+      const searchMatches = words.every(word => searchText.get(entry).includes(word));
+      entry.hidden = !(yearMatches && typeMatches && searchMatches);
       if (!entry.hidden) visible += 1;
       entry.querySelectorAll('.question-videos').forEach(details => {
         if (!entry.hidden && typeSelect.value === 'videos' && !details.hasAttribute('open')) {
@@ -69,6 +78,7 @@
   const clearFilters = () => {
     yearSelect.querySelector('option[value="all"]').selected = true;
     typeSelect.querySelector('option[value="all"]').selected = true;
+    if (searchInput) searchInput.value = '';
     applyFilters();
   };
   const revealTarget = hash => {
@@ -81,6 +91,7 @@
   form.addEventListener('submit', event => event.preventDefault());
   yearSelect.addEventListener('change', applyFilters);
   typeSelect.addEventListener('change', applyFilters);
+  searchInput?.addEventListener('input', applyFilters);
   form.querySelector('[data-clear-filters]').addEventListener('click', clearFilters);
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href^="#"]');

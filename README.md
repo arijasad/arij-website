@@ -56,3 +56,15 @@ Archive filters use the actual exam year on each row and preserve the whole matc
 `data/edexcel-practice.json` holds 18 original questions and six find-the-mistake examples. Build the companions with `NODE_PATH=/path/to/katex/node_modules python3 scripts/build-textbook-companions.py` (KaTeX 0.16.22, build-time MathML only). Run `python3 scripts/build-textbook-sheets.py` with pdfLaTeX installed to regenerate the six PDFs and Overleaf ZIP in `assets/textbook-practice/`. These downloads contain original material only. Keep the PDFs, TeX sources and generated HTML in sync.
 
 The source catalogue currently has only Review Exercise 2 for Statistics & Mechanics Year 1; do not fabricate a Review Exercise 1 link. Resource availability checks are not independent verification of every Pearson solution.
+
+## Teaching resources and enquiry measurement
+
+`bmo1-preparation.html` contains independent proof practice with staged hints, complete solutions and follow-up questions. Check dated competition information against UKMT when updating it. The January preparation section of `tmua-study-plan.html` uses UAT-UK's current timetable; preserve the once-per-cycle and university eligibility caveats.
+
+`teacher-resources.html` collects the existing original worksheets. Rebuild its ZIP with `python3 scripts/build-teacher-pack.py`. This copies the existing PDF and TeX files unchanged and adds a guide; it does not bundle third-party papers or textbook solutions. Keep separate questions and solutions clearly identified.
+
+Archive text search matches titles, descriptions and provider headings alongside year/type filters. It retains the whole matching row and clears when a shortcut needs to reveal a filtered resource. Preserve the official, university, community order in the TMUA catalogue.
+
+`site.js` records only approved resource paths after analytics consent. Resource attribution can survive a visit to a tuition page before the contact form, expires after 15 minutes and is cleared on consent withdrawal. The existing confirmed-return token prevents duplicate or direct-visit leads. Never send form text, names, email addresses or URL query strings as analytics parameters. Check GA4 enhanced measurement before adding download or outbound events so they are not counted twice.
+
+Run the focused interaction checks with `NODE_PATH=/path/to/linkedom/node_modules node --test scripts/site-analytics.test.cjs scripts/archive-filters.test.cjs`. Also check generated links, canonical URLs, structured data, the sitemap, the contact form's required fields and the ZIP contents before publishing. Update sitemap dates for substantive page changes, not routine rebuilds.

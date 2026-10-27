@@ -66,7 +66,8 @@ if (serviceSelect) {
     "/tmua-study-plan.html", "/tmua-logic-proof.html", "/strong-step-solution.html",
     "/when-to-start-step.html", "/cambridge-maths-interview-guide.html",
     "/cambridge-interview-problems.html", "/algebra-to-tmua-diagnostic.html",
-    "/teaching-practice-sequences.html"
+    "/teaching-practice-sequences.html", "/negation-and-contrapositive.html",
+    "/bmo1-preparation.html", "/teacher-resources.html"
   ]);
   let analyticsLoaded = false;
   let confirmedReturn = null;
@@ -137,6 +138,15 @@ if (serviceSelect) {
   };
   const canMeasure = () => consentChoice === "accepted" &&
     window[analyticsDisableKey] !== true && typeof window.gtag === "function";
+  // Retain only the latest known resource path, never form details or URL queries.
+  // This survives a resource -> tuition -> contact journey in the same tab.
+  const rememberResource = () => {
+    if (!canMeasure() || !resourcePaths.has(window.location.pathname)) return;
+    try {
+      window.sessionStorage.setItem(resourceSourceKey,
+        JSON.stringify({ path: window.location.pathname, createdAt: Date.now() }));
+    } catch (error) { /* Browsing and enquiries still work without attribution. */ }
+  };
   const recordLeadConversion = () => {
     if (!canMeasure() || !isFresh(confirmedReturn)) return;
     const record = confirmedReturn;
@@ -185,6 +195,7 @@ if (serviceSelect) {
       script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(analyticsId);
       document.head.appendChild(script);
     }
+    rememberResource();
     recordLeadConversion();
   };
 

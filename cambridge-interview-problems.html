@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Five Cambridge Maths Interview Practice Problems | Arij Asad</title>
-  <meta name="description" content="Five mathematics interview practice problems with graduated hints and solution outlines for developing problem solving and mathematical communication.">
+  <title>Cambridge Maths Interview Practice: Problems, Hints and Follow-ups | Arij Asad</title>
+  <meta name="description" content="Five maths interview practice problems with hints, solutions, follow-up questions and common mistakes. Practise explaining an idea and adapting when you get stuck.">
   <link rel="canonical" href="https://maths.arijasad.com/cambridge-interview-problems.html">
   <link rel="icon" href="/favicon.ico?v=dd9f0d4a0c" sizes="16x16 32x32 48x48 64x64">
 <link rel="icon" href="/plume-favicon-32.png" type="image/png" sizes="32x32">
@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="site.css?v=challenges-20260910">
   <meta name="theme-color" content="#111111">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Five Cambridge Maths Interview Practice Problems">
-  <meta property="og:description" content="Discussion-led practice problems with graduated hints and solution outlines.">
+  <meta property="og:title" content="Cambridge Maths Interview Practice: Problems, Hints and Follow-ups">
+  <meta property="og:description" content="Five maths interview practice problems with hints, solutions, follow-up questions and common mistakes. Practise explaining an idea and adapting when you get stuck.">
   <meta property="og:url" content="https://maths.arijasad.com/cambridge-interview-problems.html">
   <meta property="og:image" content="https://maths.arijasad.com/assets/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
     "@type": "Article",
     "headline": "Five Cambridge Maths Interview Practice Problems",
     "datePublished": "2026-08-29",
-    "dateModified": "2026-08-29",
+    "dateModified": "2026-10-27",
     "author": {
       "@type": "Person",
       "@id": "https://maths.arijasad.com/about.html#arij-asad",
@@ -73,8 +73,8 @@
         </p>
         <div class="article-meta">
           <span>By Arij Asad, former Cambridge Mathematics interviewer</span>
-          <span>Published 29 August 2026</span>
-          <span>Approximately 12 minutes</span>
+          <span>Updated 27 October 2026</span>
+          <span>Problems to explore at your own pace</span>
         </div>
       </div>
     </header>
@@ -103,7 +103,7 @@
           <details><summary>Hint 1</summary><p>Separate “real and distinct” from “both positive”. What does the discriminant tell you?</p></details>
           <details><summary>Hint 2</summary><p>If the roots are r and s, use r + s and rs rather than solving explicitly.</p></details>
           <details><summary>Solution outline</summary><p>The discriminant is 4(t² − t − 2), so distinct real roots require t &lt; −1 or t &gt; 2. By Vieta, r + s = 2t and rs = t + 2. Two positive roots require a positive sum and product. Combining all conditions gives <strong>t &gt; 2</strong>.</p></details>
-        </section>
+        <h3>Take the idea further</h3><p>What changes if repeated roots are allowed? What if both roots must be negative?</p><details><summary>Discuss a common mistake</summary><p>A positive discriminant gives real distinct roots, but does not tell you their signs. Check the sum and product as well.</p></details><details><summary>Follow-up solution</summary><p>For positive roots allowing repetition, t ≥ 2. For two distinct negative roots, −2 &lt; t &lt; −1. Check the excluded endpoints directly.</p></details></section>
 
         <section class="practice-problem" id="divisibility">
           <h2>2. A divisibility claim</h2>
@@ -111,7 +111,7 @@
           <details><summary>Hint 1</summary><p>Factorise the expression completely.</p></details>
           <details><summary>Hint 2</summary><p>What must occur among any three consecutive integers?</p></details>
           <details><summary>Solution outline</summary><p>Write n³ − n = n(n − 1)(n + 1). These are three consecutive integers. At least one is even and exactly one is divisible by 3, so their product is divisible by both 2 and 3 and therefore by 6.</p></details>
-        </section>
+        <h3>Take the idea further</h3><p>When is n³ − n divisible by 12? Try to classify all integers n.</p><details><summary>Discuss a common mistake</summary><p>Showing that several values work is evidence for a pattern, not a proof for every integer. Explain where each factor comes from.</p></details><details><summary>Follow-up solution</summary><p>It always has a factor of 3. If n is odd, its two even neighbours supply a factor of 4. If n is even, the neighbours are odd, so a factor of 4 occurs exactly when n is divisible by 4. Thus n is odd or a multiple of 4.</p></details></section>
 
         <section class="practice-problem" id="rectangle">
           <h2>3. The largest rectangle</h2>
@@ -119,7 +119,7 @@
           <details><summary>Hint 1</summary><p>If one side is x, express the other side and the area in terms of x.</p></details>
           <details><summary>Hint 2</summary><p>Complete the square. This also answers the question about a global maximum.</p></details>
           <details><summary>Solution outline</summary><p>The second side is P/2 − x, so A = x(P/2 − x) = P²/16 − (x − P/4)². The squared term is never negative, so A ≤ P²/16, with equality when both sides are P/4. The rectangle of greatest area is therefore a square.</p></details>
-        </section>
+        <h3>Take the idea further</h3><p>Can you obtain the maximum without differentiating? If the area is fixed instead, which rectangle has the smallest perimeter?</p><details><summary>Discuss a common mistake</summary><p>A stationary point alone does not establish a global maximum. State the allowed range of the side length and explain why the bound holds throughout it.</p></details><details><summary>Follow-up solution</summary><p>For fixed area A and positive sides x,y, (x − y)² ≥ 0 gives (x + y)² ≥ 4xy = 4A. Hence the perimeter is at least 4√A, with equality for a square.</p></details></section>
 
         <section class="practice-problem" id="sequence">
           <h2>4. A sequence approaching √2</h2>
@@ -129,7 +129,7 @@
           <details><summary>Hint 1</summary><p>Compare x<sub>n+1</sub> first with √2 and then with x<sub>n</sub>.</p></details>
           <details><summary>Hint 2</summary><p>Factor the numerators of x<sub>n+1</sub> − √2 and x<sub>n+1</sub> − x<sub>n</sub>.</p></details>
           <details><summary>Solution outline</summary><p>If x<sub>n</sub> &gt; √2, then x<sub>n+1</sub> − √2 = (x<sub>n</sub> − √2)²/(2x<sub>n</sub>) &gt; 0, so the sequence stays above √2. Also x<sub>n+1</sub> − x<sub>n</sub> = (2 − x<sub>n</sub>²)/(2x<sub>n</sub>) &lt; 0, so it decreases. It is decreasing and bounded below, hence convergent. If its limit is L &gt; 0, then L = ½(L + 2/L), giving L² = 2 and therefore <strong>L = √2</strong>.</p></details>
-        </section>
+        <h3>Take the idea further</h3><p>What happens if 0 &lt; x₁ &lt; √2? What does the error formula suggest about the speed of convergence near √2?</p><details><summary>Discuss a common mistake</summary><p>Solving the equation for a possible limit does not prove that the sequence converges. Establish boundedness and monotonicity first.</p></details><details><summary>Follow-up solution</summary><p>The identity x₂ − √2 = (x₁ − √2)²/(2x₁) shows that x₂ &gt; √2 unless x₁ = √2. The argument then applies from x₂ onwards. The next error is proportional to the square of the current error when xₙ is close to √2.</p></details></section>
 
         <section class="practice-problem" id="pigeonhole">
           <h2>5. A consecutive sum</h2>
@@ -137,11 +137,11 @@
           <details><summary>Hint 1</summary><p>Consider the n partial sums s<sub>k</sub> = a₁ + ··· + a<sub>k</sub>.</p></details>
           <details><summary>Hint 2</summary><p>Look at the remainders of these partial sums when divided by n. What happens if none has remainder 0?</p></details>
           <details><summary>Solution outline</summary><p>If some s<sub>k</sub> is divisible by n, the block a₁ + ··· + a<sub>k</sub> works. Otherwise the n partial sums occupy only the n − 1 non-zero remainder classes, so two have the same remainder. If s<sub>i</sub> and s<sub>j</sub> have the same remainder with i &lt; j, then s<sub>j</sub> − s<sub>i</sub> = a<sub>i+1</sub> + ··· + a<sub>j</sub> is divisible by n.</p></details>
-        </section>
+        <h3>Take the idea further</h3><p>Could n − 1 integers guarantee the same conclusion? What happens if every integer is 1?</p><details><summary>Discuss a common mistake</summary><p>The two partial sums must be ordered before subtracting them, so that the resulting block is non-empty and consecutive.</p></details><details><summary>Follow-up solution</summary><p>For n ≥ 2, take n − 1 copies of 1. Every non-empty block has sum between 1 and n − 1, so none is divisible by n. The bound of n integers cannot be reduced in general.</p></details></section>
 
         <h2 id="reflection">Questions to ask after each solution</h2>
         <ul>
-          <li>What was the first observation that genuinely reduced the problem?</li>
+          <li>Which observation made the problem easier?</li>
           <li>Which assumption or example was useful, and which was a distraction?</li>
           <li>Where did the argument move from evidence to proof?</li>
           <li>Could the solution be explained coherently without repeating every calculation?</li>
@@ -169,11 +169,11 @@
     </div>
 
     <section class="resource-section resource-section--white">
-      <div class="container"><div class="resource-cta"><div><h2>Practise the discussion, not only the answer.</h2><p>Mock interviews provide feedback on reasoning, communication and response to guidance.</p></div><a class="resource-button" href="contact.html">Discuss interview preparation</a></div></div>
+      <div class="container"><div class="resource-cta"><div><h2>Practise the discussion, not only the answer.</h2><p>A mock session includes 30 minutes of problems and discussion, followed by 30 minutes of feedback on your reasoning and the next things to practise.</p></div><a class="resource-button" href="contact.html?service=Cambridge%20mathematics%20interview%20preparation#enquiry-form">Discuss interview preparation</a></div></div>
     </section>
   </main>
 
   <footer><div class="container footer-content"><div><div class="footer-brand">Arij Asad Maths</div><div>Specialist online mathematics tuition</div></div><div class="footer-links"><a href="tuition.html">Tuition</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><button class="cookie-settings-link" type="button" data-cookie-settings>Cookie settings</button></div><div>© 2026 Arij Asad Maths</div></div></footer>
-  <script src="site.js?v=20260914-1" defer></script>
+  <script src="site.js?v=20261027-1" defer></script>
 </body>
 </html>

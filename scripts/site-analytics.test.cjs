@@ -206,3 +206,24 @@ test('GA configuration still gets a clean URL if browser history replacement fai
   assert.equal(config[2].page_location, nextUrl);
   assert.equal(JSON.stringify(returned.commands()).includes('enquiry_return'), false);
 });
+
+test('logic resource attribution survives tuition and contact without requiring a direct contact click', () => {
+  const resource = browser({ consent: 'accepted', form: false, url: 'https://maths.arijasad.com/negation-and-contrapositive.html?private=not-for-analytics' });
+  const saved = JSON.parse(resource.session.get(sourceKey));
+  assert.equal(saved.path, '/negation-and-contrapositive.html');
+  assert.equal(JSON.stringify(saved).includes('private'), false);
+  const tuition = browser({ session: resource.session, local: resource.local, form: false, url: 'https://maths.arijasad.com/tuition.html' });
+  const { returned } = submitAndReturn({ session: tuition.session, local: tuition.local });
+  assert.equal(returned.events('generate_lead')[0][2].resource_source, '/negation-and-contrapositive.html');
+});
+
+test('resource visits are retained only after consent and the latest allowed resource wins', () => {
+  const resource = browser({ url: 'https://maths.arijasad.com/bmo1-preparation.html', form: false });
+  assert.equal(resource.session.has(sourceKey), false);
+  resource.choose('accept');
+  assert.equal(JSON.parse(resource.session.get(sourceKey)).path, '/bmo1-preparation.html');
+  const next = browser({ session: resource.session, local: resource.local, form: false, url: 'https://maths.arijasad.com/teacher-resources.html' });
+  assert.equal(JSON.parse(next.session.get(sourceKey)).path, '/teacher-resources.html');
+  next.choose('reject');
+  assert.equal(next.session.has(sourceKey), false);
+});

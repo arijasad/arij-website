@@ -2,7 +2,7 @@
   {
     "slug": "modulus-and-graphs",
     "label": "Functions and graphs",
-    "title": "Modulus and graph reflections",
+    "title": "Modulus Graphs: Worked Examples and Practice",
     "description": "Understand modulus signs and graph reflections with a worked example, a practice question, hints and full solutions.",
     "intro": "Keep track of which part of an expression changes sign, then use a sketch to organise the cases.",
     "approachTitle": "Find the sign changes before doing the algebra",
@@ -41,7 +41,7 @@
   {
     "slug": "algebra-and-factorisation",
     "label": "Algebra",
-    "title": "Factorisation and useful identities",
+    "title": "Factorisation and Algebraic Identities: Practice and Solutions",
     "description": "Recognise differences of cubes, simplify algebra without losing domain restrictions, and use identities in unfamiliar questions.",
     "intro": "Look for structure before expanding. An identity can reveal a cancellation or turn a long calculation into a short argument.",
     "approachTitle": "Name the pattern you can see",
@@ -80,7 +80,7 @@
   {
     "slug": "sequences-and-series",
     "label": "Sequences",
-    "title": "Sequences, recurrence and sums",
+    "title": "Sequences and Series: Recurrence, Sums and Practice",
     "description": "Read recurrence notation, distinguish terms from sums, and use shifted geometric sequences and telescoping sums.",
     "intro": "Separate the term number from the value of the term. Write the first few terms before choosing a formula.",
     "approachTitle": "Make the notation concrete",
@@ -119,7 +119,7 @@
   {
     "slug": "calculus-and-graph-sketches",
     "label": "Calculus",
-    "title": "Calculus: sketch before calculating",
+    "title": "Calculus and Graph Sketching: Practice and Solutions",
     "description": "Use symmetry and signed area before integration, distinguish area from an integral, and check chain-rule factors.",
     "intro": "A graph can reveal a cancellation before you integrate. Keep signed area, total area and differentiation rules distinct.",
     "approachTitle": "Ask what the graph already tells you",
@@ -163,7 +163,7 @@
   {
     "slug": "geometry-and-trigonometry",
     "label": "Geometry",
-    "title": "Turn a diagram into equations",
+    "title": "Geometry and Trigonometry Practice: Hints and Solutions",
     "description": "Translate geometry into algebra using distances and loci, then choose trigonometric rules from the information given.",
     "intro": "Label the quantities you know and translate each condition separately. A useful diagram helps you choose an equation.",
     "approachTitle": "Write one equation for each condition",
@@ -207,7 +207,7 @@
   {
     "slug": "counting-and-overlap",
     "label": "Counting",
-    "title": "Counting without double-counting",
+    "title": "Counting and Inclusion-Exclusion: Examples and Practice",
     "description": "Use inclusion–exclusion and systematic cases to count accurately, with worked examples, hints and full solutions.",
     "intro": "Define exactly what is being counted. Check overlap and whether order matters before reaching for a formula.",
     "approachTitle": "Make the cases exhaustive and control overlap",

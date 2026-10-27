@@ -909,7 +909,11 @@
         transition-duration: 0.01ms !important;
       }
     }
-  </style>
+
+.form-extra { margin: 20px 0; padding: 16px; border: 1px solid #d6ccba; border-radius: 10px; }
+.form-extra summary { cursor: pointer; font-weight: 700; padding: 8px 0; }
+.form-extra .form-grid { margin-top: 16px; }
+</style>
   <link rel="icon" href="/favicon.ico?v=dd9f0d4a0c" sizes="16x16 32x32 48x48 64x64">
 <link rel="icon" href="/plume-favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/plume-favicon-64.png" type="image/png" sizes="64x64">
@@ -1222,9 +1226,7 @@
                 <label for="website">Leave this field empty</label>
                 <input id="website" type="text" name="_honey" tabindex="-1" autocomplete="off">
               </div>
-              <div class="form-grid">
-
-                <div class="form-group">
+<div class="form-grid"><div class="form-group">
                   <label for="name">
                     Your name *
                   </label>
@@ -1236,21 +1238,7 @@
                     autocomplete="name"
                     required
                   >
-                </div>
-
-                <div class="form-group">
-                  <label for="student-name">
-                    Student’s name
-                  </label>
-
-                  <input
-                    id="student-name"
-                    name="student_name"
-                    type="text"
-                  >
-                </div>
-
-                <div class="form-group">
+                </div><div class="form-group">
                   <label for="email">
                     Your email address *
                   </label>
@@ -1262,9 +1250,7 @@
                     autocomplete="email"
                     required
                   >
-                </div>
-
-                <div class="form-group">
+                </div><div class="form-group">
                   <label for="service">
                     Type of support *
                   </label>
@@ -1314,9 +1300,28 @@
                       Other mathematics support
                     </option>
                   </select>
-                </div>
+                </div><div class="form-group full">
+                  <label for="message">
+                    Current preparation and goals *
+                  </label>
 
-                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Please describe the student’s current preparation, areas of difficulty and what you hope to achieve."
+                  ></textarea>
+                </div></div><details class="form-extra"><summary>Add a little more detail (optional)</summary><p>The student’s name, year group and any dates help me suggest a useful starting point. You can leave these blank.</p><div class="form-grid"><div class="form-group">
+                  <label for="student-name">
+                    Student’s name
+                  </label>
+
+                  <input
+                    id="student-name"
+                    name="student_name"
+                    type="text"
+                  >
+                </div><div class="form-group">
                   <label for="level">
                     Year group or current level
                   </label>
@@ -1327,9 +1332,7 @@
                     type="text"
                     placeholder="For example, Year 12 or predicted A*"
                   >
-                </div>
-
-                <div class="form-group">
+                </div><div class="form-group">
                   <label for="location">
                     Location or time zone
                   </label>
@@ -1340,9 +1343,7 @@
                     type="text"
                     placeholder="For example, Shanghai or UK time"
                   >
-                </div>
-
-                <div class="form-group">
+                </div><div class="form-group">
                   <label for="frequency">
                     Preferred lesson frequency
                   </label>
@@ -1375,9 +1376,7 @@
                       Occasional support
                     </option>
                   </select>
-                </div>
-
-                <div class="form-group">
+                </div><div class="form-group">
                   <label for="deadline">
                     Relevant examination or deadline
                   </label>
@@ -1388,23 +1387,7 @@
                     type="text"
                     placeholder="Include the date where known"
                   >
-                </div>
-
-                <div class="form-group full">
-                  <label for="message">
-                    Current preparation and goals *
-                  </label>
-
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    placeholder="Please describe the student’s current preparation, areas of difficulty and what you hope to achieve."
-                  ></textarea>
-                </div>
-
-              </div>
-
+                </div></div></details>
               <div class="form-actions">
                 <button
                   class="button button-primary"
@@ -1635,7 +1618,7 @@
         <a href="tmua.html">TMUA</a>
         <a href="step.html">STEP</a>
         <a href="interviews.html">Interviews</a>
-      
+
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <button class="cookie-settings-link" type="button" data-cookie-settings>Cookie settings</button>
@@ -1646,6 +1629,6 @@
       </div>
     </div>
   </footer>
-  <script src="site.js?v=20260914-1" defer></script>
+  <script src="site.js?v=20261027-1" defer></script>
 </body>
 </html>

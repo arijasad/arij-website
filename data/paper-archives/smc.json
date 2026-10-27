@@ -3,6 +3,39 @@
   "title": "Senior Mathematical Challenge",
   "years": [
     {
+      "year": 2026,
+      "variant": "",
+      "papers": [
+        {
+          "label": "Question paper",
+          "url": "https://ukmt.org.uk/wp-content/uploads/2026/07/SMC_2026_Paper-2.pdf",
+          "kind": "paper"
+        },
+        {
+          "label": "Short solutions",
+          "url": "https://ukmt.org.uk/wp-content/uploads/2026/07/SMC_2026_Solutions.pdf",
+          "kind": "solutions"
+        },
+        {
+          "label": "Extended solutions & investigations",
+          "url": "https://ukmt.org.uk/wp-content/uploads/2026/07/SMC__2026_Solutions_and_Investigations_web_version__final_.pdf",
+          "kind": "extended-solutions"
+        }
+      ],
+      "boundaries": {
+        "bronze": 41,
+        "silver": 54,
+        "gold": 71,
+        "qualification": "Senior Kangaroo 71 (UK schools); BMO1 101.",
+        "sourceUrl": "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge-awards",
+        "note": "Qualification is subject to eligibility; a score alone does not guarantee entry."
+      },
+      "sourceUrls": [
+        "https://ukmt.org.uk/free-past-papers/senior-mathematical-challenge-2026",
+        "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge-awards"
+      ]
+    },
+    {
       "year": 2025,
       "variant": "",
       "papers": [
@@ -753,5 +786,7 @@
   "displayNotes": [
     "Compare scores with the matching year: historical scoring rules and qualification requirements can differ. Follow-on entry is also subject to eligibility.",
     "Some older question papers are available only in paid UKMT packs. Free extended solutions are linked separately where available."
-  ]
+  ],
+  "dateModified": "2026-10-27",
+  "description": "SMC past papers through 2026, official short and extended solutions, and historical Bronze, Silver, Gold, Senior Kangaroo and BMO1 boundaries."
 }

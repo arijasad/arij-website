@@ -103,3 +103,14 @@
   .archive-page .archive-section { margin-bottom: 30px; }
 }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+/* Search and a compact opening, keeping every resource available without JS. */
+.archive-page .archive-filter-fields input { width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid #b9ac94; border-radius: 7px; background: #fff; color: #222; font: inherit; }
+.archive-page .archive-filter-fields { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.archive-page .archive-filter-fields label { flex: 1 1 170px; }
+.archive-page .archive-filter-fields label:first-child { flex: 2 1 240px; }
+.archive-page .archive-directory { margin: 12px 0; padding: 12px 16px; border: 1px solid #d9d0c0; border-radius: 8px; }
+.archive-page .archive-directory summary, .archive-page .archive-guidance summary { cursor: pointer; font-weight: 700; padding: 8px 0; }
+.archive-page .archive-directory .archive-note { margin-bottom: 0; }
+.archive-page .archive-help { font-size: .95rem; margin: 18px 0; }
+.archive-page .archive-help a { color: #684b1c; text-underline-offset: 3px; }

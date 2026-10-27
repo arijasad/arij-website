@@ -1,7 +1,7 @@
 {
   "exam": "step",
-  "pageTitle": "STEP Past Papers, Extended Solutions & Grade Boundaries | Arij Asad",
-  "description": "STEP papers from 1987, earlier specimens, extended worked solutions and grade boundaries by year. Includes historical STEP 1 and current STEP 2 and STEP 3.",
+  "pageTitle": "STEP Past Papers, Worked Solutions & Grade Boundaries | Arij Asad",
+  "description": "Find STEP 2 and STEP 3 papers, worked solutions, examiner reports and grade boundaries by year, alongside the historical STEP 1 archive.",
   "intro": "Choose a year, open the paper and work through the solutions alongside its grade boundaries. Explore STEP 2 and STEP 3, the historical STEP 1 archive and free preparation resources.",
   "coverageLabel": "1986 specimens · 1987–2025 papers · 2026 boundaries",
   "displayNotes": [
@@ -4417,5 +4417,6 @@
       "url": "https://www.ocr.org.uk/Images/761472-explanation-of-results-for-step-2026.pdf"
     }
   ],
-  "sourceNote": "Curated by Arij Asad. Papers and solutions remain the work of their original authors; links open the original provider or the named archive mirror. Historical boundaries for 2000–2018 are transcribed from Mathsaurus; 2019–2026 link to official results documents. No pre-2000 boundaries were located."
+  "sourceNote": "Curated by Arij Asad. Papers and solutions remain the work of their original authors; links open the original provider or the named archive mirror. Historical boundaries for 2000–2018 are transcribed from Mathsaurus; 2019–2026 link to official results documents. No pre-2000 boundaries were located.",
+  "dateModified": "2026-10-27"
 }

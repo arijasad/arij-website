@@ -27,6 +27,11 @@ function load(name, run = true) {
     },
     visible() { return Array.from(document.querySelectorAll('[data-archive-entry]')).filter(node => !node.hidden); },
     clear() { document.querySelector('[data-clear-filters]').click(); }
+    ,search(value) {
+      const input = document.getElementById('archive-search');
+      input.value = value;
+      input.dispatchEvent(new window.Event('input'));
+    }
   };
 }
 
@@ -128,4 +133,30 @@ test('a teaching-guide anchor reveals a section hidden by filters', () => {
   page.document.querySelector('#practice-guidance a[href="#jz-maths-logic-worksheets"]').click();
   assert.equal(target.hidden, false);
   assert.equal(page.document.getElementById('archive-year').value, 'all');
+});
+
+test('provider search includes section credits, combines filters and preserves complete rows', () => {
+  const page = load('tmua-paper-archive');
+  page.search('beyond horizon');
+  assert.ok(page.visible().length > 0);
+  assert.ok(page.visible().every(entry => /Beyond Horizon/i.test(entry.closest('[data-archive-group]').textContent)));
+  const original = page.visible().map(entry => entry.innerHTML);
+  page.select('archive-type', 'papers');
+  assert.ok(page.visible().every(entry => original.includes(entry.innerHTML)));
+  page.search('a-provider-that-does-not-exist');
+  assert.equal(page.visible().length, 0);
+  assert.equal(page.document.getElementById('archive-filter-empty').hidden, false);
+  page.clear();
+  assert.equal(page.document.getElementById('archive-search').value, '');
+  assert.equal(page.visible().length, load('tmua-paper-archive', false).visible().length);
+});
+
+test('search matches multiple case-insensitive words and anchor navigation clears it', () => {
+  const page = load('tmua-paper-archive');
+  page.search('  GREsTY  video ');
+  assert.ok(page.visible().length > 0);
+  assert.ok(page.document.getElementById('jz-maths-logic-worksheets').hidden);
+  page.document.querySelector('#practice-guidance a[href="#jz-maths-logic-worksheets"]').click();
+  assert.equal(page.document.getElementById('archive-search').value, '');
+  assert.equal(page.document.getElementById('jz-maths-logic-worksheets').hidden, false);
 });
