@@ -987,6 +987,7 @@ body:not(.resource-page) .nav-links {
 }
 
 .policy-hero h1 {
+  color: #ffffff;
   max-width: 760px;
   margin: 0 0 18px;
   font-family: Georgia, "Times New Roman", serif;
