@@ -250,16 +250,20 @@ def render(data):
     groups = dict(sorted(groups.items(), key=lambda pair: int(pair[0][:-1]) if pair[0][:-1].isdigit() else 0, reverse=True))
     nav = ''
     if exam == 'tmua':
-        nav = '<nav class="archive-nav" aria-label="TMUA archive shortcuts"><a href="#2020s">Official past papers</a><a href="#community-papers">Community papers</a><a href="#practice-guidance">How to practise</a><a href="tmua-past-papers.html">Past-paper study guide</a></nav>'
+        nav = '<nav class="archive-nav" aria-label="TMUA archive shortcuts"><a href="#2020s">Official past papers</a><a href="#official-preparation">Official preparation</a><a href="#university-preparation">University resources</a><a href="#community-papers">Community mocks</a><a href="#free-online-simulators">Free simulators</a><a href="#tyler-topic-worksheets">Topic worksheets</a><a href="#practice-guidance">How to practise</a></nav>'
     archive_sections = data.get('archiveSections') or [{'id':g.lower().replace(' ', '-'), 'title':g, 'rows':r} for g,r in groups.items()]
     jumps = ''.join(f'<a href="#{e(g["id"])}">{e(g.get("navLabel", g["title"]))}</a>' for g in archive_sections)
+    for section in data.get('linkSections', []):
+        if section.get('placement') == 'after-official':
+            jumps += f'<a href="#{e(section["id"])}">{e(section["title"])}</a>'
     if data.get('legacyYears'):
         jumps += '<a href="#ahsme">AHSME: 1950–1999</a>'
     for collection in data.get('community', []):
         c_id = collection.get('id') or re.sub(r'[^a-z0-9]+', '-', collection['title'].lower()).strip('-')
         jumps += f'<a href="#{e(c_id)}">{e(collection.get("navLabel", collection["title"].replace(" — supplied collection", "")))}</a>'
     for section in data.get('linkSections', []):
-        jumps += f'<a href="#{e(section["id"])}">{e(section["title"])}</a>'
+        if section.get('placement') != 'after-official':
+            jumps += f'<a href="#{e(section["id"])}">{e(section["title"])}</a>'
     sections = []
     for group in archive_sections:
         group_rows = group['rows']
@@ -271,11 +275,17 @@ def render(data):
     notes = data.get('displayNotes', [])
     notes_html = '<aside class="archive-note">' + ''.join('<p>' + e(n) + '</p>' for n in notes) + '</aside>' if notes else ''
     communities = []
+    community_blocks = {}
+    community_heading = ''
     if data.get('legacyYears'):
         communities.append('<section class="archive-section" data-archive-group id="ahsme"><h2>Earlier papers: AHSME</h2><p class="community-description">The American High School Mathematics Examination preceded AMC 12. These papers date from 1950–1999 and use historical formats and scoring.</p>' + table(data['legacyYears'], exam, 'AHSME predecessor papers, 1950–1999') + '</section>')
     if data.get('community'):
-        communities.append('<h2 class="community-heading" data-community-heading id="community-papers">Community <span>practice papers.</span></h2><p class="community-description" data-community-heading>Independent practice material. These are not official TMUA papers; any suggested score conversions are the creator’s estimates.</p>')
+        community_heading = '<h2 class="community-heading" data-community-heading id="community-papers">Community <span>practice papers.</span></h2><p class="community-description" data-community-heading>Independent practice material. These are not official TMUA papers; any suggested score conversions are the creator’s estimates.</p>'
+        if data.get('communityOrderNote'):
+            community_heading += '<p class="community-description" data-community-heading>' + e(data['communityOrderNote']) + '</p>'
+        communities.append(community_heading)
         for collection in data['community']:
+            block_start = len(communities)
             c_id = collection.get('id') or re.sub(r'[^a-z0-9]+', '-', collection['title'].lower()).strip('-')
             communities.append(f'<section class="archive-section" data-archive-group data-community-group id="{e(c_id)}"><h2>{e(collection["title"])}</h2>')
             if collection.get('credit'):
@@ -283,19 +293,35 @@ def render(data):
             if collection.get('description'):
                 communities.append('<p class="community-description">' + e(collection['description']) + '</p>')
             communities.append(table(collection['rows'], exam, collection['title']) + '</section>')
+            community_blocks[c_id] = ''.join(communities[block_start:])
     if data.get('linkSections'):
         for section in data['linkSections']:
-            communities.append('<section class="archive-section" data-archive-group id="' + e(section['id']) + '"><h2>' + e(section['title']) + '</h2>')
+            destination = sections if section.get('placement') == 'after-official' else communities
+            block_start = len(destination)
+            community_attribute = ' data-community-group' if section.get('communityMock') else ''
+            destination.append('<section class="archive-section" data-archive-group' + community_attribute + ' id="' + e(section['id']) + '"><h2>' + e(section['title']) + '</h2>')
             if section.get('description'):
-                communities.append('<p class="community-description">' + e(section['description']) + '</p>')
+                destination.append('<p class="community-description">' + e(section['description']) + '</p>')
             if section.get('credit'):
-                communities.append('<p class="source-note">' + e(section['credit']) + '</p>')
-            communities.append('<ul class="archive-link-grid">')
+                destination.append('<p class="source-note">' + e(section['credit']) + '</p>')
+            destination.append('<ul class="archive-link-grid">')
             for item in section['links']:
                 detail = '<span class="source-note">' + e(item['description']) + '</span>' if item.get('description') else ''
                 attrs = filter_attributes(item.get('filterYear'), resource_types(item))
-                communities.append('<li ' + attrs + '><a href="' + e(item['url']) + '">' + e(item['label']) + '</a>' + detail + '</li>')
-            communities.append('</ul></section>')
+                destination.append('<li ' + attrs + '><a href="' + e(item['url']) + '">' + e(item['label']) + '</a>' + detail + '</li>')
+            destination.append('</ul></section>')
+            if destination is communities:
+                community_blocks[section['id']] = ''.join(destination[block_start:])
+    section_order = data.get('communitySectionOrder')
+    if section_order:
+        if len(section_order) != len(set(section_order)) or set(section_order) != set(community_blocks):
+            raise ValueError('communitySectionOrder must contain every community and later resource section exactly once')
+        communities = [community_heading] + [community_blocks[section_id] for section_id in section_order]
+        early_links = [s for s in data.get('linkSections', []) if s.get('placement') == 'after-official']
+        labels = {s.get('id') or re.sub(r'[^a-z0-9]+', '-', s['title'].lower()).strip('-'): s.get('navLabel', s['title'])
+                  for s in data.get('community', []) + data.get('linkSections', [])}
+        jumps = ''.join(f'<a href="#{e(s["id"])}">{e(s.get("navLabel", s["title"]))}</a>' for s in archive_sections + early_links)
+        jumps += ''.join(f'<a href="#{e(section_id)}">{e(labels[section_id])}</a>' for section_id in section_order)
     sources = ''.join(f'<li><a href="{e(s["url"])}">{e(s["label"])}</a></li>' for s in data.get('sources', []) + data.get('legacySources', []))
     schema = {'@context':'https://schema.org','@type':'CollectionPage','name':title.split(' | ')[0],
               'url':ORIGIN + path,'description':description,'dateModified':data.get('dateModified', CHECKED),
@@ -348,8 +374,8 @@ def render(data):
       {filter_controls()}
       <nav class="archive-jumps" aria-label="Jump to archive sections"><strong>Jump to:</strong>{jumps}</nav>
       {''.join(sections)}
-{practice_guidance(exam)}
-      {''.join(communities)}
+{'' if section_order else practice_guidance(exam)}
+      {''.join(communities)}{chr(10) + practice_guidance(exam) if section_order else ''}
       <aside class="archive-sources"><h2>Sources &amp; archive notes</h2><ul>{sources}</ul>
       <p class="source-note">{e(source_note)}</p></aside>
       <div class="archive-bottom"><p><a href="{hub}">Back to {e(hub_label.lower())}</a></p><a class="resource-button" href="contact.html?service={service}#enquiry-form">Enquire about {e(enquiry_label)} tuition</a></div>

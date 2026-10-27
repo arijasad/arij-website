@@ -107,11 +107,13 @@ test('empty results, section shortcuts and reset remain consistent', () => {
   assert.equal(page.document.querySelector('.archive-jumps').hidden, false);
 });
 
-test('dated mirror resources and Cambridge solutions follow the labelled exam year', () => {
+test('dated official papers and Cambridge solutions follow the labelled exam year', () => {
   const tmua = load('tmua-paper-archive');
   tmua.select('archive-year', '2023');
   tmua.select('archive-type', 'written');
-  assert.equal(tmua.visible().filter(entry => entry.tagName === 'LI').length, 2);
+  assert.equal(tmua.visible().filter(entry => entry.tagName === 'LI').length, 0);
+  assert.equal(tmua.visible().length, 1);
+  assert.ok(tmua.visible()[0].innerHTML.includes('TMUA-2023-paper-1-worked-answers.pdf'));
   const step = load('step-past-papers');
   step.select('archive-year', '2025');
   step.select('archive-type', 'written');

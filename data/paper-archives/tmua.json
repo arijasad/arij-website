@@ -2,8 +2,8 @@
   "exam": "tmua",
   "title": "TMUA",
   "pageTitle": "TMUA Past Papers, Worked Solutions & Community Mocks | Arij Asad",
-  "description": "TMUA official past papers, worked answers and historical score conversions, plus JZ Maths, Hercules / PrepTMUA, Gresty Academy, Tyler, Beyond Horizon and Yotta mocks.",
-  "intro": "Official papers and worked answers, followed by community mocks, topic worksheets and video solutions. Score information stays beside the matching paper.",
+  "description": "Free TMUA official past papers, worked solutions, attributed community mocks, online simulators and topic worksheets, including Oxford, Warwick and Daniel J. Smith resources.",
+  "intro": "Official papers and preparation materials, followed by free community mocks, online simulators, topic worksheets and video solutions. Papers and solutions are credited to their creators.",
   "displayNotes": [
     "Official papers currently run from the 2016 practice papers to 2023, plus an early specimen. UAT-UK has not added 2024–2026 past papers to its public archive.",
     "Add your Paper 1 and Paper 2 marks for a total out of 40. The boxes show the minimum total needed for overall scores of 7+, 8+ and 9 in that year, with 5+ and 6+ underneath.",
@@ -770,6 +770,152 @@
     }
   ],
   "community": [
+    {
+      "id": "daniel-j-smith",
+      "title": "Daniel J. Smith",
+      "credit": "Original mock papers and worked solutions by Daniel J. Smith.",
+      "description": "Three free two-paper sets, A to C. Each paper has 20 multiple-choice questions, an answer key and full worked solutions. View online or download from the author; no signup required.",
+      "rows": [
+        {
+          "year": "undated",
+          "label": "Set A Paper 1",
+          "creator": "Daniel J. Smith",
+          "papers": [
+            {
+              "label": "Questions and download",
+              "url": "https://resources.danieljsmith.org/view/tmua-setA-paper1/",
+              "kind": "paper"
+            },
+            {
+              "label": "Answer key",
+              "url": "https://resources.danieljsmith.org/view/tmua-setA-paper1-answers/",
+              "kind": "answers"
+            },
+            {
+              "label": "Worked solutions",
+              "url": "https://resources.danieljsmith.org/view/tmua-setA-paper1-solns/",
+              "kind": "extended-solutions"
+            }
+          ],
+          "boundaries": {}
+        },
+        {
+          "year": "undated",
+          "label": "Set A Paper 2",
+          "creator": "Daniel J. Smith",
+          "papers": [
+            {
+              "label": "Questions and download",
+              "url": "https://resources.danieljsmith.org/view/tmua-setA-paper2/",
+              "kind": "paper"
+            },
+            {
+              "label": "Answer key",
+              "url": "https://resources.danieljsmith.org/view/tmua-setA-paper2-answers/",
+              "kind": "answers"
+            },
+            {
+              "label": "Worked solutions",
+              "url": "https://resources.danieljsmith.org/view/tmua-setA-paper2-solns/",
+              "kind": "extended-solutions"
+            }
+          ],
+          "boundaries": {}
+        },
+        {
+          "year": "undated",
+          "label": "Set B Paper 1",
+          "creator": "Daniel J. Smith",
+          "papers": [
+            {
+              "label": "Questions and download",
+              "url": "https://resources.danieljsmith.org/view/tmua-setB-paper1/",
+              "kind": "paper"
+            },
+            {
+              "label": "Answer key",
+              "url": "https://resources.danieljsmith.org/view/tmua-setB-paper1-answers/",
+              "kind": "answers"
+            },
+            {
+              "label": "Worked solutions",
+              "url": "https://resources.danieljsmith.org/view/tmua-setB-paper1-solns/",
+              "kind": "extended-solutions"
+            }
+          ],
+          "boundaries": {}
+        },
+        {
+          "year": "undated",
+          "label": "Set B Paper 2",
+          "creator": "Daniel J. Smith",
+          "papers": [
+            {
+              "label": "Questions and download",
+              "url": "https://resources.danieljsmith.org/view/tmua-setB-paper2/",
+              "kind": "paper"
+            },
+            {
+              "label": "Answer key",
+              "url": "https://resources.danieljsmith.org/view/tmua-setB-paper2-answers/",
+              "kind": "answers"
+            },
+            {
+              "label": "Worked solutions",
+              "url": "https://resources.danieljsmith.org/view/tmua-setB-paper2-solns/",
+              "kind": "extended-solutions"
+            }
+          ],
+          "boundaries": {}
+        },
+        {
+          "year": "undated",
+          "label": "Set C Paper 1",
+          "creator": "Daniel J. Smith",
+          "papers": [
+            {
+              "label": "Questions and download",
+              "url": "https://resources.danieljsmith.org/view/tmua-setC-paper1/",
+              "kind": "paper"
+            },
+            {
+              "label": "Answer key",
+              "url": "https://resources.danieljsmith.org/view/tmua-setC-paper1-answers/",
+              "kind": "answers"
+            },
+            {
+              "label": "Worked solutions",
+              "url": "https://resources.danieljsmith.org/view/tmua-setC-paper1-solns/",
+              "kind": "extended-solutions"
+            }
+          ],
+          "boundaries": {}
+        },
+        {
+          "year": "undated",
+          "label": "Set C Paper 2",
+          "creator": "Daniel J. Smith",
+          "papers": [
+            {
+              "label": "Questions and download",
+              "url": "https://resources.danieljsmith.org/view/tmua-setC-paper2/",
+              "kind": "paper"
+            },
+            {
+              "label": "Answer key",
+              "url": "https://resources.danieljsmith.org/view/tmua-setC-paper2-answers/",
+              "kind": "answers"
+            },
+            {
+              "label": "Worked solutions",
+              "url": "https://resources.danieljsmith.org/view/tmua-setC-paper2-solns/",
+              "kind": "extended-solutions"
+            }
+          ],
+          "boundaries": {}
+        }
+      ]
+    },
     {
       "title": "JZ Maths",
       "description": "Five pairs of community mock papers, with worked solutions, video walkthroughs and an online simulator.",
@@ -2338,58 +2484,35 @@
       "url": "https://www.tmuaeuclid.com/r2drew2"
     },
     {
-      "label": "Hercules / PrepTMUA mocks",
-      "url": "https://www.preptmua.com/pricing/"
+      "label": "Daniel J. Smith: free papers and solutions",
+      "url": "https://resources.danieljsmith.org/tmua/"
+    },
+    {
+      "label": "DπD Maths: free Set 1",
+      "url": "https://dpidmaths.co.uk/resources"
+    },
+    {
+      "label": "Oxford: TMUA preparation livestream resources",
+      "url": "https://www.maths.ox.ac.uk/study-here/undergraduate-study/tmua/mat-livestream"
+    },
+    {
+      "label": "Warwick: TMUA walkthroughs",
+      "url": "https://warwick.ac.uk/fac/sci/maths/studywithus/ug/entrance-exams/tmua-support/"
+    },
+    {
+      "label": "Dr Nicky Grant: free resources",
+      "url": "https://www.drnickygrant.com/tmua-resources.html"
+    },
+    {
+      "label": "TMUAmockz: access terms",
+      "url": "https://tmuamockz.com/terms"
+    },
+    {
+      "label": "Hercules / PrepTMUA: free sample",
+      "url": "https://www.preptmua.com/questions/intro_quiz_intro/"
     }
   ],
   "linkSections": [
-    {
-      "id": "hercules-preptmua",
-      "title": "Hercules / PrepTMUA mock papers",
-      "description": "Independent TMUA-style practice: six mock papers with worked solutions on PrepTMUA (paid access). A free sample quiz is available. These are not official past papers.",
-      "credit": "Three two-paper mock sets written by Ming Chun So (Hercules) and Ashmit Rao.",
-      "links": [
-        {
-          "label": "Free sample quiz",
-          "url": "https://www.preptmua.com/questions/intro_quiz_intro/",
-          "description": "Publisher-hosted sample; no purchase required.",
-          "filterTypes": [
-            "papers"
-          ]
-        },
-        {
-          "label": "Six mock papers and worked solutions (paid)",
-          "url": "https://www.preptmua.com/pricing/",
-          "description": "Access to the full sets and solutions requires payment.",
-          "filterTypes": [
-            "papers",
-            "written"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "r2drew-walkthroughs",
-      "title": "More R2Drew2 TMUA walkthroughs",
-      "description": "Further Beyond Horizon videos by Rob Drew (R2Drew2). Use the paper shown in each video; the specimen and mock versions are separate resources.",
-      "credit": "Papers by Beyond Horizon. Video solutions by Rob Drew (R2Drew2).",
-      "links": [
-        {
-          "label": "Beyond Horizon mock TMUA Paper 1 — R2Drew2",
-          "url": "https://www.youtube.com/watch?v=IjJfRn5DNfI",
-          "filterTypes": [
-            "videos"
-          ]
-        },
-        {
-          "label": "Beyond Horizon TMUA Specimen Paper 1 — R2Drew2",
-          "url": "https://www.youtube.com/watch?v=7budk5m8Ubs",
-          "filterTypes": [
-            "videos"
-          ]
-        }
-      ]
-    },
     {
       "id": "official-preparation",
       "title": "Current official preparation",
@@ -2428,6 +2551,308 @@
           "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2026/02/11111432/TMUA_Explanation_of_Results-October2025_and_January2026.pdf",
           "filterTypes": [
             "guides"
+          ]
+        }
+      ],
+      "placement": "after-official"
+    },
+    {
+      "id": "university-preparation",
+      "title": "Free university preparation resources",
+      "description": "University-produced worksheets, solutions and recordings to support TMUA preparation. These are teaching resources, not additional official TMUA exam papers.",
+      "credit": "Resources by the University of Oxford Mathematical Institute and the University of Warwick Mathematics Institute.",
+      "links": [
+        {
+          "label": "Oxford: 2026 worksheets, solutions and recordings",
+          "url": "https://www.maths.ox.ac.uk/study-here/undergraduate-study/tmua/mat-livestream",
+          "description": "Fourteen topic and problem-solving sessions, from algebra and calculus to precision and creativity. The table links each worksheet, solution and recording. Free without registration. Includes questions from the 2020–2022 TMUA papers, so it may reveal papers you planned to save for mocks.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "videos",
+            "guides"
+          ]
+        },
+        {
+          "label": "Warwick: TMUA video and written walkthroughs",
+          "url": "https://warwick.ac.uk/fac/sci/maths/studywithus/ug/entrance-exams/tmua-support/",
+          "description": "Free university walkthroughs of selected past-paper questions, explaining approaches and the reasoning behind solutions.",
+          "filterTypes": [
+            "written",
+            "videos",
+            "guides"
+          ]
+        }
+      ],
+      "placement": "after-official"
+    },
+    {
+      "id": "dpid-free-mocks",
+      "title": "DπD Maths: free Set 1",
+      "description": "A free two-paper mock set, with 20 questions per paper and full worked solutions.",
+      "credit": "Questions and solutions by DπD Maths (Drishith Paturi and Ishan Dhakephalkar).",
+      "links": [
+        {
+          "label": "Set 1: Papers 1 and 2 with worked solutions",
+          "url": "https://dpidmaths.co.uk/resources",
+          "description": "Choose TMUA Mock Set 1 or its free bundle on the publisher’s page and follow the “Get it free” access steps. This archive entry covers Set 1 only.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "answers"
+          ]
+        }
+      ],
+      "communityMock": true
+    },
+    {
+      "id": "free-online-simulators",
+      "title": "Free online simulators",
+      "description": "Practise timing, navigation and answering on screen. The Pearson VUE link is the official practice environment; the other platforms are independent. Any community score conversions or difficulty ratings are estimates, not official results.",
+      "credit": "Platforms are credited below. Papers remain the work of their original authors; an online version is not necessarily a new paper.",
+      "links": [
+        {
+          "label": "Pearson VUE: official TMUA practice",
+          "url": "https://www.pearsonvue.com/us/en/uatuk.html",
+          "description": "Official UAT-UK computer-based specimen and practice tests. Start here to become familiar with the test interface.",
+          "filterTypes": [
+            "papers",
+            "guides"
+          ]
+        },
+        {
+          "label": "JZMaths: free exam simulator",
+          "url": "https://jzmaths.com/exam",
+          "description": "Free practice with official papers and original JZMaths and Tyler Tutoring mocks. A free account saves attempts and progress.",
+          "filterTypes": [
+            "papers",
+            "written"
+          ]
+        },
+        {
+          "label": "Clavis Education: three free practice sets",
+          "url": "https://claviseducation.com/resources/admissions-tests-resources/tmua-practice-tests/",
+          "description": "Original papers by Clavis Education in a timed simulator. Three two-paper sets; no account required.",
+          "filterTypes": [
+            "papers"
+          ]
+        },
+        {
+          "label": "MockLab999: free timed papers and mocks",
+          "url": "https://www.mocklab999.com/tmua/mock",
+          "description": "Official 2016–2023 papers and MockLab999’s original two-paper mocks, with post-exam review. The public mocks need no sign-in.",
+          "filterTypes": [
+            "papers",
+            "written"
+          ]
+        },
+        {
+          "label": "tmua.io: free online paper practice",
+          "url": "https://tmua.io/",
+          "description": "Free timed practice, automatic marking and saved results; Google sign-in required to sit papers. Choose official papers or named-author community papers. Its unattributed papers are not included in this archive.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "answers"
+          ]
+        },
+        {
+          "label": "TMUAmockz: free Set 01",
+          "url": "https://tmuamockz.com/",
+          "description": "Set 01 offers Papers 1 and 2 with unlimited attempts and worked solutions through a free account. Credit: TMUAmockz. Other sets are outside this free listing. The provider states that all paper and solution access ends after 9 January 2027.",
+          "filterTypes": [
+            "papers",
+            "written"
+          ]
+        },
+        {
+          "label": "JZMaths PLUS beta: free Exam Sets A and B",
+          "url": "https://jzmaths.com/plus_beta",
+          "description": "Four new papers by Joe Zhou, separate from the original Mock Sets, with worked solutions. Free membership requires completing two different full papers in the JZMaths simulator. Online only; free access ends 8 January 2027 at 11:59 pm GMT. This entry covers the free sets only.",
+          "filterTypes": [
+            "papers",
+            "written"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tyler-topic-worksheets",
+      "title": "Tyler Tutoring topic worksheets",
+      "description": "Topic-by-topic practice to use between full mocks. Each topic page brings together its available worksheets, multiple-choice exercises and solutions.",
+      "credit": "Free resources by Jackie Tyler (Tyler Tutoring).",
+      "links": [
+        {
+          "label": "Algebra and functions",
+          "url": "https://www.tylertutoring.com/algebra",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Sequences and series",
+          "url": "https://www.tylertutoring.com/sequences",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Coordinate geometry",
+          "url": "https://www.tylertutoring.com/coordinate",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Trigonometry",
+          "url": "https://www.tylertutoring.com/trigonometry",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Exponentials and logarithms",
+          "url": "https://www.tylertutoring.com/exponentials",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Differentiation",
+          "url": "https://www.tylertutoring.com/differentiation",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Integration",
+          "url": "https://www.tylertutoring.com/integration",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Graphs of functions",
+          "url": "https://www.tylertutoring.com/graphs",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Proof and logic",
+          "url": "https://www.tylertutoring.com/proof",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        },
+        {
+          "label": "Extra practice",
+          "url": "https://www.tylertutoring.com/extras",
+          "description": "Open the topic page for questions and the corresponding solutions.",
+          "filterTypes": [
+            "papers",
+            "written",
+            "guides"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nicky-grant-practice",
+      "title": "Dr Nicky Grant: free questions and logic notes",
+      "description": "Original interactive practice and explanations for mathematical reasoning.",
+      "credit": "Questions, notes and mock papers by Dr Nicky Grant.",
+      "links": [
+        {
+          "label": "50 original questions with worked solutions",
+          "url": "https://www.drnickygrant.com/tmua-questions.html",
+          "description": "Free interactive questions, filtered by paper and difficulty, with instant marking and worked solutions. No signup required.",
+          "filterTypes": [
+            "papers",
+            "written"
+          ]
+        },
+        {
+          "label": "Paper 2: logic and proof notes",
+          "url": "https://www.drnickygrant.com/teaching/tmua/",
+          "description": "Six sets of free notes with worked examples, including implication, contrapositive, quantifiers, proof and flawed arguments; links to a printable revision guide.",
+          "filterTypes": [
+            "guides",
+            "written"
+          ]
+        },
+        {
+          "label": "Free timed mock: Papers 1 and 2",
+          "url": "https://www.drnickygrant.com/tmua-2024-projected-exam.html",
+          "description": "Two original 75-minute papers with worked solutions. Paper 2 requires free signup. This is an independent “2024 projected” mock, not an official or released 2024 exam.",
+          "filterTypes": [
+            "papers",
+            "written"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hercules-preptmua",
+      "title": "Hercules / PrepTMUA: free sample quiz",
+      "description": "Free independent TMUA-style sample practice by Ming Chun So (Hercules) and Ashmit Rao.",
+      "credit": "Questions by Ming Chun So (Hercules) and Ashmit Rao.",
+      "links": [
+        {
+          "label": "Free sample quiz",
+          "url": "https://www.preptmua.com/questions/intro_quiz_intro/",
+          "description": "Publisher-hosted sample; no purchase required.",
+          "filterTypes": [
+            "papers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r2drew-walkthroughs",
+      "title": "More R2Drew2 TMUA walkthroughs",
+      "description": "Further Beyond Horizon videos by Rob Drew (R2Drew2). Use the paper shown in each video; the specimen and mock versions are separate resources.",
+      "credit": "Papers by Beyond Horizon. Video solutions by Rob Drew (R2Drew2).",
+      "links": [
+        {
+          "label": "Beyond Horizon mock TMUA Paper 1 — R2Drew2",
+          "url": "https://www.youtube.com/watch?v=IjJfRn5DNfI",
+          "filterTypes": [
+            "videos"
+          ]
+        },
+        {
+          "label": "Beyond Horizon TMUA Specimen Paper 1 — R2Drew2",
+          "url": "https://www.youtube.com/watch?v=7budk5m8Ubs",
+          "filterTypes": [
+            "videos"
           ]
         }
       ]
@@ -2666,8 +3091,68 @@
           ]
         }
       ]
+    },
+    {
+      "id": "clavis-free-mocks",
+      "title": "Clavis Education: three free mock sets",
+      "communityMock": true,
+      "credit": "Original mock papers by Clavis Education.",
+      "description": "Six free papers across three two-paper sets, delivered in an online simulator. No account required.",
+      "links": [
+        {
+          "label": "Open the three free timed mock sets",
+          "url": "https://claviseducation.com/resources/admissions-tests-resources/tmua-practice-tests/",
+          "description": "Paper 1 and Paper 2 are timed at 75 minutes each. These are independent practice papers.",
+          "filterTypes": [
+            "papers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mocklab-free-mocks",
+      "title": "MockLab999: two free mock sets",
+      "communityMock": true,
+      "credit": "Original mock papers and explanations by MockLab999.",
+      "description": "Four original papers across the 2024-style and 2025-style two-paper mocks. These are independent mocks, not official or recalled exam papers.",
+      "links": [
+        {
+          "label": "Open the free two-paper mock sets",
+          "url": "https://www.mocklab999.com/tmua/mock",
+          "description": "No sign-in needed for the public mocks; marking and explanations follow the sitting. The page also offers timed versions of official papers.",
+          "filterTypes": [
+            "papers",
+            "written"
+          ]
+        }
+      ]
     }
   ],
-  "sourceNote": "This archive is curated by Arij Asad. Papers and solutions remain the work of their credited creators. Links lead to the original publishers, except for the Beyond Horizon and Yotta community downloads hosted here. The original file contents and credits are preserved. N/A means that an item is unavailable or not applicable.",
-  "dateModified": "2026-10-09"
+  "sourceNote": "This archive is curated by Arij Asad. Papers and solutions remain the work of their credited creators. Links lead to the original publishers, except for the Beyond Horizon and Yotta community downloads hosted here. The original file contents and credits are preserved. N/A means that an item is unavailable or not applicable. New resources are linked on their publishers’ websites. Only the free resources described in each entry are included; some providers also offer paid products. Signup requirements and published access limits are noted. Availability checked 27 October 2026.",
+  "dateModified": "2026-10-27",
+  "communitySectionOrder": [
+    "jz-maths",
+    "tyler-tutoring",
+    "daniel-j-smith",
+    "clavis-free-mocks",
+    "mocklab-free-mocks",
+    "euclid",
+    "gresty-academy",
+    "dpid-free-mocks",
+    "beyond-horizon-supplied-collection",
+    "yotta-supplied-collection",
+    "andrew-phan",
+    "nicky-grant-practice",
+    "hercules-preptmua",
+    "free-online-simulators",
+    "tyler-topic-worksheets",
+    "jz-maths-logic-worksheets",
+    "jz-maths-additional-topic-worksheets",
+    "r2drew-walkthroughs",
+    "jzlogicarticles",
+    "jzadditionaltopics",
+    "jzpublicnavigation",
+    "jzusefulexternalresources"
+  ],
+  "communityOrderNote": "The full mock-paper collections start with those offering the most free papers, followed by shorter practice collections. Topic worksheets and online simulator links appear below. The order is not a difficulty or quality ranking."
 }
