@@ -244,13 +244,14 @@ def render(data):
     groups = defaultdict(list)
     for row in rows:
         if isinstance(row['year'], int):
-            groups[f'{row["year"] // 10 * 10}s'].append(row)
+            group = 'Official past papers' if exam == 'tmua' else f'{row["year"] // 10 * 10}s'
+            groups[group].append(row)
         else:
             groups['Specimen papers'].append(row)
     groups = dict(sorted(groups.items(), key=lambda pair: int(pair[0][:-1]) if pair[0][:-1].isdigit() else 0, reverse=True))
     nav = ''
     if exam == 'tmua':
-        nav = '<nav class="archive-nav" aria-label="TMUA archive shortcuts"><a href="#2020s">Official past papers</a><a href="#official-preparation">Official preparation</a><a href="#university-preparation">University resources</a><a href="#community-papers">Community mocks</a><a href="#free-online-simulators">Free simulators</a><a href="#tyler-topic-worksheets">Topic worksheets</a><a href="#practice-guidance">How to practise</a></nav>'
+        nav = '<nav class="archive-nav" aria-label="TMUA archive shortcuts"><a href="#official-past-papers">Official past papers</a><a href="#official-preparation">Official preparation</a><a href="#university-preparation">University resources</a><a href="#community-papers">Community mocks</a><a href="#free-online-simulators">Free simulators</a><a href="#tyler-topic-worksheets">Topic worksheets</a><a href="#practice-guidance">How to practise</a></nav>'
     archive_sections = data.get('archiveSections') or [{'id':g.lower().replace(' ', '-'), 'title':g, 'rows':r} for g,r in groups.items()]
     jumps = ''.join(f'<a href="#{e(g["id"])}">{e(g.get("navLabel", g["title"]))}</a>' for g in archive_sections)
     for section in data.get('linkSections', []):
