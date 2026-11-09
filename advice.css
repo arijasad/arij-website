@@ -1,0 +1,51 @@
+.advice-page .article-hero { padding: 56px 0 44px; }
+.advice-page .article-hero h1 { max-width: 1000px; font-size: clamp(38px, 5.2vw, 66px); }
+.advice-page .article-meta { max-width: 900px; }
+.advice-cycle { padding-top: 24px; }
+.advice-cycle p { margin: 0; padding: 18px 22px; border-left: 4px solid var(--gold); background: var(--cream-dark); font-size: 14px; line-height: 1.65; }
+.advice-page .article-layout { padding-top: 36px; grid-template-columns: minmax(0, 1fr) 275px; gap: 48px; }
+.advice-page .article-body { min-width: 0; }
+.advice-page .article-body h2 { font-size: clamp(27px, 3vw, 36px); scroll-margin-top: 96px; }
+.advice-page .article-body h3 { font-size: 21px; }
+.advice-page .article-aside { max-height: calc(100vh - 120px); overflow-y: auto; padding: 22px; }
+.advice-page .article-aside a { padding: 7px 0; font-size: 13px; }
+.advice-page .advice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.advice-page .resource-card { padding: 25px; }
+.advice-page .resource-card h3 { margin-top: 12px; }
+.advice-page .resource-card p { font-size: 15px; }
+.advice-page .resource-card a { text-decoration: none; }
+.advice-table-wrap { overflow-x: auto; margin: 24px 0; border: 1px solid var(--border); border-radius: 12px; background: white; }
+.advice-table-hint { display: none; }
+.advice-table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.55; }
+.advice-table caption { text-align: left; padding: 16px; font-weight: 700; color: var(--gold); }
+.advice-table th, .advice-table td { padding: 14px 16px; vertical-align: top; text-align: left; border-top: 1px solid var(--border); }
+.advice-table thead { background: var(--cream-dark); }
+.advice-table th { min-width: 125px; }
+.advice-faq { margin: 0 0 12px; border: 1px solid var(--border); border-radius: 10px; background: white; }
+.advice-faq summary { cursor: pointer; padding: 18px 20px; font-weight: 700; line-height: 1.5; }
+.advice-faq p { padding: 0 20px 18px; margin-bottom: 0; }
+.advice-page a:focus-visible, .advice-faq summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+.advice-sources { border-top: 1px solid var(--border); margin-top: 40px; font-size: 15px; }
+.advice-sources li { scroll-margin-top: 100px; }
+.advice-practice { padding: 24px; background: white; border: 1px solid var(--border); border-radius: 14px; margin: 24px 0; }
+.advice-page .advice-practice h3 { margin-top: 0; }
+@media (max-width: 1080px) {
+ .advice-page .article-layout { grid-template-columns: 1fr; }
+ .advice-page .article-aside { position: static; max-height: none; grid-row: 1; }
+ .advice-page .article-aside nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 18px; }
+ .advice-page .article-body { max-width: none; }
+}
+@media (max-width: 600px) {
+ .advice-table-hint { display: block; color: var(--muted); font-size: 14px; }
+ .advice-page .advice-grid { grid-template-columns: 1fr; }
+ .advice-page .article-aside nav { grid-template-columns: 1fr; }
+ .advice-page .article-hero { padding-top: 38px; }
+ .advice-table th, .advice-table td { padding: 12px; }
+}
+@media print {
+ .site-header, .paper-archive-bar, .article-aside, footer, .cookie-banner { display: none !important; }
+ .advice-page .article-layout { display: block; padding-top: 10px; }
+ .advice-page .article-body { max-width: none; }
+ .advice-page { background: white; }
+ .advice-faq { break-inside: avoid; }
+}

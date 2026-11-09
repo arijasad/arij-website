@@ -53,6 +53,11 @@ if (serviceSelect) {
   const returnParameter = "enquiry_return";
   const recordLifetime = 15 * 60 * 1000;
   const resourcePaths = new Set([
+    "/advice.html", "/cambridge-mathematics-application-guide.html",
+    "/oxford-mathematics-application-guide.html", "/cambridge-engineering-application-guide.html",
+    "/oxford-engineering-application-guide.html", "/cambridge-computer-science-application-guide.html",
+    "/cambridge-vs-oxford-maths.html", "/cambridge-vs-oxford-engineering.html",
+    "/do-you-need-an-admissions-consultancy.html",
     "/resources.html", "/tmua-paper-archive.html", "/tmua-past-papers.html",
     "/mat-past-papers.html", "/step-past-papers.html", "/esat-paper-archive.html",
     "/jmc-past-papers.html", "/imc-past-papers.html", "/smc-past-papers.html",

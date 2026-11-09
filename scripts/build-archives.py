@@ -280,6 +280,10 @@ def render(data):
                         + table(group_rows, exam, name + ' papers and scores — ' + group['title']) + '</section>')
     notes = data.get('displayNotes', [])
     notes_html = '<aside class="archive-note">' + ''.join('<p>' + e(n) + '</p>' for n in notes) + '</aside>' if notes else ''
+    advice_links = data.get('adviceLinks', [])
+    advice_html = ('<aside class="archive-note" aria-label="Course application advice"><p>Planning an application? Read '
+                   + ', '.join(f'<a href="{e(x["url"])}">{e(x["label"])}</a>' for x in advice_links)
+                   + ' for current requirements and preparation advice.</p></aside>') if advice_links else ''
     communities = []
     community_blocks = {}
     community_heading = ''
@@ -389,6 +393,7 @@ def render(data):
       <p class="archive-help">Need help with a particular step? <a href="contact.html?service={service}#enquiry-form">Discuss {e(enquiry_label)} preparation</a>.</p>
       {filter_controls()}
       {jumps_html}
+      {advice_html}
       {''.join(sections)}
 {'' if section_order else practice_guidance(exam)}
       {''.join(communities)}{chr(10) + practice_guidance(exam) if section_order else ''}

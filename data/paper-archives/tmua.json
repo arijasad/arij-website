@@ -3129,7 +3129,7 @@
     }
   ],
   "sourceNote": "This archive is curated by Arij Asad. Papers and solutions remain the work of their credited creators. Links lead to the original publishers, except for the Beyond Horizon and Yotta community downloads hosted here. The original file contents and credits are preserved. N/A means that an item is unavailable or not applicable. New resources are linked on their publishers’ websites. Only the free resources described in each entry are included; some providers also offer paid products. Signup requirements and published access limits are noted. Availability checked 27 October 2026.",
-  "dateModified": "2026-10-27",
+  "dateModified": "2026-11-09",
   "communitySectionOrder": [
     "jz-maths",
     "tyler-tutoring",
@@ -3154,5 +3154,19 @@
     "jzpublicnavigation",
     "jzusefulexternalresources"
   ],
-  "communityOrderNote": "The full mock-paper collections start with those offering the most free papers, followed by shorter practice collections. Topic worksheets and online simulator links appear below. The order is not a difficulty or quality ranking."
+  "communityOrderNote": "The full mock-paper collections start with those offering the most free papers, followed by shorter practice collections. Topic worksheets and online simulator links appear below. The order is not a difficulty or quality ranking.",
+  "adviceLinks": [
+    {
+      "url": "cambridge-mathematics-application-guide.html",
+      "label": "Cambridge Maths"
+    },
+    {
+      "url": "oxford-mathematics-application-guide.html",
+      "label": "Oxford Maths"
+    },
+    {
+      "url": "cambridge-computer-science-application-guide.html",
+      "label": "Cambridge Computer Science"
+    }
+  ]
 }

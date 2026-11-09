@@ -4418,5 +4418,15 @@
     }
   ],
   "sourceNote": "Curated by Arij Asad. Papers and solutions remain the work of their original authors; links open the original provider or the named archive mirror. Historical boundaries for 2000–2018 are transcribed from Mathsaurus; 2019–2026 link to official results documents. No pre-2000 boundaries were located.",
-  "dateModified": "2026-10-27"
+  "dateModified": "2026-11-09",
+  "adviceLinks": [
+    {
+      "url": "cambridge-mathematics-application-guide.html",
+      "label": "the Cambridge Maths guide"
+    },
+    {
+      "url": "cambridge-vs-oxford-maths.html",
+      "label": "Cambridge vs Oxford Maths"
+    }
+  ]
 }

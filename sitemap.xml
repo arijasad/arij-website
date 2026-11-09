@@ -1,84 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://maths.arijasad.com/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/about.html</loc>
     <lastmod>2026-10-30</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/tuition.html</loc>
     <lastmod>2026-09-10</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/tmua.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/step.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/interviews.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/resources.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/tmua-study-plan.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/strong-step-solution.html</loc>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/when-to-start-step.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/cambridge-maths-interview-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/tmua-past-papers.html</loc>
     <lastmod>2026-09-10</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/tmua-logic-proof.html</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/negation-and-contrapositive.html</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/cambridge-interview-problems.html</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/contact.html</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/zh.html</loc>
     <lastmod>2026-10-30</lastmod>
@@ -87,14 +71,12 @@
     <loc>https://maths.arijasad.com/privacy.html</loc>
     <lastmod>2026-09-14</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/terms.html</loc>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/maths-challenges.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://maths.arijasad.com/university-maths.html</loc>
@@ -130,23 +112,23 @@
   </url>
   <url>
     <loc>https://maths.arijasad.com/tmua-paper-archive.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://maths.arijasad.com/step-past-papers.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://maths.arijasad.com/esat-paper-archive.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://maths.arijasad.com/mat-past-papers.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://maths.arijasad.com/maths-topic-practice.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://maths.arijasad.com/modulus-and-graphs.html</loc>
@@ -212,10 +194,44 @@
     <loc>https://maths.arijasad.com/teacher-resources.html</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
-
   <url>
     <loc>https://maths.arijasad.com/bmo1-preparation.html</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
-
+  <url>
+    <loc>https://maths.arijasad.com/advice.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://maths.arijasad.com/cambridge-mathematics-application-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://maths.arijasad.com/oxford-mathematics-application-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://maths.arijasad.com/cambridge-engineering-application-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://maths.arijasad.com/oxford-engineering-application-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://maths.arijasad.com/cambridge-computer-science-application-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://maths.arijasad.com/cambridge-vs-oxford-maths.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://maths.arijasad.com/cambridge-vs-oxford-engineering.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://maths.arijasad.com/do-you-need-an-admissions-consultancy.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
 </urlset>

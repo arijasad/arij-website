@@ -8,6 +8,22 @@ The academic and research website is maintained separately at [www.arijasad.com]
 
 Deployment source: the `main` branch, published from the repository root.
 
+## Admissions advice
+
+`advice.html` collects five course guides, two Cambridge/Oxford comparisons and an independent-preparation guide. The checked cycle is applications in autumn 2026 for entry in 2027 (including deferred entry in 2028). Content is in `content/advice/`; metadata, SEO intent and primary-source links are in `data/advice-pages.json`.
+
+After editing reviewed content, run:
+
+```sh
+python3 scripts/build-advice.py
+python3 scripts/integrate-advice.py
+python3 scripts/build-navigation.py
+python3 scripts/check-advice.py
+node --test scripts/site-analytics.test.cjs
+```
+
+Run the integration script after rebuilding archives or topic pages so contextual routes and asset versions remain current. Keep archive course links in each catalogue's `adviceLinks` field. Do not mechanically advance the admissions year or checked dates. Verify current course requirements, tests, subject expectations and college exceptions first. The release rationale, interpretation notes and full added-link inventory are in `docs/admissions-advice-release.md` and `docs/advice-internal-links.csv`.
+
 ## Paper archives
 
 Eleven static archives cover JMC, IMC, SMC, AMC 10, AMC 12, AIME, BMO, TMUA, MAT, STEP and ESAT. The Olympiad and TMUA tuition pages link to these larger grids. The existing `tmua-past-papers.html` remains the study guide; the catalogue is `tmua-paper-archive.html`.

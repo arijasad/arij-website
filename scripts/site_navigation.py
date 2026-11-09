@@ -36,6 +36,17 @@ def archive_navigation(current_path, chinese=False):
 
 
 def install_archive_navigation(document, current_path):
+    # Keep the advice entry crawlable and present after any page regeneration.
+    def add_advice(match):
+        navigation = match.group(0)
+        navigation = re.sub(r'<a\b[^>]*href="/?advice\.html"[^>]*>.*?</a>', '', navigation, flags=re.S)
+        current = ' aria-current="page"' if current_path == 'advice.html' else ''
+        chinese = bool(re.search(r'<html[^>]+lang="zh', document))
+        label = '申请建议（英文）' if chinese else 'Advice'
+        language = ' lang="en" hreflang="en-GB"' if chinese else ''
+        link = f'<a href="/advice.html"{current}{language}>{label}</a>'
+        return re.sub(r'(<a\b[^>]*href="/?resources\.html")', link + r'\1', navigation, count=1)
+    document = re.sub(r'<nav\b[^>]*class="nav-links"[^>]*>.*?</nav>', add_advice, document, flags=re.S)
     document = re.sub(r'\n?  <!-- Shared past-paper navigation -->.*?<!-- /Shared past-paper navigation -->', '', document, flags=re.S)
     header = re.search(r'<header\b[^>]*class="site-header"[^>]*>.*?</header>', document, re.S)
     if header is None:

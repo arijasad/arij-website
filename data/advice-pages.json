@@ -1,0 +1,595 @@
+{
+  "checked": "2026-11-09",
+  "cycle": "Applications in autumn 2026 for entry in 2027",
+  "sources": {
+    "cam-maths": {
+      "title": "Cambridge Mathematics: 2027 entry requirements",
+      "url": "https://www.undergraduate.study.cam.ac.uk/courses/mathematics-ba-hons-mmath",
+      "checked": "2026-11-09"
+    },
+    "cam-maths-apply": {
+      "title": "Cambridge Mathematics: how to apply",
+      "url": "https://www.maths.cam.ac.uk/undergrad/admissions/how-to-apply",
+      "checked": "2026-11-09"
+    },
+    "cam-maths-faq": {
+      "title": "Cambridge Mathematics: subject choices, STEP and interviews",
+      "url": "https://www.maths.cam.ac.uk/undergrad/admissions/faq",
+      "checked": "2026-11-09"
+    },
+    "cam-eng": {
+      "title": "Cambridge Engineering: 2027 entry requirements",
+      "url": "https://www.undergraduate.study.cam.ac.uk/courses/engineering-ba-hons-meng",
+      "checked": "2026-11-09"
+    },
+    "cam-cs": {
+      "title": "Cambridge Computer Science: 2027 entry requirements",
+      "url": "https://www.undergraduate.study.cam.ac.uk/courses/computer-science-ba-hons-meng",
+      "checked": "2026-11-09"
+    },
+    "cam-subjects": {
+      "title": "Cambridge: choosing school subjects",
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/before/choosing-high-school-subjects",
+      "checked": "2026-11-09"
+    },
+    "cam-qualifications": {
+      "title": "Cambridge: accepted qualifications and three or four A levels",
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/before/accepted-qualifications",
+      "checked": "2026-11-09"
+    },
+    "cam-interviews": {
+      "title": "Cambridge: interviews and commercial preparation services",
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/after/cambridge-interviews",
+      "checked": "2026-11-09"
+    },
+    "cam-interview-prep": {
+      "title": "Cambridge: preparing for interviews",
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/after/interview-preparation",
+      "checked": "2026-11-09"
+    },
+    "cam-statement": {
+      "title": "Cambridge: personal statement guidance",
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/how/ucas-personal-statement",
+      "checked": "2026-11-09"
+    },
+    "cam-application": {
+      "title": "Cambridge: My Cambridge Application",
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/how/cambridge-application",
+      "checked": "2026-11-09"
+    },
+    "cam-step": {
+      "title": "Cambridge: STEP and college offer conditions",
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/after/sixth-term-exam-STEP",
+      "checked": "2026-11-09"
+    },
+    "cam-cs-interviews": {
+      "title": "Cambridge Computer Science: interviews",
+      "url": "https://www.cst.cam.ac.uk/admissions/undergraduate/interviews",
+      "checked": "2026-11-09"
+    },
+    "cam-cs-explore": {
+      "title": "Cambridge Computer Science: supercurricular activities",
+      "url": "https://www.cst.cam.ac.uk/admissions/undergraduate/super-curricular-activities",
+      "checked": "2026-11-09"
+    },
+    "cam-cs-faq": {
+      "title": "Cambridge Computer Science: department FAQ",
+      "url": "https://www.cst.cam.ac.uk/admissions/undergraduate/faqs",
+      "checked": "2026-11-09"
+    },
+    "cam-explore": {
+      "title": "Cambridge: exploring your subject",
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/before/improve-application",
+      "checked": "2026-11-09"
+    },
+    "cam-eng-gap": {
+      "title": "Cambridge Engineering: gap years and industrial experience",
+      "url": "https://www.admissions.eng.cam.ac.uk/information/gap-year",
+      "checked": "2026-11-09"
+    },
+    "pembroke-eng": {
+      "title": "Pembroke College: Engineering subject combinations",
+      "url": "https://www.pem.cam.ac.uk/study-here/undergraduate/courses/engineering",
+      "checked": "2026-11-09"
+    },
+    "ox-maths": {
+      "title": "Oxford Mathematics: course and entry requirements",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/mathematics",
+      "checked": "2026-11-09"
+    },
+    "ox-maths-offer": {
+      "title": "Oxford Mathematics: offers and Further Maths availability",
+      "url": "https://www.maths.ox.ac.uk/study-here/undergraduate-study/our-offer",
+      "checked": "2026-11-09"
+    },
+    "ox-maths-prospectus": {
+      "title": "Oxford Mathematics: prospectus for October 2026 applicants",
+      "url": "https://www.maths.ox.ac.uk/study-here/undergraduate-study/prospectus",
+      "checked": "2026-11-09"
+    },
+    "ox-maths-tmua": {
+      "title": "Oxford Mathematics: TMUA replaces MAT in 2026",
+      "url": "https://www.maths.ox.ac.uk/study-here/undergraduate-study/tmua",
+      "checked": "2026-11-09"
+    },
+    "ox-maths-interviews": {
+      "title": "Oxford Mathematics: interviews and free preparation",
+      "url": "https://www.maths.ox.ac.uk/study-here/undergraduate-study/interviews",
+      "checked": "2026-11-09"
+    },
+    "ox-eng": {
+      "title": "Oxford Engineering Science: course and entry requirements",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/engineering-science",
+      "checked": "2026-11-09"
+    },
+    "ox-eng-entry": {
+      "title": "Oxford Engineering Science: qualifications",
+      "url": "https://eng.ox.ac.uk/study/undergraduate/applications/entry-requirements",
+      "checked": "2026-11-09"
+    },
+    "ox-eng-apply": {
+      "title": "Oxford Engineering Science: selection and application",
+      "url": "https://eng.ox.ac.uk/study/undergraduate/applications",
+      "checked": "2026-11-09"
+    },
+    "ox-eng-faq": {
+      "title": "Oxford Engineering Science: common questions",
+      "url": "https://eng.ox.ac.uk/study/undergraduate/common-questions",
+      "checked": "2026-11-09"
+    },
+    "ox-qualifications": {
+      "title": "Oxford: UK qualifications and additional A levels",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/admissions-requirements/uk-qualifications",
+      "checked": "2026-11-09"
+    },
+    "ox-parents": {
+      "title": "Oxford: preparation advice for families",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/applying/for-parents-and-families/how-can-they-prepare",
+      "checked": "2026-11-09"
+    },
+    "ox-application": {
+      "title": "Oxford: UCAS application and personal statement",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/applying/guide-for-applicants/ucas-application",
+      "checked": "2026-11-09"
+    },
+    "ox-interviews": {
+      "title": "Oxford: interview guidance",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/applying/guide-for-applicants/interviews",
+      "checked": "2026-11-09"
+    },
+    "ox-tests": {
+      "title": "Oxford: new test arrangements for 2027 entry",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/applying/guide-for-applicants/admissions-tests",
+      "checked": "2026-11-09"
+    },
+    "uat-tmua": {
+      "title": "UAT-UK: TMUA format and candidate guidance",
+      "url": "https://esat-tmua.ac.uk/about-the-tests/tmua-test/",
+      "checked": "2026-11-09"
+    },
+    "uat-esat": {
+      "title": "UAT-UK: ESAT format and candidate guidance",
+      "url": "https://esat-tmua.ac.uk/about-the-tests/esat-test/",
+      "checked": "2026-11-09"
+    },
+    "uat-dates": {
+      "title": "UAT-UK: 2026/27 dates, deadlines and sitting eligibility",
+      "url": "https://esat-tmua.ac.uk/deadlines/",
+      "checked": "2026-11-09"
+    },
+    "uat-prepare": {
+      "title": "UAT-UK: free official preparation materials",
+      "url": "https://esat-tmua.ac.uk/prepare/",
+      "checked": "2026-11-09"
+    },
+    "ocr-step": {
+      "title": "OCR: current STEP specification",
+      "url": "https://www.ocr.org.uk/Images/696329-step-specification-2026.pdf",
+      "checked": "2026-11-09"
+    },
+    "ocr-dates": {
+      "title": "OCR: STEP 2027 dates and registration",
+      "url": "https://www.ocr.org.uk/students/step-mathematics/key-dates-and-fees/",
+      "checked": "2026-11-09"
+    },
+    "step-support": {
+      "title": "Cambridge STEP Support Programme: free preparation",
+      "url": "https://step.maths.org/",
+      "checked": "2026-11-09"
+    },
+    "ucas-statement": {
+      "title": "UCAS: current three-question personal statement",
+      "url": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement",
+      "checked": "2026-11-09"
+    },
+    "ucas-dates": {
+      "title": "UCAS: 2027 entry application deadlines",
+      "url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+      "checked": "2026-11-09"
+    }
+  },
+  "pages": [
+    {
+      "slug": "advice",
+      "title": "Cambridge & Oxford Admissions Advice",
+      "heading": "Preparing for mathematical admissions.",
+      "description": "Practical Cambridge and Oxford application advice for Maths, Engineering and Computer Science: subjects, tests, interviews and free independent preparation.",
+      "lede": "Understand the requirements, choose worthwhile problems and make a plan you can actually follow. Guidance for students and parents, with official sources and room for independent thinking.",
+      "category": "Admissions advice",
+      "cardTitle": "Admissions advice",
+      "primaryKeyword": "Cambridge Oxford admissions advice",
+      "searchIntent": "Find trustworthy course-specific guidance and choose the right next resource.",
+      "sources": [
+        "cam-maths",
+        "cam-eng",
+        "cam-cs",
+        "ox-maths",
+        "ox-eng",
+        "uat-dates",
+        "ucas-statement",
+        "ucas-dates",
+        "cam-application",
+        "ox-application"
+      ],
+      "related": [
+        [
+          "resources.html",
+          "All free preparation resources"
+        ],
+        [
+          "when-to-start-step.html",
+          "When to start STEP"
+        ],
+        [
+          "cambridge-maths-interview-guide.html",
+          "What a Cambridge maths interview is like"
+        ]
+      ]
+    },
+    {
+      "slug": "cambridge-mathematics-application-guide",
+      "title": "Cambridge Maths: Entry Requirements, TMUA and STEP",
+      "heading": "Applying for Mathematics at Cambridge.",
+      "description": "Cambridge Maths entry requirements for 2027: Further Maths, three or four A levels, TMUA, STEP, interviews and a sensible preparation plan.",
+      "lede": "A strong application grows out of doing mathematics carefully. Here is how the subject choices, TMUA, interviews and STEP fit together, and what is worth your time.",
+      "category": "Course guide",
+      "cardTitle": "Cambridge Mathematics",
+      "primaryKeyword": "Cambridge maths application guide",
+      "searchIntent": "Understand requirements and plan Cambridge Mathematics preparation.",
+      "sources": [
+        "cam-maths",
+        "cam-maths-apply",
+        "cam-maths-faq",
+        "cam-qualifications",
+        "uat-tmua",
+        "uat-dates",
+        "cam-step",
+        "ocr-step",
+        "ocr-dates",
+        "step-support",
+        "cam-statement",
+        "cam-application",
+        "cam-interviews"
+      ],
+      "related": [
+        [
+          "cambridge-vs-oxford-maths.html",
+          "Cambridge or Oxford for Maths?"
+        ],
+        [
+          "tmua-paper-archive.html",
+          "TMUA archive"
+        ],
+        [
+          "step-past-papers.html",
+          "STEP papers and solutions"
+        ],
+        [
+          "when-to-start-step.html",
+          "When to start STEP"
+        ],
+        [
+          "cambridge-maths-interview-guide.html",
+          "Cambridge interview guide"
+        ]
+      ]
+    },
+    {
+      "slug": "oxford-mathematics-application-guide",
+      "title": "Oxford Maths Guide: TMUA and Further Maths",
+      "heading": "Applying for Mathematics at Oxford.",
+      "description": "Oxford Maths requirements for 2027 entry, the switch from MAT to TMUA, Further Maths, A levels, interviews and practical independent preparation.",
+      "lede": "Choose this course because you want to explore mathematics in depth. Preparation should help you reason with unfamiliar ideas, not collect application credentials.",
+      "category": "Course guide",
+      "cardTitle": "Oxford Mathematics",
+      "primaryKeyword": "Oxford maths application guide",
+      "searchIntent": "Check Oxford Mathematics requirements, new test and preparation priorities.",
+      "sources": [
+        "ox-maths",
+        "ox-maths-offer",
+        "ox-maths-prospectus",
+        "ox-maths-tmua",
+        "ox-maths-interviews",
+        "ox-qualifications",
+        "ox-application",
+        "uat-tmua",
+        "uat-dates",
+        "uat-prepare"
+      ],
+      "related": [
+        [
+          "cambridge-vs-oxford-maths.html",
+          "Compare Oxford and Cambridge Maths"
+        ],
+        [
+          "tmua-paper-archive.html",
+          "TMUA papers and university resources"
+        ],
+        [
+          "tmua-study-plan.html",
+          "A flexible TMUA study plan"
+        ],
+        [
+          "mat-past-papers.html",
+          "Historical MAT questions for extra practice"
+        ]
+      ]
+    },
+    {
+      "slug": "cambridge-engineering-application-guide",
+      "title": "Cambridge Engineering: ESAT, Subjects and Interviews",
+      "heading": "Applying for Engineering at Cambridge.",
+      "description": "Cambridge Engineering requirements for 2027: Maths, Physics, Further Maths, four A levels, ESAT modules, interviews and free preparation resources.",
+      "lede": "The useful preparation is mathematical and physical: build a model, explain an assumption and work out what changes when the situation changes.",
+      "category": "Course guide",
+      "cardTitle": "Cambridge Engineering",
+      "primaryKeyword": "Cambridge engineering application guide",
+      "searchIntent": "Plan subject choices, ESAT and interviews for Cambridge Engineering.",
+      "sources": [
+        "cam-eng",
+        "cam-subjects",
+        "cam-qualifications",
+        "pembroke-eng",
+        "cam-step",
+        "uat-esat",
+        "uat-dates",
+        "uat-prepare",
+        "cam-interviews",
+        "cam-statement",
+        "cam-application",
+        "cam-eng-gap",
+        "cam-explore"
+      ],
+      "related": [
+        [
+          "cambridge-vs-oxford-engineering.html",
+          "Compare Cambridge and Oxford Engineering"
+        ],
+        [
+          "esat-paper-archive.html",
+          "ESAT and historical engineering practice"
+        ],
+        [
+          "maths-topic-practice.html",
+          "Strengthen the underlying mathematics"
+        ],
+        [
+          "do-you-need-an-admissions-consultancy.html",
+          "Preparing without a general admissions agency"
+        ]
+      ]
+    },
+    {
+      "slug": "oxford-engineering-application-guide",
+      "title": "Oxford Engineering Science: ESAT and Further Maths",
+      "heading": "Applying for Engineering Science at Oxford.",
+      "description": "Oxford Engineering Science requirements for 2027: ESAT replaces PAT, Further Maths is helpful but not required, plus interviews and preparation advice.",
+      "lede": "Start with the mathematics and physics that let you explain how something works. A convincing application does not need an expensive project or a polished sales pitch.",
+      "category": "Course guide",
+      "cardTitle": "Oxford Engineering Science",
+      "primaryKeyword": "Oxford engineering application guide",
+      "searchIntent": "Understand Oxford Engineering subjects, ESAT and interview preparation.",
+      "sources": [
+        "ox-eng",
+        "ox-eng-entry",
+        "ox-eng-apply",
+        "ox-eng-faq",
+        "ox-qualifications",
+        "ox-application",
+        "ox-interviews",
+        "ox-tests",
+        "uat-esat",
+        "uat-dates",
+        "uat-prepare"
+      ],
+      "related": [
+        [
+          "cambridge-vs-oxford-engineering.html",
+          "Cambridge or Oxford for Engineering?"
+        ],
+        [
+          "esat-paper-archive.html",
+          "ESAT practice and historical papers"
+        ],
+        [
+          "maths-topic-practice.html",
+          "Maths topic practice"
+        ],
+        [
+          "do-you-need-an-admissions-consultancy.html",
+          "What can be prepared independently?"
+        ]
+      ]
+    },
+    {
+      "slug": "cambridge-computer-science-application-guide",
+      "title": "Cambridge Computer Science: TMUA and Further Maths",
+      "heading": "Applying for Computer Science at Cambridge.",
+      "description": "Cambridge Computer Science requirements for 2027: Maths, Further Maths, TMUA, college CSAT, interviews, projects and independent preparation.",
+      "lede": "This is a mathematical Computer Science course. Clear reasoning and an interest in how algorithms work matter more than the size or appearance of a programming portfolio.",
+      "category": "Course guide",
+      "cardTitle": "Cambridge Computer Science",
+      "primaryKeyword": "Cambridge computer science application guide",
+      "searchIntent": "Check Cambridge CS mathematical requirements, tests and project preparation.",
+      "sources": [
+        "cam-cs",
+        "cam-subjects",
+        "cam-qualifications",
+        "cam-cs-faq",
+        "cam-cs-interviews",
+        "cam-cs-explore",
+        "uat-tmua",
+        "uat-dates",
+        "uat-prepare",
+        "cam-statement",
+        "cam-application"
+      ],
+      "related": [
+        [
+          "tmua-paper-archive.html",
+          "TMUA archive"
+        ],
+        [
+          "tmua-logic-proof.html",
+          "Logic and proof"
+        ],
+        [
+          "negation-and-contrapositive.html",
+          "Negation and contrapositive practice"
+        ],
+        [
+          "cambridge-mathematics-application-guide.html",
+          "Compare the Cambridge Maths application"
+        ],
+        [
+          "do-you-need-an-admissions-consultancy.html",
+          "Independent preparation and targeted support"
+        ]
+      ]
+    },
+    {
+      "slug": "cambridge-vs-oxford-maths",
+      "title": "Cambridge vs Oxford Maths: Courses, TMUA and STEP",
+      "heading": "Cambridge or Oxford for Mathematics?",
+      "description": "Compare Cambridge and Oxford Maths: course structure, entry requirements, Further Maths, TMUA, STEP and interviews for 2027 entry.",
+      "lede": "Both courses require serious mathematical engagement. Choose by the mathematics you want to study and the application route you are prepared to follow, rather than a prestige ranking.",
+      "category": "Comparison",
+      "cardTitle": "Cambridge vs Oxford for Maths",
+      "primaryKeyword": "Cambridge vs Oxford maths",
+      "searchIntent": "Compare course fit and admissions routes before choosing one university.",
+      "sources": [
+        "cam-maths",
+        "cam-maths-faq",
+        "ox-maths",
+        "ox-maths-prospectus",
+        "ox-maths-tmua",
+        "cam-maths-apply",
+        "cam-step",
+        "ox-application",
+        "ox-parents"
+      ],
+      "related": [
+        [
+          "cambridge-mathematics-application-guide.html",
+          "Full Cambridge Mathematics guide"
+        ],
+        [
+          "oxford-mathematics-application-guide.html",
+          "Full Oxford Mathematics guide"
+        ],
+        [
+          "when-to-start-step.html",
+          "When to start STEP"
+        ],
+        [
+          "tmua-paper-archive.html",
+          "Shared TMUA preparation resources"
+        ]
+      ]
+    },
+    {
+      "slug": "cambridge-vs-oxford-engineering",
+      "title": "Cambridge vs Oxford Engineering: Courses and ESAT",
+      "heading": "Cambridge or Oxford for Engineering?",
+      "description": "Compare Cambridge Engineering and Oxford Engineering Science: broad courses, Further Maths expectations, ESAT modules and interviews for 2027 entry.",
+      "lede": "Both begin broadly and develop specialist choices later. The most useful comparison is the course you would actually study, including its mathematical demands and practical work.",
+      "category": "Comparison",
+      "cardTitle": "Cambridge vs Oxford for Engineering",
+      "primaryKeyword": "Cambridge vs Oxford engineering",
+      "searchIntent": "Compare course content, subject expectations and assessment routes.",
+      "sources": [
+        "cam-eng",
+        "ox-eng",
+        "cam-subjects",
+        "ox-eng-entry",
+        "ox-qualifications",
+        "cam-step",
+        "ox-application",
+        "pembroke-eng"
+      ],
+      "related": [
+        [
+          "cambridge-engineering-application-guide.html",
+          "Full Cambridge Engineering guide"
+        ],
+        [
+          "oxford-engineering-application-guide.html",
+          "Full Oxford Engineering Science guide"
+        ],
+        [
+          "esat-paper-archive.html",
+          "Shared ESAT practice archive"
+        ],
+        [
+          "do-you-need-an-admissions-consultancy.html",
+          "Planning independently"
+        ]
+      ]
+    },
+    {
+      "slug": "do-you-need-an-admissions-consultancy",
+      "title": "Do You Need an Oxbridge Admissions Consultancy?",
+      "heading": "Do you need an admissions consultancy?",
+      "description": "Can you prepare for Cambridge or Oxford independently? A practical guide to free official resources, specialist tutoring and avoiding unnecessary costs.",
+      "lede": "Usually, I would start without a general admissions agency. First establish what the course requires, what you can do independently and whether there is a specific difficulty that needs help.",
+      "category": "Independent preparation",
+      "cardTitle": "Do you need an admissions consultancy?",
+      "primaryKeyword": "do I need an Oxbridge admissions consultancy",
+      "searchIntent": "Decide whether paid help adds value and build a free preparation plan.",
+      "sources": [
+        "cam-interviews",
+        "cam-interview-prep",
+        "ox-maths-interviews",
+        "ox-parents",
+        "cam-explore",
+        "cam-statement",
+        "ox-application",
+        "uat-prepare",
+        "step-support",
+        "ucas-statement"
+      ],
+      "related": [
+        [
+          "advice.html",
+          "Choose your course guide"
+        ],
+        [
+          "resources.html",
+          "Free paper archives and preparation guides"
+        ],
+        [
+          "maths-topic-practice.html",
+          "Problem-solving practice with hints"
+        ],
+        [
+          "tmua-study-plan.html",
+          "TMUA preparation plan"
+        ],
+        [
+          "when-to-start-step.html",
+          "STEP preparation timeline"
+        ]
+      ]
+    }
+  ]
+}
