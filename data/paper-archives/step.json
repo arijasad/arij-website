@@ -16,7 +16,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/99/99-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/99/99-S3.pdf",
           "kind": "paper"
         },
         {
@@ -37,8 +37,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -54,7 +53,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/99/99-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/99/99-S2.pdf",
           "kind": "paper"
         },
         {
@@ -75,8 +74,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -92,7 +90,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/99/99-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/99/99-S1.pdf",
           "kind": "paper"
         },
         {
@@ -113,8 +111,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -131,7 +128,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/98/98-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/98/98-S3.pdf",
           "kind": "paper"
         },
         {
@@ -152,8 +149,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -170,7 +166,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/98/98-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/98/98-S2.pdf",
           "kind": "paper"
         },
         {
@@ -191,8 +187,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -208,7 +203,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/98/98-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/98/98-S1.pdf",
           "kind": "paper"
         },
         {
@@ -229,8 +224,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -246,7 +240,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/97/97-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/97/97-S3.pdf",
           "kind": "paper"
         },
         {
@@ -267,8 +261,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -285,7 +278,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/97/97-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/97/97-S2.pdf",
           "kind": "paper"
         },
         {
@@ -306,8 +299,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -324,7 +316,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/97/97-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/97/97-S1.pdf",
           "kind": "paper"
         },
         {
@@ -345,8 +337,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -363,7 +354,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/96/96-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/96/96-S3.pdf",
           "kind": "paper"
         },
         {
@@ -384,8 +375,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -402,7 +392,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/96/96-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/96/96-S2.pdf",
           "kind": "paper"
         },
         {
@@ -423,8 +413,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -440,7 +429,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/96/96-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/96/96-S1.pdf",
           "kind": "paper"
         },
         {
@@ -461,8 +450,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -478,7 +466,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/95/95-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/95/95-S3.pdf",
           "kind": "paper"
         },
         {
@@ -494,8 +482,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -511,7 +498,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/95/95-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/95/95-S2.pdf",
           "kind": "paper"
         },
         {
@@ -527,8 +514,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -543,7 +529,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/95/95-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/95/95-S1.pdf",
           "kind": "paper"
         },
         {
@@ -559,8 +545,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -575,7 +560,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/94/94-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/94/94-S3.pdf",
           "kind": "paper"
         },
         {
@@ -591,8 +576,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -607,7 +591,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/94/94-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/94/94-S2.pdf",
           "kind": "paper"
         },
         {
@@ -623,8 +607,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -639,7 +622,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/94/94-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/94/94-S1.pdf",
           "kind": "paper"
         },
         {
@@ -655,8 +638,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -672,7 +654,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/93/93-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/93/93-S3.pdf",
           "kind": "paper"
         },
         {
@@ -688,8 +670,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -704,7 +685,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/93/93-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/93/93-S2.pdf",
           "kind": "paper"
         },
         {
@@ -720,8 +701,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -736,7 +716,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/93/93-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/93/93-S1.pdf",
           "kind": "paper"
         },
         {
@@ -752,8 +732,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -768,7 +747,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/92/92-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/92/92-S3.pdf",
           "kind": "paper"
         },
         {
@@ -784,8 +763,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -801,7 +779,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/92/92-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/92/92-S2.pdf",
           "kind": "paper"
         },
         {
@@ -817,8 +795,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -833,7 +810,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/92/92-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/92/92-S1.pdf",
           "kind": "paper"
         },
         {
@@ -849,8 +826,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -865,7 +841,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/91/91-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/91/91-S3.pdf",
           "kind": "paper"
         },
         {
@@ -881,8 +857,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -898,7 +873,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/91/91-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/91/91-S2.pdf",
           "kind": "paper"
         },
         {
@@ -914,8 +889,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -930,7 +904,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/91/91-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/91/91-S1.pdf",
           "kind": "paper"
         },
         {
@@ -946,8 +920,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -962,7 +935,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/90/90-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/90/90-S3.pdf",
           "kind": "paper"
         },
         {
@@ -978,8 +951,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -995,7 +967,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/90/90-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/90/90-S2.pdf",
           "kind": "paper"
         },
         {
@@ -1011,8 +983,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1027,7 +998,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/90/90-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/90/90-S1.pdf",
           "kind": "paper"
         },
         {
@@ -1043,8 +1014,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1059,7 +1029,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/89/89-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/89/89-S3.pdf",
           "kind": "paper"
         },
         {
@@ -1075,8 +1045,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1092,7 +1061,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/89/89-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/89/89-S2.pdf",
           "kind": "paper"
         },
         {
@@ -1108,8 +1077,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1125,7 +1093,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/89/89-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/89/89-S1.pdf",
           "kind": "paper"
         },
         {
@@ -1141,8 +1109,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1158,7 +1125,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/88/88-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/88/88-S3.pdf",
           "kind": "paper"
         },
         {
@@ -1174,8 +1141,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1191,7 +1157,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/88/88-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/88/88-S2.pdf",
           "kind": "paper"
         },
         {
@@ -1207,8 +1173,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1223,7 +1188,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/88/88-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/88/88-S1.pdf",
           "kind": "paper"
         },
         {
@@ -1239,8 +1204,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1255,7 +1219,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/87/87-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/87/87-S3.pdf",
           "kind": "paper"
         },
         {
@@ -1271,8 +1235,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1287,7 +1250,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/87/87-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/87/87-S2.pdf",
           "kind": "paper"
         },
         {
@@ -1303,8 +1266,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1319,7 +1281,7 @@
       "papers": [
         {
           "label": "Paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/87/87-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/87/87-S1.pdf",
           "kind": "paper"
         },
         {
@@ -1335,8 +1297,7 @@
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step",
         "https://www.physicsandmathstutor.com/admissions/step/",
         "https://www.thestudentroom.co.uk/showthread.php?t=2403970",
@@ -1351,14 +1312,13 @@
       "papers": [
         {
           "label": "Specimen paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/Spec/Spec-S3.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/Spec/Spec-S3.pdf",
           "kind": "paper"
         }
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step"
       ],
       "paperUnavailable": "N/A",
@@ -1371,14 +1331,13 @@
       "papers": [
         {
           "label": "Specimen paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/Spec/Spec-S2.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/Spec/Spec-S2.pdf",
           "kind": "paper"
         }
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step"
       ],
       "paperUnavailable": "N/A",
@@ -1391,14 +1350,13 @@
       "papers": [
         {
           "label": "Specimen paper (Cambridge STEP database)",
-          "url": "https://stepdatabase.maths.org/database/db/Spec/Spec-S1.pdf",
+          "url": "https://step.maths.org/sites/default/files/stepdbquestions/Spec/Spec-S1.pdf",
           "kind": "paper"
         }
       ],
       "boundaries": {},
       "sourceUrls": [
-        "https://stepdatabase.maths.org/database/index.html",
-        "https://stepdatabase.maths.org/database/database_data.json",
+        "https://step.maths.org/questions",
         "https://www.maths.cam.ac.uk/undergrad/admissions/step"
       ],
       "paperUnavailable": "N/A",
@@ -4156,14 +4114,14 @@
       "links": [
         {
           "label": "Search STEP questions",
-          "url": "https://stepdatabase.maths.org/database/index.html",
+          "url": "https://step.maths.org/questions",
           "filterTypes": [
             "papers"
           ]
         },
         {
-          "label": "Database home",
-          "url": "https://stepdatabase.maths.org/",
+          "label": "Past STEP paper folder",
+          "url": "https://drive.google.com/drive/folders/1KeO280n5uSccXv9ir2QU6BzHlRzTTBFF?usp=drive_link",
           "filterTypes": [
             "guides"
           ]
@@ -4338,11 +4296,7 @@
     },
     {
       "label": "Cambridge STEP question database",
-      "url": "https://stepdatabase.maths.org/database/index.html"
-    },
-    {
-      "label": "Cambridge STEP database linked data (source of exact PDF URLs)",
-      "url": "https://stepdatabase.maths.org/database/database_data.json"
+      "url": "https://step.maths.org/questions"
     },
     {
       "label": "PMT STEP paper and solution archive",
