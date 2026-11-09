@@ -42,7 +42,7 @@ for p in DATA['pages']:
     sources = ''.join(f'<li id="source-{key}"><a href="{escape(DATA["sources"][key]["url"])}">{escape(DATA["sources"][key]["title"])}</a></li>' for key in p['sources'])
     related = ''.join(f'<li><a href="{escape(url)}">{escape(label)}</a></li>' for url, label in p['related'])
     byline = '<a href="about.html">Arij Asad</a>, Cambridge Mathematics graduate, former Cambridge interviewer and STEP examiner'
-    cycle = 'For applications in autumn 2026, entry in 2027 (or deferred entry in 2028). Checked 9 November 2026. The October application and test deadlines have passed. If you are in Year 12 now, recheck the rules for your own entry year before booking tests or choosing subjects.'
+    cycle = 'For applications in autumn 2026 for entry in 2027, or deferred entry in 2028.'
     schema = {
         '@context': 'https://schema.org', '@graph': [
             {'@type': 'CollectionPage' if p['slug'] == 'advice' else 'Article',
@@ -75,12 +75,12 @@ for p in DATA['pages']:
 <a class="skip-link" href="#main-content">Skip to main content</a>
 {HEADER}
 <main id="main-content">
-<header class="article-hero"><div class="container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {crumb}</nav><div class="eyebrow">{escape(p['category'])}</div><h1>{escape(p['heading'])}</h1><p class="resource-lede">{escape(p['lede'])}</p><div class="article-meta"><span>By {byline}</span><span>Checked <time datetime="{CHECKED}">9 November 2026</time></span></div></div></header>
+<header class="article-hero"><div class="container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {crumb}</nav><div class="eyebrow">{escape(p['category'])}</div><h1>{escape(p['heading'])}</h1><p class="resource-lede">{escape(p['lede'])}</p><div class="article-meta"><span>By {byline}</span></div></div></header>
 <div class="container advice-cycle"><p>{cycle}</p></div>
 <div class="container article-layout">
 <article class="article-body">
 {body}
-<section class="advice-sources" aria-labelledby="official-sources"><h2 id="official-sources">Official sources and checks</h2><p>Requirements above use the official sources below. Preparation suggestions are my teaching advice, not university requirements. College instructions and your individual offer take precedence. Recheck dates, test arrangements and course requirements for your own cycle.</p><ul>{sources}</ul><p class="article-disclaimer">Independent guidance. I offer specialist tuition, but this advice is intended to be useful without paid support. It is not endorsed by Cambridge, Oxford, UAT-UK or OCR and does not use confidential admissions material.</p></section>
+<section class="advice-sources" aria-labelledby="official-sources"><h2 id="official-sources">Official sources</h2><p>Use these sources for the requirements that apply to your entry year. Follow any specific instructions from your college, including the conditions of your offer.</p><ul>{sources}</ul><p class="article-disclaimer">An independent guide by Arij Asad. Preparation suggestions reflect my teaching experience.</p></section>
 <section aria-labelledby="read-next"><h2 id="read-next">Useful next steps</h2><ul>{related}</ul></section>
 </article>
 <aside class="article-aside" aria-label="On this page"><strong>In this guide</strong><nav aria-label="Guide sections">{toc}<a href="#official-sources">Official sources</a></nav><a href="advice.html">All admissions advice</a></aside>
