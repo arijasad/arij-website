@@ -42,7 +42,7 @@ def install_archive_navigation(document, current_path):
         navigation = re.sub(r'<a\b[^>]*href="/?advice\.html"[^>]*>.*?</a>', '', navigation, flags=re.S)
         current = ' aria-current="page"' if current_path == 'advice.html' else ''
         chinese = bool(re.search(r'<html[^>]+lang="zh', document))
-        label = '申请建议（英文）' if chinese else 'Advice'
+        label = 'UCAS申请建议（英文）' if chinese else 'UCAS Advice'
         language = ' lang="en" hreflang="en-GB"' if chinese else ''
         link = f'<a href="/advice.html"{current}{language}>{label}</a>'
         return re.sub(r'(<a\b[^>]*href="/?resources\.html")', link + r'\1', navigation, count=1)

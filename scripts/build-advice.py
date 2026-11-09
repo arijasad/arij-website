@@ -55,10 +55,10 @@ for p in DATA['pages']:
              'citation': [DATA['sources'][k]['url'] for k in p['sources']]},
             {'@type': 'BreadcrumbList', 'itemListElement': [
                 {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': ORIGIN},
-                {'@type': 'ListItem', 'position': 2, 'name': 'Admissions advice', 'item': ORIGIN+'advice.html'}
+                {'@type': 'ListItem', 'position': 2, 'name': 'UCAS application advice', 'item': ORIGIN+'advice.html'}
             ] + ([] if p['slug'] == 'advice' else [{'@type': 'ListItem', 'position': 3, 'name': p['cardTitle'], 'item': ORIGIN+path}])}
         ]}
-    crumb = 'Admissions advice' if p['slug'] == 'advice' else f'<a href="advice.html">Admissions advice</a> / {escape(p["cardTitle"])}'
+    crumb = 'UCAS application advice' if p['slug'] == 'advice' else f'<a href="advice.html">UCAS application advice</a> / {escape(p["cardTitle"])}'
     document = f'''<!DOCTYPE html>
 <html lang="en-GB"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,7 +83,7 @@ for p in DATA['pages']:
 <section class="advice-sources" aria-labelledby="official-sources"><h2 id="official-sources">Official sources</h2><p>Use these sources for the requirements that apply to your entry year. Follow any specific instructions from your college, including the conditions of your offer.</p><ul>{sources}</ul><p class="article-disclaimer">An independent guide by Arij Asad. Preparation suggestions reflect my teaching experience.</p></section>
 <section aria-labelledby="read-next"><h2 id="read-next">Useful next steps</h2><ul>{related}</ul></section>
 </article>
-<aside class="article-aside" aria-label="On this page"><strong>In this guide</strong><nav aria-label="Guide sections">{toc}<a href="#official-sources">Official sources</a></nav><a href="advice.html">All admissions advice</a></aside>
+<aside class="article-aside" aria-label="On this page"><strong>In this guide</strong><nav aria-label="Guide sections">{toc}<a href="#official-sources">Official sources</a></nav><a href="advice.html">All UCAS application advice</a></aside>
 </div></main>{FOOTER}<script src="site.js?v=20261109-advice" defer></script></body></html>'''
     document = install_archive_navigation(document, path)
     (ROOT/path).write_text(document)

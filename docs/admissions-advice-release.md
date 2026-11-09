@@ -7,14 +7,14 @@ Nine new pages for applications in autumn 2026 for entry in 2027 or deferred ent
 - The existing site had separate tuition pages, eleven paper archives, topic practice and focused TMUA, STEP and interview guides. It did not have course-by-course application guidance or Cambridge/Oxford comparison pages.
 - Retained `when-to-start-step.html`, `tmua-study-plan.html` and `cambridge-maths-interview-guide.html` as the detailed preparation guides. The new course pages summarise their role and link to them rather than replacing them.
 - Retained the distinction between `tmua-paper-archive.html` (catalogue) and `tmua-past-papers.html` (how to use papers). Preserved all existing archive data, papers, credits and boundaries.
-- Added Advice to the shared navigation, plus contextual routes from the homepage, resources hub, relevant tuition/preparation pages and four admissions archives.
+- Added UCAS Advice to the shared navigation, plus contextual routes from the homepage, resources hub, relevant tuition/preparation pages and four admissions archives.
 - Extended the existing consent-dependent resource attribution allowlist to the nine advice URLs. No form details are sent to Analytics. The contact submission logic is unchanged.
 
 ## New pages and SEO intent
 
 | Page / URL | Primary target query | Search intent |
 | --- | --- | --- |
-| [Admissions advice](https://maths.arijasad.com/advice.html) | Cambridge Oxford admissions advice | Find trustworthy course-specific guidance and choose the right next resource. |
+| [Admissions advice](https://maths.arijasad.com/advice.html) | Cambridge Oxford UCAS application advice | Find trustworthy course-specific guidance and choose the right next resource. |
 | [Cambridge Mathematics](https://maths.arijasad.com/cambridge-mathematics-application-guide.html) | Cambridge maths application guide | Understand requirements and plan Cambridge Mathematics preparation. |
 | [Oxford Mathematics](https://maths.arijasad.com/oxford-mathematics-application-guide.html) | Oxford maths application guide | Check Oxford Mathematics requirements, new test and preparation priorities. |
 | [Cambridge Engineering](https://maths.arijasad.com/cambridge-engineering-application-guide.html) | Cambridge engineering application guide | Plan subject choices, ESAT and interviews for Cambridge Engineering. |
@@ -29,7 +29,7 @@ Nine new pages for applications in autumn 2026 for entry in 2027 or deferred ent
 ### Admissions advice
 
 - URL: `advice.html`
-- Title: Cambridge & Oxford Admissions Advice | Arij Asad
+- Title: Cambridge & Oxford UCAS Application Advice | Arij Asad
 - Meta description: Practical Cambridge and Oxford application advice for Maths, Engineering and Computer Science: subjects, tests, interviews and free independent preparation.
 
 ### Cambridge Mathematics
@@ -177,3 +177,5 @@ Assess performance by page/query impressions and clicks and by genuine enquiries
 ## Copy edit after publication
 
 Removed repeated tuition paragraphs from all five course guides and kept one brief paragraph about feedback on the independent-preparation page. Removed visible review dates and shortened the repeated cycle notice to one sentence. Rewrote introductions, vague phrases and long explanations across all nine pages. Expanded compact IB notation into explicit grades, separated the access-arrangement and bursary deadlines, and retained the researched requirements, source links and URLs.
+
+The section is labelled “UCAS application advice”, with “UCAS Advice” in the shared navigation. Its existing URL remains `advice.html`.

@@ -211,13 +211,13 @@
   "pages": [
     {
       "slug": "advice",
-      "title": "Cambridge & Oxford Admissions Advice",
-      "heading": "Preparing for mathematical admissions.",
+      "title": "Cambridge & Oxford UCAS Application Advice",
+      "heading": "UCAS application advice.",
       "description": "Practical Cambridge and Oxford application advice for Maths, Engineering and Computer Science: subjects, tests, interviews and free independent preparation.",
       "lede": "Course requirements, admissions tests and practical preparation for students and parents applying to Cambridge or Oxford.",
-      "category": "Admissions advice",
-      "cardTitle": "Admissions advice",
-      "primaryKeyword": "Cambridge Oxford admissions advice",
+      "category": "UCAS application advice",
+      "cardTitle": "UCAS application advice",
+      "primaryKeyword": "Cambridge Oxford UCAS application advice",
       "searchIntent": "Find trustworthy course-specific guidance and choose the right next resource.",
       "sources": [
         "cam-maths",
