@@ -1,0 +1,158 @@
+/* Shared layout rules. Page content and specialised resource controls stay local. */
+:root {
+  --site-content-width: 1180px;
+  --site-gutter: 40px;
+  --site-heading-font: Georgia, 'Times New Roman', serif;
+  --site-section-space: 54px;
+}
+html { scroll-padding-top: 96px; }
+html:lang(zh) { --site-heading-font: Georgia, 'Songti SC', 'SimSun', serif; }
+body:not(:lang(zh)) { line-height: 1.68; }
+body.archive-page { --max-width: var(--site-content-width); }
+body .container,
+body.resource-page .container,
+.paper-archive-bar .paper-archive-bar__inner {
+  width: min(calc(100% - var(--site-gutter)), var(--site-content-width));
+  margin-right: auto;
+  margin-left: auto;
+}
+body *, body *::before, body *::after { box-sizing: border-box; }
+
+/* One header geometry and mobile-menu breakpoint on every page. */
+body .site-header { background: rgba(247, 245, 240, .95); }
+body .site-header .nav { min-height: 76px; gap: 24px; }
+body .site-header .brand { font-size: 21px; line-height: 1.2; font-weight: 800; }
+body .site-header .nav-links { display: flex; align-items: center; gap: 12px; }
+body .site-header .nav-links a { font-size: 13px; line-height: 1.4; font-weight: 650; }
+body .site-header .menu-button { display: none; min-height: 44px; font-size: 14px; }
+@media (max-width: 1180px) {
+  body .site-header .menu-button { display: inline-flex; align-items: center; }
+  body .site-header .nav-links {
+    position: absolute; top: 100%; right: 20px; left: 20px;
+    display: none; flex-direction: column; align-items: stretch; gap: 0;
+    max-height: calc(100vh - 90px); max-height: calc(100dvh - 90px);
+    overflow-y: auto; padding: 12px; border: 1px solid var(--border);
+    border-radius: 14px; background: var(--white); box-shadow: var(--shadow);
+  }
+  body .site-header .nav-links.open { display: flex; }
+  body .site-header .nav-links a { display: flex; align-items: center; flex-shrink: 0; min-height: 44px; padding: 11px 12px; font-size: 14px; }
+  body .site-header .nav-contact { justify-content: center; margin-top: 6px; }
+}
+
+/* Titles and full-width section rhythm share one scale. */
+main#main-content h1 {
+  font-family: var(--site-heading-font); font-size: clamp(44px, 6vw, 76px);
+  font-weight: 600; line-height: 1.08; letter-spacing: -1.5px;
+  overflow-wrap: anywhere;
+}
+html:lang(zh) main#main-content h1 { line-height: 1.15; letter-spacing: -1px; }
+main#main-content > :is(.hero, .resource-hero, .article-hero, .policy-hero) { padding: 56px 0 48px; }
+main#main-content > :is(.archive-intro, .topic-hero, .textbook-hero) { padding: 36px 0 32px; }
+main#main-content > :is(.archive-intro, .topic-hero, .textbook-hero) h1 { font-size: clamp(36px, 4.8vw, 60px); }
+main#main-content > :is(.section, .resource-section, .policy-section) { padding: var(--site-section-space) 0; }
+main#main-content :is(.section-heading, .resource-heading, .uni-heading) { margin-bottom: 28px; }
+main#main-content :is(.section-heading, .resource-heading, .uni-heading) h2,
+main#main-content .interview-section > .container > h2,
+main#main-content .guide-section > .container > h2 {
+  font-family: var(--site-heading-font); font-size: clamp(32px, 4vw, 46px);
+  font-weight: 600; line-height: 1.12; letter-spacing: -1px;
+}
+main#main-content :is(.article-body, .topic-article, .policy-content) { min-width: 0; overflow-wrap: anywhere; }
+main#main-content :is(.hero-grid, .resource-grid, .official-grid, .resource-cta, .paired) > * { min-width: 0; }
+main#main-content .resource-card { min-height: 0; border-radius: 16px; }
+main#main-content .official-link { min-height: 0; }
+main#main-content :is(.button, .resource-button) { min-height: 50px; border-radius: 10px; font-size: 16px; line-height: 1.5; font-weight: 750; }
+main#main-content :is(.article-layout, .policy-layout) { gap: 40px; }
+main#main-content .article-layout { padding-top: 40px; padding-bottom: 54px; }
+main#main-content :is(.article-aside, .policy-aside, .topic-sidebar) { padding: 24px; border-radius: 14px; }
+main#main-content :is(.article-aside, .policy-aside) { max-height: calc(100vh - 120px); overflow-y: auto; }
+main#main-content :is(.article-aside, .policy-aside, .topic-sidebar) a { overflow-wrap: anywhere; }
+main#main-content pre { max-width: 100%; overflow-x: auto; }
+main#main-content :is(input, select, textarea) { max-width: 100%; }
+main#main-content :is(section[id], h2[id], h3[id], details[id]) { scroll-margin-top: 96px; }
+@media (min-width: 1001px) {
+  main#main-content :is(.article-layout, .policy-layout) { grid-template-columns: minmax(0, 1fr) 280px; }
+  main#main-content :is(.article-aside, .policy-aside) { position: sticky; top: 96px; order: 0; grid-row: auto; }
+}
+@media (max-width: 1000px) {
+  main#main-content :is(.article-layout, .topic-layout, .policy-layout) { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  main#main-content :is(.article-aside, .policy-aside, .topic-sidebar) { position: static; max-height: none; overflow: visible; }
+  main#main-content :is(.article-aside, .policy-aside) { order: -1; grid-row: auto; }
+  main#main-content :is(.article-aside, .topic-sidebar) nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+}
+
+/* Resources: use the available width and keep category cards easy to scan. */
+.resource-hub main#main-content > .resource-category { padding: 44px 0; }
+.resource-hub .resource-category .resource-grid { gap: 20px; }
+.resource-hub .resource-category .resource-card { padding: 26px; box-shadow: none; }
+.resource-hub .resource-category .resource-card h3 { font-size: 26px; line-height: 1.18; }
+.resource-hub .resource-category .resource-card > .text-link { order: 3; margin-top: auto; padding-top: 18px; }
+.resource-hub .resource-category .resource-card > nav { order: 2; margin-bottom: 4px; }
+.resource-hub .resource-category .resource-card > nav ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; list-style: none; padding: 0; margin: 0; }
+.resource-hub .resource-category .resource-card > nav a { display: block; padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--gold); font-size: 15px; line-height: 1.45; text-underline-offset: 3px; }
+.resource-hub #past-papers { background: var(--white); }
+.resource-hub #past-papers .resource-card { background: var(--cream); }
+.resource-hub #past-papers .resource-card:last-child:nth-child(odd),
+.resource-hub .resource-grid > .resource-card:only-child { grid-column: 1 / -1; }
+.resource-hub #textbook-help .resource-card { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); column-gap: 40px; }
+.resource-hub #textbook-help .resource-card > .resource-card__label { grid-area: 1 / 1; }
+.resource-hub #textbook-help .resource-card > h3 { grid-area: 2 / 1; }
+.resource-hub #textbook-help .resource-card > p { grid-area: 3 / 1; }
+.resource-hub #textbook-help .resource-card > .text-link { grid-area: 4 / 1; padding-top: 0; }
+.resource-hub #textbook-help .resource-card > nav { grid-area: 1 / 2 / 5 / 3; align-self: center; }
+.resource-hub #topic-practice { background: var(--white); }
+.resource-hub #topic-practice .resource-card { background: var(--cream); }
+.resource-hub #application-advice { background: var(--black); }
+.resource-hub #application-advice .resource-heading h2 { color: var(--gold-light); }
+.resource-hub #application-advice .resource-heading p,
+.resource-hub #application-advice .resource-card p { color: #d4d0c7; }
+.resource-hub #application-advice .resource-card { background: var(--charcoal); border-color: #49433a; }
+.resource-hub #application-advice :is(.resource-card__label, h3, .text-link) { color: var(--gold-light); }
+.resource-hub #application-advice :focus-visible { outline-color: var(--gold-light); }
+.resource-hub #preparation-guides .resource-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.resource-hub #preparation-guides .resource-card h3 { font-size: 24px; }
+.resource-hub #preparation-guides .resource-card { padding: 24px; }
+.resource-hub .official-link { padding: 24px; }
+
+/* Consistent footer alignment and room for keyboard and touch controls. */
+body > footer, body.resource-page > footer { padding: 34px 0; background: #111; border-top: 1px solid #2b2b2b; color: #bdbdbd; font-size: 14px; }
+body > footer .footer-content { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+body > footer .footer-links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+body > footer .footer-links :is(a, button) { display: inline-flex; align-items: center; min-height: 44px; }
+.cookie-button { min-height: 44px; }
+:focus-visible { outline: 3px solid #72531c; outline-offset: 4px; }
+@media (max-width: 1000px) {
+  .resource-hub #preparation-guides .resource-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  body > footer .footer-content { flex-direction: column; align-items: flex-start; }
+  .resource-hub #textbook-help .resource-card { display: flex; }
+  .resource-hub #textbook-help .resource-card > .text-link { padding-top: 18px; }
+}
+@media (max-width: 620px) {
+  :root { --site-gutter: 32px; --site-section-space: 38px; }
+  body .site-header .nav { min-height: 68px; gap: 16px; }
+  body .site-header .nav-links { right: 16px; left: 16px; max-height: calc(100vh - 82px); max-height: calc(100dvh - 82px); }
+  body .interview-quick-nav { padding-right: 16px; padding-left: 16px; }
+  main#main-content h1 { font-size: 44px; }
+  main#main-content > :is(.hero, .resource-hero, .article-hero, .policy-hero) { padding: 38px 0 34px; }
+  main#main-content > :is(.archive-intro, .topic-hero, .textbook-hero) { padding: 28px 0; }
+  main#main-content > :is(.archive-intro, .topic-hero, .textbook-hero) h1 { font-size: 36px; }
+  main#main-content :is(.article-layout, .policy-section) { padding-top: 28px; padding-bottom: 38px; }
+  main#main-content :is(.article-aside, .policy-aside, .topic-sidebar) { padding: 20px; }
+  main#main-content :is(.article-aside, .topic-sidebar) nav { grid-template-columns: minmax(0, 1fr); }
+  .resource-hub main#main-content > .resource-category { padding: 34px 0; }
+  .resource-hub #preparation-guides .resource-grid { grid-template-columns: minmax(0, 1fr); }
+  .resource-hub .resource-category .resource-card { padding: 22px; }
+  .resource-hub .resource-category-nav a { min-width: 0; }
+  .resource-hub .resource-category .resource-card > nav ul { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  body .site-header, body .paper-archive-bar, body .interview-quick-nav,
+  body .cookie-banner, body > footer { display: none !important; }
+  body .container, body.resource-page .container { width: 100%; }
+  main#main-content > :is(.hero, .resource-hero, .article-hero, .policy-hero, .section, .resource-section) { padding: 24px 0; }
+  main#main-content :is(.article-layout, .topic-layout, .policy-layout) { display: block; }
+  main#main-content :is(.article-aside, .policy-aside, .topic-sidebar) { display: none; }
+}

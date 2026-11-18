@@ -24,6 +24,13 @@ INTERVIEW_LINKS = [
 ]
 INTERVIEW_SEASON = True
 STYLE = '<link rel="stylesheet" href="/paper-navigation.css?v=20261118-both">'
+LAYOUT_STYLE = '<link rel="stylesheet" href="/site-layout.css?v=20261118-format">'
+
+
+def install_layout_styles(document):
+    """Load the shared layout last, after page-specific and embedded styles."""
+    document = re.sub(r'\s*<link[^>]+href="/?site-layout\.css[^>]*>', '', document)
+    return re.sub(r'\s*</head>', '\n  ' + LAYOUT_STYLE + '\n</head>', document, count=1)
 
 MAIN_NAVIGATION = [
     ('', 'Home'),
@@ -123,4 +130,4 @@ def install_archive_navigation(document, current_path):
     chinese = bool(re.search(r'<html[^>]+lang="zh', document))
     document = document[:header.end()] + '\n' + archive_navigation(current_path, chinese) + document[header.end():]
     document = re.sub(r'\s*<link[^>]+href="/?paper-navigation\.css[^>]*>', '', document)
-    return document.replace('</head>', '  ' + STYLE + '\n</head>', 1)
+    return install_layout_styles(document.replace('</head>', '  ' + STYLE + '\n</head>', 1))

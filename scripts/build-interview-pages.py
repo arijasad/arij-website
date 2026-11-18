@@ -10,7 +10,7 @@ from html import escape as esc
 import argparse
 import json
 import re
-from site_navigation import archive_navigation, reorder_main_navigation
+from site_navigation import archive_navigation, reorder_main_navigation, LAYOUT_STYLE
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://maths.arijasad.com/'
@@ -168,6 +168,7 @@ def document(path, body, preview=False):
     styles = f'<style>{theme_css()}</style>' if preview else '<link rel="stylesheet" href="site.css?v=advice-20261109"><link rel="stylesheet" href="/paper-navigation.css?v=20261118-both"><link rel="stylesheet" href="assets/interview-pages.css?v=20261118-oxford-layout">'
     if path == 'engineering-interview-guide.html':
         styles += ('<style>' + (ROOT / 'assets/guide-layout.css').read_text() + '</style>') if preview else '<link rel="stylesheet" href="assets/guide-layout.css?v=20261118">'
+    styles += ('<style>' + (ROOT / 'site-layout.css').read_text() + '</style>') if preview else LAYOUT_STYLE
     schema = {'@context':'https://schema.org','@type':'WebPage' if path=='interviews.html' else 'Article', 'headline':title.split(' | ')[0], 'description':desc,'url':BASE+path, 'author':{'@type':'Person','name':'Arij Asad','url':BASE+'about.html'}}
     if path != 'interviews.html':
         schema['dateModified']='2026-11-18'
