@@ -1,0 +1,115 @@
+/* Section layouts for the UCAS hub and Engineering interview guide. */
+.guide-page main > section { margin: 0; }
+.guide-page .resource-hero { padding: 56px 0 48px; }
+.guide-page .resource-hero__inner { max-width: 1000px; }
+.guide-page .resource-hero h1 { max-width: 960px; font-size: clamp(44px, 6vw, 76px); line-height: 1.06; }
+.guide-page .guide-meta { margin: 18px 0 0; color: var(--muted); font-size: 14px; }
+.guide-page .guide-jump-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.guide-page .guide-jump-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 16px; border: 1px solid var(--gold); border-radius: 8px; background: var(--black); color: var(--gold-light); font-size: 14px; font-weight: 700; text-decoration: none; }
+.guide-page .guide-jump-links a:hover { background: #28231b; color: var(--white); }
+.guide-page .guide-section,
+.engineering-interviews .interview-section { padding: 54px 0; }
+.guide-page main [id] { scroll-margin-top: 100px; }
+.guide-page .guide-section h2,
+.engineering-interviews .interview-section > .container > h2 { margin: 0 0 22px; font-size: clamp(32px, 4vw, 46px); line-height: 1.12; }
+.guide-page .guide-section p { max-width: 82ch; margin: 0 0 22px; color: var(--muted); }
+.guide-page .guide-section p:last-child { margin-bottom: 0; }
+.guide-page .guide-section > .container > p:first-of-type { font-size: 17px; }
+.guide-page .guide-section a { color: var(--gold); font-weight: 700; text-underline-offset: 3px; }
+.guide-page .guide-section--white { background: var(--white); }
+.guide-page .guide-section--cream { background: var(--cream); }
+.guide-page .guide-section--dark { background: var(--black); color: #d4d0c7; }
+.guide-page .guide-section--dark h2 { color: var(--gold-light); }
+.guide-page .guide-section--dark p { color: #d4d0c7; }
+.guide-page .guide-section--dark a { color: var(--gold-light); }
+.guide-page :focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+.guide-page .guide-section--dark :focus-visible,
+.engineering-interviews #engineering-advice :focus-visible,
+.engineering-interviews #contact :focus-visible { outline-color: var(--gold-light); }
+
+/* The hub uses full-width sections; individual course articles keep their sidebar. */
+.advice-hub .advice-grid { gap: 20px; }
+.advice-hub .resource-card { min-width: 0; min-height: 0; padding: 28px; box-shadow: none; }
+.advice-hub .resource-card h3 { margin: 0 0 14px; font-size: 28px; line-height: 1.16; }
+.advice-hub .resource-card h3 a { color: var(--black); }
+.advice-hub .resource-card h3 a:hover { color: var(--gold); text-decoration: underline; }
+.advice-hub .resource-card p { margin: 0; font-size: 16px; }
+.advice-hub .resource-card__label { margin-bottom: 14px; }
+.advice-hub .guide-section--white .resource-card { background: var(--cream); }
+.advice-hub .guide-section--dark .resource-card { background: #1b1b1b; border-color: #49433a; }
+.advice-hub .guide-section--dark .resource-card h3 a,
+.advice-hub .guide-section--dark .resource-card__label { color: var(--gold-light); }
+.advice-hub .advice-grid > :only-child { grid-column: 1 / -1; }
+.advice-hub .advice-grid > :only-child p { max-width: 85ch; }
+.advice-hub .advice-table-wrap { margin: 24px 0; }
+.advice-hub .advice-table-hint { font-size: 14px !important; }
+.advice-hub .guide-section ol { max-width: 85ch; margin: 24px 0; padding-left: 24px; }
+.advice-hub .guide-section ol li { margin-bottom: 12px; padding-left: 6px; }
+.advice-hub .advice-faq { background: transparent; border: 0; border-top: 1px solid var(--border); border-radius: 0; margin: 0; }
+.advice-hub .advice-faq:last-child { border-bottom: 1px solid var(--border); }
+.advice-hub .advice-faq summary { padding: 20px 0; font-size: 18px; }
+.advice-hub .advice-faq p { padding: 0 0 20px; }
+.advice-hub .guide-next-steps { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: start; gap: 56px; }
+.advice-hub .guide-next-steps h2,
+.advice-hub .guide-sources summary { margin: 0 0 20px; font: 600 28px/1.2 Georgia, 'Times New Roman', serif; letter-spacing: -.5px; color: var(--black); }
+.advice-hub .guide-sources summary { cursor: pointer; }
+.advice-hub .guide-next-steps ul { margin: 0; padding-left: 20px; }
+.advice-hub .guide-next-steps li { margin: 0 0 12px; }
+
+/* Engineering follows the same contrast and spacing as the Oxford guide. */
+.engineering-interviews .resource-hero .eyebrow { margin-top: 0; }
+.engineering-interviews .section-lead { margin-bottom: 24px; }
+.engineering-interviews #engineering-process { background: var(--white); }
+.engineering-interviews #engineering-advice { background: var(--black); color: #d4d0c7; }
+.engineering-interviews #engineering-advice h2,
+.engineering-interviews #engineering-advice .eyebrow { color: var(--gold-light); }
+.engineering-interviews #engineering-advice .eyebrow::before { background: var(--gold-light); }
+.engineering-interviews .engineering-advice-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: start; gap: 56px; }
+.engineering-interviews .engineering-advice { margin: 0 0 24px; }
+.engineering-interviews .engineering-advice li,
+.engineering-interviews #engineering-advice .details-body { color: #d4d0c7; }
+.engineering-interviews .engineering-advice strong,
+.engineering-interviews .engineering-advice li::marker { color: var(--gold-light); }
+.engineering-interviews .engineering-advice-layout > div > p { margin: 0; }
+.engineering-interviews #engineering-advice .reading-group { margin: 0; }
+.engineering-interviews #engineering-advice details { border-color: #49433a; }
+.engineering-interviews #engineering-advice summary { color: var(--white); }
+.engineering-interviews #engineering-advice summary::after,
+.engineering-interviews #engineering-advice .details-body a { color: var(--gold-light); }
+.engineering-interviews #engineering-resources { background: var(--cream); }
+.engineering-interviews #engineering-resources .resource-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.engineering-interviews #engineering-resources .resource-list > li { min-width: 0; padding: 26px; border: 1px solid var(--border); border-radius: 14px; background: var(--white); }
+.engineering-interviews #engineering-resources .small { margin: 24px 0 0; }
+.engineering-interviews #contact { background: var(--black); }
+.engineering-interviews #contact .resource-cta { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.engineering-interviews #contact h2 { color: var(--white); }
+.engineering-interviews #contact p { color: #d4d0c7; }
+.engineering-interviews #contact .resource-button { background: var(--gold-light); color: var(--black) !important; }
+.engineering-interviews #contact .resource-button:hover { background: var(--white); }
+
+@media (max-width: 900px) {
+  .advice-hub .guide-next-steps,
+  .engineering-interviews .engineering-advice-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+}
+@media (max-width: 620px) {
+  .guide-page .resource-hero { padding: 38px 0 34px; }
+  .guide-page .resource-hero h1 { font-size: 44px; }
+  .guide-page .guide-section,
+  .engineering-interviews .interview-section { padding: 38px 0; }
+  .guide-page .guide-jump-links a { flex: 1 1 140px; justify-content: center; text-align: center; }
+  .advice-hub .advice-grid,
+  .engineering-interviews #engineering-resources .resource-list { grid-template-columns: minmax(0, 1fr); }
+  .advice-hub .resource-card,
+  .engineering-interviews #engineering-resources .resource-list > li { padding: 22px; }
+  .advice-hub .advice-table { min-width: 520px; }
+}
+@media print {
+  .guide-page .guide-jump-links { display: none; }
+  .guide-page .resource-hero,
+  .guide-page .guide-section,
+  .engineering-interviews .interview-section { padding: 24px 0; }
+  .guide-page .guide-section--dark,
+  .engineering-interviews #engineering-advice { background: var(--white); }
+  .guide-page .guide-section--dark *,
+  .engineering-interviews #engineering-advice * { color: var(--text) !important; }
+}

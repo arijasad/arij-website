@@ -30,6 +30,29 @@ class Headings(HTMLParser):
 def card(p):
     return f'<article class="resource-card"><div class="resource-card__label">{escape(p["category"])}</div><h3><a href="{p["slug"]}.html">{escape(p["cardTitle"])}</a></h3><p>{escape(p["description"])}</p></article>'
 
+def advice_hub(p, body, cycle, sources, related):
+    """Give the advice landing page the same section layout as the resource hub."""
+    parts = re.split(r'(?=<h2 id=")', body)
+    introductions = re.findall(r'<p>.*?</p>', parts[0], re.S)
+    sections = []
+    colours = {
+        'course-guides': 'white', 'compare': 'dark', 'independent': 'cream',
+        'tests': 'white', 'dates': 'cream', 'ucas': 'white',
+        'practice': 'cream', 'faq': 'white',
+    }
+    for part in parts[1:]:
+        anchor = re.match(r'<h2 id="([^"]+)"', part)[1]
+        if anchor == 'course-guides' and introductions:
+            part = part.replace('</h2>', '</h2>' + introductions[0], 1)
+        if anchor == 'practice' and len(introductions) > 1:
+            part = part.replace('</h2>', '</h2>' + introductions[1], 1)
+        sections.append(f'<section class="resource-section guide-section guide-section--{colours[anchor]}" aria-labelledby="{anchor}"><div class="container">{part}</div></section>')
+    return f'''<main id="main-content">
+<section class="resource-hero"><div class="container"><div class="resource-hero__inner"><div class="eyebrow">Cambridge &amp; Oxford applications</div><h1>UCAS <span>application advice.</span></h1><p class="resource-lede">{escape(p['lede'])}</p><p class="guide-meta">{cycle}</p><nav class="guide-jump-links" aria-label="On this page"><a href="#course-guides">Choose your course</a><a href="#tests">Tests &amp; dates</a><a href="#ucas">Application &amp; preparation</a></nav></div></div></section>
+{''.join(sections)}
+<section class="resource-section guide-section guide-section--cream"><div class="container guide-next-steps"><details class="guide-sources"><summary id="official-sources">Official sources</summary><p>Use these sources for the requirements that apply to your entry year. Follow any specific instructions from your college, including the conditions of your offer.</p><ul>{sources}</ul></details><div><h2 id="read-next">Useful next steps</h2><ul>{related}</ul></div></div></section>
+</main>'''
+
 for p in DATA['pages']:
     path = p['slug'] + '.html'
     body = (ROOT / 'content/advice' / path).read_text()
@@ -85,6 +108,10 @@ for p in DATA['pages']:
 </article>
 <aside class="article-aside" aria-label="On this page"><strong>In this guide</strong><nav aria-label="Guide sections">{toc}<a href="#official-sources">Official sources</a></nav><a href="advice.html">All UCAS application advice</a></aside>
 </div></main>{FOOTER}<script src="site.js?v=20261109-advice" defer></script></body></html>'''
+    if p['slug'] == 'advice':
+        document = document.replace('class="resource-page advice-page"', 'class="resource-page advice-page guide-page advice-hub"')
+        document = document.replace('</head>', '<link rel="stylesheet" href="assets/guide-layout.css?v=20261118"></head>')
+        document = re.sub(r'<main id="main-content">.*?</main>', lambda _: advice_hub(p, body, cycle, sources, related), document, count=1, flags=re.S)
     document = install_archive_navigation(document, path)
     (ROOT/path).write_text(document)
 print(f'Built {len(DATA["pages"])} admissions advice pages.')
