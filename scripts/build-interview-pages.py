@@ -10,7 +10,7 @@ from html import escape as esc
 import argparse
 import json
 import re
-from site_navigation import archive_navigation
+from site_navigation import archive_navigation, reorder_main_navigation
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://maths.arijasad.com/'
@@ -40,7 +40,7 @@ def link(url, text, cls=''):
 
 def header(path='interviews.html'):
     return ('<a class="skip-link" href="#main-content">Skip to main content</a>'
-            + SITE_HEADER + archive_navigation(path))
+            + reorder_main_navigation(SITE_HEADER, path) + archive_navigation(path))
 
 def footer():
     return SITE_FOOTER

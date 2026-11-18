@@ -25,6 +25,53 @@ INTERVIEW_LINKS = [
 INTERVIEW_SEASON = True
 STYLE = '<link rel="stylesheet" href="/paper-navigation.css?v=20261118-both">'
 
+MAIN_NAVIGATION = [
+    ('', 'Home'),
+    ('about.html', 'About'),
+    ('tuition.html', 'Tuition'),
+    ('advice.html', 'UCAS Advice'),
+    ('tmua.html', 'TMUA'),
+    ('interviews.html', 'Interviews'),
+    ('step.html', 'STEP'),
+    ('university-maths.html', 'University'),
+    ('maths-challenges.html', 'Challenges'),
+    ('resources.html', 'Resources'),
+    ('zh.html', '中文'),
+    ('contact.html', 'Contact'),
+]
+
+
+def reorder_main_navigation(document, current_path):
+    # The Chinese landing page has its own navigation to translated sections.
+    if re.search(r'<html[^>]+lang="zh', document):
+        return document
+
+    def reorder(match):
+        opening, contents, closing = match.groups()
+        anchors = re.findall(r'<a\b[^>]*>.*?</a>', contents, flags=re.S)
+        existing = {}
+        for anchor in anchors:
+            href = re.search(r'href="([^"]+)"', anchor)
+            if not href:
+                continue
+            key = href[1].lstrip('/')
+            if key == 'index.html':
+                key = ''
+            if re.search(r'class="[^"]*\bnav-contact\b', anchor):
+                key = 'contact.html'
+            existing[key] = anchor
+        ordered = []
+        for path, label in MAIN_NAVIGATION:
+            if path in existing:
+                ordered.append(existing.pop(path))
+            else:
+                current = ' aria-current="page"' if path == current_path else ''
+                ordered.append(f'<a href="/{path}"{current}>{label}</a>')
+        return opening + ''.join(ordered) + ''.join(existing.values()) + closing
+
+    return re.sub(r'(<nav\b[^>]*class="nav-links"[^>]*>)(.*?)(</nav>)',
+                  reorder, document, flags=re.S)
+
 
 def archive_navigation(current_path, chinese=False):
     label = '历年试题（英文）' if chinese else 'Past paper archives'
@@ -68,6 +115,7 @@ def install_archive_navigation(document, current_path):
         link = f'<a href="/advice.html"{current}{language}>{label}</a>'
         return re.sub(r'(<a\b[^>]*href="/?resources\.html")', link + r'\1', navigation, count=1)
     document = re.sub(r'<nav\b[^>]*class="nav-links"[^>]*>.*?</nav>', add_advice, document, flags=re.S)
+    document = reorder_main_navigation(document, current_path)
     document = re.sub(r'\n?  <!-- Shared past-paper navigation -->.*?<!-- /Shared past-paper navigation -->', '', document, flags=re.S)
     header = re.search(r'<header\b[^>]*class="site-header"[^>]*>.*?</header>', document, re.S)
     if header is None:
