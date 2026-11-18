@@ -345,7 +345,6 @@ def render(data):
     enquiry_label = 'admissions preparation' if exam == 'mat' else 'ESAT maths' if exam == 'esat' else name
     css_version = '20261027-search1'
     paper_heading = 'practice papers' if exam == 'esat' else 'past papers'
-    curator = '<p class="archive-curator">Curated by <a href="about.html">Arij Asad</a>. Papers, worked solutions and videos are credited to their original creators.</p>' if exam == 'tmua' else ''
     jumps_html = '<nav class="archive-jumps" aria-label="Jump to archive sections"><strong>Jump to:</strong>' + jumps + '</nav>'
     if exam == 'tmua':
         jumps_html = '<details class="archive-directory"><summary>Find a particular provider or collection</summary>' + jumps_html + '</details>'
@@ -385,7 +384,6 @@ def render(data):
       <nav class="archive-breadcrumbs" aria-label="Breadcrumb"><a href="{hub}">{e(hub_label)}</a><span aria-hidden="true">/</span><span>{e(name)} archive</span></nav>
       <h1>{e(name)} {paper_heading} &amp; <span>solutions.</span></h1>
       <p>{e(intro)}</p>
-{curator}
     </div></header>
     <div class="container">
 {nav}
