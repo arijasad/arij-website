@@ -1,0 +1,35 @@
+/* A personal story using the same type, colours and spacing as the main site. */
+.story-page .story-hero::after { content: none; }
+.story-page .story-hero .eyebrow { margin-top: 0; }
+.story-page .story-hero h1 { margin-bottom: 20px; color: var(--black); }
+.story-page .story-bio { max-width: 940px; }
+.story-page .story-photo { width: 100%; max-width: 380px; margin: 0; }
+.story-page .story-photo img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.story-page .story-quote-grid { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); align-items: center; gap: 48px; }
+.story-page .story-quote-grid > * { min-width: 0; }
+.story-page .story-quote { margin: 0; }
+.story-page .story-quote blockquote { margin: 0; color: #f7f5f0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(21px, 2vw, 25px); line-height: 1.55; }
+.story-page .story-quote blockquote p { margin: 0; }
+.story-page .story-quote figcaption { margin-top: 22px; color: var(--gold-light); font-size: 15px; font-weight: 650; }
+.story-page .story-stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 0; padding: 0; list-style: none; }
+.story-page .story-stages li { border-top: 2px solid #b99d68; padding-top: 22px; min-width: 0; }
+.story-page .story-stages h2 { margin: 0 0 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 25px; font-weight: 600; line-height: 1.2; letter-spacing: -.4px; }
+.story-page .story-stages p { margin: 0; color: #565656; font-size: 16px; }
+.story-page .story-cta { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.story-page .story-cta .resource-heading { margin: 0; }
+.story-page .story-cta h2 { margin-bottom: 12px; }
+.story-page .story-cta .resource-button { flex-shrink: 0; }
+@media (max-width: 900px) {
+  .story-page .story-quote-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .story-page .story-photo { justify-self: center; }
+}
+@media (max-width: 720px) {
+  .story-page .story-stages { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .story-page .story-cta { align-items: flex-start; flex-direction: column; gap: 24px; }
+}
+@media print {
+  .story-page .story-quote-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 24px; }
+  .story-page .story-quote blockquote, .story-page .story-quote figcaption { color: #111; }
+  .story-page .story-stages { break-inside: avoid; }
+  .story-page .story-cta { display: none; }
+}

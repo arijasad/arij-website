@@ -36,6 +36,7 @@ MAIN_NAVIGATION = [
     ('', 'Home'),
     ('about.html', 'About'),
     ('tuition.html', 'Tuition'),
+    ('student-stories.html', 'Student story'),
     ('advice.html', 'UCAS Advice'),
     ('tmua.html', 'TMUA'),
     ('interviews.html', 'Interviews'),
@@ -51,7 +52,12 @@ MAIN_NAVIGATION = [
 def reorder_main_navigation(document, current_path):
     # The Chinese landing page has its own navigation to translated sections.
     if re.search(r'<html[^>]+lang="zh', document):
-        return document
+        def add_story(match):
+            navigation = re.sub(r'<a\b[^>]*href="/?student-stories\.html"[^>]*>.*?</a>', '', match.group(0), flags=re.S)
+            return re.sub(r'(<a\b[^>]*href="#services"[^>]*>.*?</a>)',
+                          r'\1<a href="/student-stories.html" hreflang="en-GB">学生故事（英文）</a>',
+                          navigation, count=1, flags=re.S)
+        return re.sub(r'<nav\b[^>]*class="nav-links"[^>]*>.*?</nav>', add_story, document, flags=re.S)
 
     def reorder(match):
         opening, contents, closing = match.groups()
