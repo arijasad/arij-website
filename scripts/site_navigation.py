@@ -15,7 +15,15 @@ ARCHIVES = [
     ('aime-past-papers.html', 'AIME'),
     ('bmo-past-papers.html', 'BMO'),
 ]
-STYLE = '<link rel="stylesheet" href="/paper-navigation.css?v=20260910-1">'
+# Highlight interviews during the autumn season while retaining every archive link.
+INTERVIEW_LINKS = [
+    ('interviews.html', 'Mock interviews'),
+    ('cambridge-college-maths-interviews.html', 'Cambridge interviews'),
+    ('oxford-maths-interview-guide.html', 'Oxford interviews'),
+    ('engineering-interview-guide.html', 'Engineering interviews'),
+]
+INTERVIEW_SEASON = True
+STYLE = '<link rel="stylesheet" href="/paper-navigation.css?v=20261118-both">'
 
 
 def archive_navigation(current_path, chinese=False):
@@ -25,7 +33,20 @@ def archive_navigation(current_path, chinese=False):
         current = ' aria-current="page"' if path == current_path else ''
         language = ' hreflang="en-GB" lang="en"' if chinese else ''
         links.append(f'<a href="/{path}" aria-label="{escape(name)} paper archive"{current}{language}>{escape(name)}</a>')
+    interview_bar = ''
+    if INTERVIEW_SEASON:
+        interview_label = '面试准备（英文）' if chinese else 'Interview preparation'
+        interview_links = []
+        for path, name in INTERVIEW_LINKS:
+            current = ' aria-current="page"' if path == current_path else ''
+            language = ' hreflang="en-GB" lang="en"' if chinese else ''
+            primary = ' class="interview-quick-nav__primary"' if path == 'interviews.html' else ''
+            interview_links.append(f'<a href="/{path}"{primary}{current}{language}>{escape(name)}</a>')
+        interview_bar = (f'  <nav class="interview-quick-nav" aria-label="{interview_label}">\n'
+                         '    <div class="interview-quick-nav__links">' + ''.join(interview_links) + '</div>\n'
+                         '  </nav>\n')
     return ('  <!-- Shared past-paper navigation -->\n'
+            + interview_bar +
             f'  <nav class="paper-archive-bar" aria-label="{label}">\n'
             '    <div class="paper-archive-bar__inner">\n'
             f'      <span class="paper-archive-bar__label">{label}</span>\n'

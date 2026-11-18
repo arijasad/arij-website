@@ -1,0 +1,584 @@
+{
+  "checked": "2026-11-18",
+  "cycle": "2027 entry",
+  "colleges": [
+    {
+      "name": "Trinity",
+      "category": "varies",
+      "delivery": "UK school or college: in person. Overseas: choice of online or in person. UK school leavers ordinarily resident in the UK normally attend in person.",
+      "structure": "One 45-minute interview with two mathematicians, following a 60-minute written test. The discussion draws partly on your test work. No books, notes or calculator in the test.",
+      "note": "The October 2026 applicant notes give 45 minutes; the subject page gives approximately 40 to 45. Online applicants need the specified writing and scanning setup.",
+      "papers": [
+        {
+          "title": "Specimen test 1 (PDF)",
+          "url": "https://www.trin.cam.ac.uk/download/mathematics-specimen-written-test-1/?masterkey=60abff3008fae&wpdmdl=33054"
+        },
+        {
+          "title": "Specimen test 2 (PDF)",
+          "url": "https://www.trin.cam.ac.uk/download/mathematics-specimen-written-test-2/?masterkey=60abff49b410d&wpdmdl=33055"
+        },
+        {
+          "title": "Specimen test 3 (PDF)",
+          "url": "https://www.trin.cam.ac.uk/download/mathematics-specimen-written-test-3/?masterkey=60abff66be1a7&wpdmdl=33056"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.trin.cam.ac.uk/subjects/mathematics/"
+        },
+        {
+          "title": "Interview arrangements",
+          "url": "https://www.trin.cam.ac.uk/undergraduate/applying/interviews/"
+        },
+        {
+          "title": "October 2026 applicant notes (PDF)",
+          "url": "https://www.trin.cam.ac.uk/?ind=1778234569503&wpdmdl=30416"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Christ’s",
+      "category": "online",
+      "delivery": "Online, using Microsoft Teams.",
+      "structure": "Two interviews, normally 35 to 50 minutes in total, typically covering pure and applied maths. A 40-minute invigilated problem sheet precedes one interview; no calculator.",
+      "note": "The college calls the problem sheet interview preparation and separately says there is no College assessment. This is not a separately registered admissions test.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.christs.cam.ac.uk/study-here/undergraduate-study/subjects/mathematics"
+        },
+        {
+          "title": "Current applicants: subject information, Mathematics",
+          "url": "https://www.christs.cam.ac.uk/current-applicants/subject-information"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Churchill",
+      "category": "person",
+      "delivery": "In person, including overseas applicants. Exceptional remote arrangements may be considered.",
+      "structure": "The current maths page does not specify the interview count, duration or a preparation task. General college guidance says most applicants have one interview of 30 to 40 minutes.",
+      "note": "The timing is college-wide, not confirmed specifically for Mathematics. An older aptitude-test PDF is still online, but the current maths page does not identify it as the current interview test.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths",
+          "url": "https://www.chu.cam.ac.uk/undergraduate-courses/maths/"
+        },
+        {
+          "title": "Undergraduate Applications",
+          "url": "https://www.chu.cam.ac.uk/undergraduate-admissions/"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "name": "Clare",
+      "category": "online",
+      "delivery": "Online for Mathematics.",
+      "structure": "Maths-specific interview count, duration and any preparation task are not published in the current guidance reviewed.",
+      "note": "Medicine and Music have different delivery arrangements. Those exceptions do not apply to Mathematics.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.clare.cam.ac.uk/admissions-outreach/undergraduate-study/applying-to-clare/subjects/mathematics"
+        },
+        {
+          "title": "Applying to Clare",
+          "url": "https://www.clare.cam.ac.uk/admissions-outreach/undergraduate-study/applying-to-clare"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "name": "Corpus Christi",
+      "category": "varies",
+      "delivery": "UK: in person. Overseas: online. Republic of Ireland: choice.",
+      "structure": "A problem sheet may be provided immediately before the interview. The current maths page does not state a duration or interview count.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.corpus.cam.ac.uk/subjects/mathematics"
+        },
+        {
+          "title": "How to Apply",
+          "url": "https://www.corpus.cam.ac.uk/undergraduate-study/how-apply"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Downing",
+      "category": "online",
+      "delivery": "Online for all applicants.",
+      "structure": "Two 25-minute interviews on the same day, one pure and one applied. The college publishes sample interview questions; a timed preparation task is not specified in current guidance.",
+      "note": "The linked PDF is labelled sample interview questions on the current course page. Do not infer a current 30-minute test from older preparation guides.",
+      "papers": [
+        {
+          "title": "Sample questions (PDF)",
+          "url": "https://www.dow.cam.ac.uk/sites/default/files/maths_test.pdf"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://dow.cam.ac.uk/undergraduate-admissions/courses/mathematics"
+        },
+        {
+          "title": "How interviews work",
+          "url": "https://dow.cam.ac.uk/undergraduate-admissions/apply-downing/interviews/how-interviews-work"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Emmanuel",
+      "category": "person",
+      "delivery": "In person, including overseas applicants. Exceptional remote arrangements may be considered.",
+      "structure": "Normally two maths interviews, approximately 30 minutes each, using unfamiliar questions and discussion. A separate preparation task is not specified.",
+      "note": "This uses the maths subject page. The shorter timing on the general college interview page is not used.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics: interview accordion",
+          "url": "https://www.emma.cam.ac.uk/admissions/undergraduates/subjects/mathematics"
+        },
+        {
+          "title": "Interviews",
+          "url": "https://www.emma.cam.ac.uk/admissions/undergraduates/interviews"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Fitzwilliam",
+      "category": "online",
+      "delivery": "Online.",
+      "structure": "Normally two maths interviews of approximately 20 minutes each. A separate preparation task is not specified.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.fitz.cam.ac.uk/mathematics"
+        },
+        {
+          "title": "How to apply",
+          "url": "https://www.fitz.cam.ac.uk/how-apply-0"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Girton",
+      "category": "online",
+      "delivery": "Online.",
+      "structure": "Two interviews with mathematical problems to attempt during the discussion. Duration and any separate preparation task are not specified.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.girton.cam.ac.uk/subjects-courses/mathematics"
+        },
+        {
+          "title": "Applicants: interviews 2026",
+          "url": "https://www.girton.cam.ac.uk/Applicants"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Gonville & Caius",
+      "category": "varies",
+      "delivery": "UK or Ireland school: choice of in person or online. Overseas school: online.",
+      "structure": "Usually two maths interviews of about 30 minutes each, discussing mathematical problems. A separate preparation task is not specified.",
+      "note": "Eligibility is phrased by school location on the current-applicant page. Ask the college about unusual circumstances.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.cai.cam.ac.uk/courses/mathematics"
+        },
+        {
+          "title": "Applicant Information: October 2026 applications",
+          "url": "https://www.cai.cam.ac.uk/apply-caius/applicant-information"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Homerton",
+      "category": "varies",
+      "delivery": "UK school, or UK-resident school leaver: choice of in person or online. Overseas: online.",
+      "structure": "Two maths interviews. General college guidance gives about 25 minutes each. The December 2026 maths table explicitly says there is no pre-interview reading or task.",
+      "note": "The duration comes from college-wide guidance. The maths-specific applicant table confirms two interviews and no preparation task.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Subject Interview Information for Applicants",
+          "url": "https://www.homerton.cam.ac.uk/admissions-portal/resources/subject-interview-information-applicants"
+        },
+        {
+          "title": "Interviews",
+          "url": "https://www.homerton.cam.ac.uk/study-here/undergraduate-study/how-apply/interviews"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Hughes Hall",
+      "category": "online",
+      "delivery": "Online. Mature college: normally 21 or over at entry.",
+      "structure": "The current subject guidance does not publish a maths-specific interview count, duration or preparation task.",
+      "note": "The general interview page still describes the previous admissions cycle, so its timings are not presented here as current maths arrangements.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "What to expect at your Cambridge interview",
+          "url": "https://www.undergraduate.study.cam.ac.uk/apply/after/cambridge-interviews"
+        },
+        {
+          "title": "Hughes Hall",
+          "url": "https://www.undergraduate.study.cam.ac.uk/colleges/hughes-hall"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "name": "Jesus",
+      "category": "varies",
+      "delivery": "UK residents: in person. Overseas residents: online.",
+      "structure": "One or two maths interviews, lasting 35 to 50 minutes in total, with at least three subject specialists across the interview process. A separate preparation task is not specified.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.jesus.cam.ac.uk/subjects/mathematics"
+        },
+        {
+          "title": "Interviews, tests and written work",
+          "url": "https://www.jesus.cam.ac.uk/college/undergraduate/how-apply/interviews-tests-and-written-work"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "King’s",
+      "category": "person",
+      "delivery": "In person, including overseas applicants. Remote interviews only in exceptional circumstances.",
+      "structure": "Two maths interviews, each about 20 to 25 minutes, usually with two interviewers. A separate preparation task is not specified.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.kings.cam.ac.uk/subjects/mathematics"
+        },
+        {
+          "title": "Applicant Information 2026",
+          "url": "https://www.kings.cam.ac.uk/study/undergraduate-study/applicant-information-2026"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Lucy Cavendish",
+      "category": "online",
+      "delivery": "Online.",
+      "structure": "The maths page describes typically one interview of 40 to 45 minutes. General college guidance gives a different structure; confirm your invitation. Preparatory material may be provided.",
+      "note": "The general page describes two interviews of 20 to 30 minutes. The subject-specific guidance is shown, with the discrepancy flagged. The practice pack is not a specimen timed assessment.",
+      "papers": [
+        {
+          "title": "Practice pack (PDF)",
+          "url": "https://www.lucy.cam.ac.uk/sites/default/files/inline-files/Interview%20Question%20Pack%20%28Sciences%20%26%20Maths%29.pdf"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.lucy.cam.ac.uk/subject/mathematics"
+        },
+        {
+          "title": "How to apply",
+          "url": "https://www.lucy.cam.ac.uk/study-us/undergraduates/how-apply"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Magdalene",
+      "category": "online",
+      "delivery": "Online.",
+      "structure": "Two maths interviews, each about 20 to 25 minutes. A separate preparation task is not specified in current guidance.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.magd.cam.ac.uk/study-magdalene/undergraduate-study/courses/mathematics"
+        },
+        {
+          "title": "Interviews, Assessments and Written Work",
+          "url": "https://www.magd.cam.ac.uk/study-magdalene/undergraduate-study/application-process/interviews-assessments-and-written-work"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Murray Edwards",
+      "category": "online",
+      "delivery": "Online.",
+      "structure": "The reviewed current pages do not specify maths interview count, duration or a preparation task.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "How to apply",
+          "url": "https://www.murrayedwards.cam.ac.uk/study-us/how-apply"
+        },
+        {
+          "title": "Mathematics",
+          "url": "https://www.murrayedwards.cam.ac.uk/subject/mathematics"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "name": "Newnham",
+      "category": "online",
+      "delivery": "Online, using Zoom.",
+      "structure": "The maths subject page does not specify interview count, duration or a preparation task. The current applicant page requires an online whiteboard for Mathematics.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Undergraduate Applicants 2026",
+          "url": "https://newn.cam.ac.uk/undergraduate-applicants-2026"
+        },
+        {
+          "title": "Mathematics",
+          "url": "https://newn.cam.ac.uk/study-here/subjects/mathematics"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "name": "Pembroke",
+      "category": "varies",
+      "delivery": "UK: in person. Overseas: normally online, with an in-person option on request.",
+      "structure": "Applicants work on questions before the interview and discuss them with interviewers. The current maths page does not publish the task duration or interview count.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Mathematics",
+          "url": "https://www.pem.cam.ac.uk/study-here/undergraduate/courses/mathematics"
+        },
+        {
+          "title": "How to Apply",
+          "url": "https://www.pem.cam.ac.uk/study-here/undergraduate/how-apply"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Peterhouse",
+      "category": "varies",
+      "delivery": "UK school or UK-resident school leaver: in person. Overseas: online.",
+      "structure": "One longer maths interview, preceded by roughly 45 to 60 minutes working on preparation questions. The subject page does not specify interview duration.",
+      "note": "The maths-specific description takes precedence over the older general college page, which describes two interviews.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.pet.cam.ac.uk/mathematics"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.pet.cam.ac.uk/undergraduate-applications"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Queens’",
+      "category": "online",
+      "delivery": "Online.",
+      "structure": "The current maths and application pages do not specify maths interview count, duration or preparation tasks.",
+      "note": "Use the current application timeline. The separate generic interviews page still refers to the previous cycle.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.queens.cam.ac.uk/applying-here/subjects/mathematics/"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.queens.cam.ac.uk/applying-here/undergraduate-admissions/application-timeline-and-process/"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "name": "Robinson",
+      "category": "varies",
+      "delivery": "UK or Common Travel Area, including Ireland: in person. Elsewhere: online.",
+      "structure": "The maths guidance, last updated July 2025, describes two subject interviews of about 30 minutes each. Confirm current timings in your invitation. A separate preparation task is not specified.",
+      "note": "The maths timing page was last updated in July 2025. Delivery is checked against December 2026 guidance; confirm current timings in your invitation.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.robinson.cam.ac.uk/courses/mathematics-further-information"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.robinson.cam.ac.uk/prospective-students/undergraduate/how-apply/interviews"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "St Catharine’s",
+      "category": "online",
+      "delivery": "Online.",
+      "structure": "The reviewed maths page does not publish a current subject-specific count, duration or preparation task.",
+      "note": "The generic interview page is still headed 2025. Its general timing is not presented as a confirmed current maths arrangement.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.caths.cam.ac.uk/subject/mathematics-and-mathematics-physics"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.caths.cam.ac.uk/study-us/undergraduate-study/how-apply/preparing-interviews"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "name": "St Edmund’s",
+      "category": "online",
+      "delivery": "Online. Mature college: normally 21 or over at entry.",
+      "structure": "Usually one maths interview of approximately an hour, with two academics, working on mathematical problems. A separate preparation task is not specified.",
+      "note": "The college also has a January application round, whose interview dates differ from the main December round.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.st-edmunds.cam.ac.uk/course/maths/"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.undergraduate.study.cam.ac.uk/apply/after/cambridge-interviews"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "St John’s",
+      "category": "online",
+      "delivery": "Online.",
+      "structure": "Usually two interviews of approximately 25 minutes each with Maths Fellows. Most of the time is spent discussing problems. A separate preparation task is not specified.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.joh.cam.ac.uk/live-and-study/subjects/undergraduate-subjects/mathematics"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.joh.cam.ac.uk/apply/undergraduate/undergraduate-interviews"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Selwyn",
+      "category": "person",
+      "delivery": "In person, including overseas applicants.",
+      "structure": "Normally two maths interviews. Mathematics with Physics applicants also have a short Physics interview. Maths interview duration and any separate preparation task are not specified.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.sel.cam.ac.uk/node/4793"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.undergraduate.study.cam.ac.uk/apply/after/cambridge-interviews"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Sidney Sussex",
+      "category": "varies",
+      "delivery": "Ordinarily resident in the UK: in person. Overseas: online.",
+      "structure": "Maths-specific count and duration are not published in the current guidance reviewed. General college guidance describes one or two interviews; any preparation instructions come with the invitation.",
+      "note": "The 2026/27 applicant page is used for delivery. The subject page contains older interview text.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.sid.cam.ac.uk/apply/undergraduate-study/2026-27-applicant-information"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.sid.cam.ac.uk/apply/subjects/mathematics"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "name": "Trinity Hall",
+      "category": "varies",
+      "delivery": "UK: in person. Overseas: online.",
+      "structure": "Two maths interviews of around 25 minutes each, working through problems. A separate preparation task is not specified.",
+      "note": "",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.trinhall.cam.ac.uk/study-with-us/undergraduate-study/courses/mathematics/"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.trinhall.cam.ac.uk/study-with-us/undergraduate-study/how-to-apply/"
+        }
+      ],
+      "compact": false
+    },
+    {
+      "name": "Wolfson",
+      "category": "online",
+      "delivery": "Online, using Zoom. Mature college: normally 21 or over at entry.",
+      "structure": "General college guidance gives one or two interviews, totalling 40 to 50 minutes. A maths-specific structure or preparation task is not published. The college says it does not provide specimen assessment papers.",
+      "note": "Wolfson’s current website offers Mathematics. The timing is college-wide rather than specific to maths.",
+      "papers": [],
+      "sources": [
+        {
+          "title": "Maths guidance",
+          "url": "https://www.wolfson.cam.ac.uk/undergraduate-study/subjects/mathematics"
+        },
+        {
+          "title": "Interview guidance",
+          "url": "https://www.wolfson.cam.ac.uk/applications/undergraduate-study/applying"
+        }
+      ],
+      "compact": true
+    }
+  ]
+}

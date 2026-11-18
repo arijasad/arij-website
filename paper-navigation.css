@@ -1,4 +1,4 @@
-/* A separate archive row below the main site header. */
+/* Shared seasonal navigation below the main site header. */
 body .paper-archive-bar {
   margin: 0;
   padding: 0;
@@ -65,6 +65,53 @@ body .paper-archive-bar {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+.interview-quick-nav, .interview-quick-nav * { box-sizing: border-box; }
+body .interview-quick-nav {
+  margin: 0;
+  padding: 8px 20px;
+  background: #111111;
+  border-bottom: 1px solid #63563e;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.interview-quick-nav__links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(100%, 840px);
+  gap: 8px;
+  margin: 0 auto;
+}
+.interview-quick-nav__links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid #b5975f;
+  border-radius: 6px;
+  background: #f7f5f0;
+  color: #72531c;
+  font-size: .875rem;
+  font-weight: 650;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: normal;
+  text-align: center;
+}
+.interview-quick-nav__links .interview-quick-nav__primary,
+.interview-quick-nav__links a:hover,
+.interview-quick-nav__links a[aria-current="page"] {
+  background: #ead9b6;
+  color: #111111;
+}
+.interview-quick-nav__links a[aria-current="page"] {
+  border-color: #72531c;
+}
+.interview-quick-nav__links a:focus-visible {
+  outline: 2px solid #ead9b6;
+  outline-offset: 2px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 @media (max-width: 700px) {
   .paper-archive-bar .paper-archive-bar__inner {
     flex-direction: column;
@@ -76,4 +123,14 @@ body .paper-archive-bar {
     padding: 0 3px;
     border: 0;
   }
+  .interview-quick-nav__links a {
+    padding: 8px 6px;
+    font-size: .8rem;
+  }
+}
+@media (max-width: 520px) {
+  .interview-quick-nav__links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media print {
+  .interview-quick-nav { display: none !important; }
 }
