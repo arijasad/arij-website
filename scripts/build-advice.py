@@ -41,7 +41,7 @@ for p in DATA['pages']:
     toc = ''.join(f'<a href="#{i}">{escape(t)}</a>' for i, t in parser.items)
     sources = ''.join(f'<li id="source-{key}"><a href="{escape(DATA["sources"][key]["url"])}">{escape(DATA["sources"][key]["title"])}</a></li>' for key in p['sources'])
     related = ''.join(f'<li><a href="{escape(url)}">{escape(label)}</a></li>' for url, label in p['related'])
-    byline = '<a href="about.html">Arij Asad</a>, Cambridge Mathematics graduate, former Cambridge interviewer and STEP examiner'
+    byline = '<a href="about.html">Arij Asad</a>'
     cycle = 'For applications in autumn 2026 for entry in 2027, or deferred entry in 2028.'
     schema = {
         '@context': 'https://schema.org', '@graph': [

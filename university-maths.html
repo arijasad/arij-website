@@ -1169,7 +1169,7 @@ body:not(.resource-page) .nav-links {
 .university-page h1 { font-size: clamp(44px, 6vw, 80px); line-height: 1.06; font-weight: 600; }
 .university-page h2 { font-size: clamp(32px, 4vw, 48px); line-height: 1.12; font-weight: 600; }
 .university-page .resource-section { padding: 72px 0; }
-.university-page .resource-hero { padding: 80px 0 70px; }
+.university-page .resource-hero { padding: 52px 0; }
 .university-page .resource-hero::after { content: none; }
 .uni-hero-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, .8fr); gap: 58px; align-items: center; }
 .university-page .resource-lede { color: #444; font-size: 1.2rem; line-height: 1.75; }
@@ -1178,13 +1178,11 @@ body:not(.resource-page) .nav-links {
 .university-page .resource-button:hover { border-color: #72531c; }
 .university-page .uni-secondary { background: #fff; color: #111 !important; border-color: #cfc7ba; }
 .university-page .uni-secondary:hover { background: #ead9b6; color: #111 !important; }
-.uni-credentials { margin: 24px 0 0; color: #656565; font-size: .875rem; }
 .uni-overview { position: relative; padding: 34px; background: linear-gradient(145deg, #1d1d1d, #0d0d0d); color: #d0d0d0; border: 1px solid #806b46; border-radius: 22px; box-shadow: 0 24px 54px #0002; }
 .university-page .uni-overview h2 { margin: 0 0 22px; color: #ead9b6; font-size: 1.9rem; }
 .uni-overview ul { list-style: none; margin: 0; padding: 0; }
 .uni-overview li { padding: 16px 0; border-top: 1px solid #454039; }
 .uni-overview strong { display: block; color: #fff; margin-bottom: 4px; }
-.uni-overview p { margin: 20px 0 0; font-size: .875rem; color: #d0c6b3; }
 .uni-heading { max-width: 790px; margin-bottom: 32px; }
 .uni-heading h2 { margin: 0 0 18px; }
 .uni-heading p { color: #565656; margin: 0; }
@@ -1224,7 +1222,8 @@ body:not(.resource-page) .nav-links {
   .uni-hero-grid, .uni-experience { grid-template-columns: 1fr; gap: 34px; }
   .uni-subjects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .uni-process { grid-template-columns: 1fr; gap: 26px; }
-  .university-page .resource-hero, .university-page .resource-section { padding: 48px 0; }
+  .university-page .resource-section { padding: 48px 0; }
+  .university-page .resource-hero { padding: 36px 0; }
   .university-page .resource-cta { grid-template-columns: 1fr; padding: 32px 26px; }
 }
 @media (max-width: 560px) {
@@ -1269,7 +1268,6 @@ body:not(.resource-page) .nav-links {
             <a class="resource-button" href="contact.html?service=University%20mathematics#enquiry-form">Enquire about university tuition</a>
             <a class="resource-button uni-secondary" href="#subjects">Explore subject support</a>
           </div>
-          <p class="uni-credentials">Cambridge Mathematics graduate · Bristol PhD thesis submitted · University teaching and marking experience</p>
         </div>
         <aside class="uni-overview" aria-labelledby="support-heading">
           <h2 id="support-heading">Support shaped around your course.</h2>
@@ -1278,7 +1276,6 @@ body:not(.resource-page) .nav-links {
             <li><strong>Develop your solutions</strong>Learn how to start, justify each step and check your reasoning.</li>
             <li><strong>Prepare for examinations</strong>Review difficult topics and practise with your own module materials.</li>
           </ul>
-          <p>For mathematics students and students taking mathematical modules in other degrees.</p>
         </aside>
       </div>
     </section>
