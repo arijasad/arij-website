@@ -77,19 +77,29 @@ CHILD_SCRIPT = r'''
     event.preventDefault();
     parent.postMessage({type:'website-preview-navigate', path, search:url.search, hash:url.hash}, '*');
   });
-  const form = document.getElementById('enquiry-form-fields');
+  const form = document.querySelector('#enquiry-form-fields, #access-application-form');
   if (form) {
     const note = document.createElement('p');
     note.id = 'preview-form-status';
     note.setAttribute('role', 'status');
     note.style.cssText = 'padding:14px 18px;border:1px solid #e3dccf;border-radius:10px;background:#f7f5f0;color:#72531c;';
-    note.textContent = 'Preview only: this form will not send an enquiry.';
+    note.textContent = 'Preview only: this form will not send any information.';
     form.prepend(note);
     form.addEventListener('submit', event => {
       event.preventDefault();
-      note.textContent = 'This is a preview. No enquiry has been sent.';
+      note.textContent = 'Preview checked: no information has been sent.';
+      if (form.dataset.previewNext) {
+        parent.postMessage({type:'website-preview-navigate',path:form.dataset.previewNext,search:'?preview=1',hash:''}, '*');
+      }
       note.scrollIntoView({block:'center'});
     });
+  }
+  if (route.search.includes('preview=1') && route.path === 'access-scheme-next-steps.html') {
+    const notice = document.createElement('p');
+    notice.setAttribute('role', 'status');
+    notice.style.cssText = 'padding:18px;background:#ead9b6;color:#111;margin:0;';
+    notice.textContent = 'Preview only: your application has not been sent. These are the next steps after a real submission.';
+    document.querySelector('main').prepend(notice);
   }
   document.querySelectorAll('[data-cookie-settings]').forEach(button => button.addEventListener('click', () => {
     alert('Analytics are disabled in this preview.');
@@ -168,7 +178,7 @@ def transform(path):
     html = re.sub(r'<a\b[^>]*>', anchor_tag, html, flags=re.I)
     def preview_form(match):
         tag = match.group(0)
-        if attributes(tag).get('id') != 'enquiry-form-fields':
+        if attributes(tag).get('id') not in ('enquiry-form-fields', 'access-application-form'):
             return tag
         tag = re.sub(r'\s+(?:action|method)\s*=\s*(["\']).*?\1', '', tag, flags=re.I)
         return tag[:-1] + ' method="dialog">'
@@ -182,13 +192,15 @@ def transform(path):
 SHELL_CSS = '''
 *{box-sizing:border-box}body{margin:0;background:#f7f5f0;color:#1c1c1c;font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .preview-bar{min-height:76px;padding:12px 20px;background:#f7f5f0;color:#1c1c1c;display:flex;align-items:center;justify-content:space-between;gap:20px}.preview-bar p{margin:0;font-size:12px}.preview-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.preview-controls button,.preview-controls select{min-height:40px;padding:8px 12px;border:1px solid #95846a;border-radius:8px;background:#f7f5f0;color:#1c1c1c;font:inherit;font-size:12px;cursor:pointer}.preview-controls button[aria-current=page]{background:#ead9b6;color:#111}.preview-controls button:disabled{opacity:.45;cursor:default}.preview-controls select{max-width:210px}.preview-controls label{font-size:12px}.preview-frame{display:block;width:100%;height:calc(100vh - 76px);height:calc(100dvh - 76px);min-height:500px;border:0;background:#f7f5f0}.sr-only{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden}:focus-visible{outline:3px solid #b5975f;outline-offset:3px}@media(max-width:950px){.preview-bar{display:block}.preview-controls{margin-top:9px}.preview-frame{height:calc(100dvh - 124px)}}@media(max-width:540px){.preview-controls{gap:6px}.preview-controls button,.preview-controls select{padding:6px 9px;min-height:36px}.preview-controls select{max-width:160px}.preview-frame{height:calc(100dvh - 166px)}}
-body{height:100vh;height:100dvh;display:flex;flex-direction:column}.preview-bar{flex:0 0 auto}.preview-frame{flex:1 1 auto;height:0;min-height:0}
+body{height:100vh;height:100dvh;display:flex;flex-direction:column}.preview-bar{flex:0 0 auto}.preview-frame{flex:1 1 auto;height:0;min-height:0;max-width:100%;margin-inline:auto}
 '''
 
 SHELL_SCRIPT = r'''
 const pages = __PAGES__;
 const frame = document.getElementById('website-preview');
 const picker = document.getElementById('page-picker');
+const viewport = document.getElementById('viewport-picker');
+viewport.addEventListener('change', () => { frame.style.width = viewport.value === 'full' ? '100%' : viewport.value + 'px'; });
 const back = document.getElementById('preview-back');
 const forward = document.getElementById('preview-forward');
 const trail = [];
@@ -225,7 +237,7 @@ window.addEventListener('message',event=>{
   }
 });
 const requestedPage = new URLSearchParams(window.location.search).get('page');
-showPage(Object.prototype.hasOwnProperty.call(pages,requestedPage) ? requestedPage : 'index.html');
+showPage(Object.prototype.hasOwnProperty.call(pages,requestedPage) ? requestedPage : 'index.html', '', window.location.hash);
 '''
 
 def build(output):
@@ -237,8 +249,8 @@ def build(output):
         pages[path.name] = {'title':title, 'html':html}
     payload = json.dumps(pages, ensure_ascii=False).replace('<', '\\u003c')
     options = ''.join(f'<option value="{path}">{escape(p["title"].split(" | ")[0])}</option>' for path,p in pages.items())
-    buttons = ''.join(f'<button type="button" data-page="{path}">{label}</button>' for path,label in [('index.html','Home'),('interviews.html','Mock interviews'),('cambridge-college-maths-interviews.html','Cambridge interviews'),('oxford-maths-interview-guide.html','Oxford interviews'),('engineering-interview-guide.html','Engineering')])
-    shell = f'''<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Arij Asad Maths | Whole website preview</title><style>{SHELL_CSS}</style></head><body><header class="preview-bar"><p>Whole website preview · {len(pages)} pages · Private preview<br><span id="preview-status" role="status">Home</span></p><nav class="preview-controls" aria-label="Website preview controls"><button type="button" id="preview-back" aria-label="Previous preview page">←</button><button type="button" id="preview-forward" aria-label="Next preview page">→</button>{buttons}<label class="sr-only" for="page-picker">All pages</label><select id="page-picker" aria-label="All website pages">{options}</select></nav></header><noscript><p>Enable JavaScript to navigate the full website preview.</p></noscript><iframe class="preview-frame" id="website-preview" title="Arij Asad Maths website preview" srcdoc="{escape(pages['index.html']['html'],quote=True)}"></iframe><script>{SHELL_SCRIPT.replace('__PAGES__',payload)}</script></body></html>'''
+    buttons = ''.join(f'<button type="button" data-page="{path}">{label}</button>' for path,label in [('index.html','Home'),('interviews.html','Interviews & access scheme'),('access-scheme-application.html','Free interview application'),('cambridge-college-maths-interviews.html','Cambridge interviews'),('oxford-maths-interview-guide.html','Oxford interviews'),('engineering-interview-guide.html','Engineering')])
+    shell = f'''<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Arij Asad Maths | Whole website preview</title><style>{SHELL_CSS}</style></head><body><header class="preview-bar"><p>Whole website preview · {len(pages)} pages · Private preview<br><span id="preview-status" role="status">Home</span></p><nav class="preview-controls" aria-label="Website preview controls"><button type="button" id="preview-back" aria-label="Previous preview page">←</button><button type="button" id="preview-forward" aria-label="Next preview page">→</button>{buttons}<label class="sr-only" for="page-picker">All pages</label><select id="page-picker" aria-label="All website pages">{options}</select><label class="sr-only" for="viewport-picker">Preview width</label><select id="viewport-picker" aria-label="Preview width"><option value="full">Desktop / full width</option><option value="768">Tablet · 768px</option><option value="390">Phone · 390px</option><option value="320">Small phone · 320px</option></select></nav></header><noscript><p>Enable JavaScript to navigate the full website preview.</p></noscript><iframe class="preview-frame" id="website-preview" title="Arij Asad Maths website preview" srcdoc="{escape(pages['index.html']['html'],quote=True)}"></iframe><script>{SHELL_SCRIPT.replace('__PAGES__',payload)}</script></body></html>'''
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(shell)

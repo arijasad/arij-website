@@ -10,6 +10,7 @@ from html import escape as esc
 import argparse
 import json
 import re
+from access_scheme import install as install_access_scheme
 from site_navigation import archive_navigation, reorder_main_navigation, LAYOUT_STYLE
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -183,7 +184,9 @@ def document(path, body, preview=False):
         scripts += '''<script>document.addEventListener('click',function(event){const a=event.target.closest('a');if(!a)return;const u=new URL(a.href);if(u.origin==='https://maths.arijasad.com' && ['interviews.html','cambridge-college-maths-interviews.html','oxford-maths-interview-guide.html','engineering-interview-guide.html'].includes(u.pathname.slice(1))){event.preventDefault();parent.postMessage({type:'interview-preview',page:u.pathname.slice(1),hash:u.hash},'*');}});document.querySelectorAll('a[href^="https://"]').forEach(a=>{a.target='_blank';a.rel='noopener';});window.addEventListener('message',e=>{if(e.source!==parent||e.data?.type!=='interview-preview-anchor')return;let id;try{id=decodeURIComponent(e.data.hash.slice(1));}catch(_){return;}const target=document.getElementById(id);if(target){if(target.tagName==='DETAILS')target.open=true;target.scrollIntoView();}});</script>'''
     else:
         body=header(path)+body+footer()
-    return f'<!doctype html>\n<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111111"><title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{tags}{styles}</head><body class="resource-page interview-pages{page_class}">{body}{scripts}</body></html>\n'
+    result = f'<!doctype html>\n<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111111"><title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{tags}{styles}</head><body class="resource-page interview-pages{page_class}">{body}{scripts}</body></html>\n'
+
+    return install_access_scheme(result, path)
 
 def build(preview_path=None):
     colleges=json.loads((ROOT/'data/interview-colleges.json').read_text())['colleges']
