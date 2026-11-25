@@ -10,7 +10,7 @@ SECTION = '''
 <section class="resource-section access-scheme" id="state-school-access" aria-labelledby="access-title">
   <div class="container access-panel">
     <div class="access-compact-header">
-      <div><h2 id="access-title">State School Access Scheme</h2><p class="access-summary">One free mathematics mock interview for students at UK state-funded schools and sixth-form colleges, with personalised written feedback and preparation recommendations.</p><p class="access-assurance">No obligation to purchase additional sessions.</p></div>
+      <div><h2 id="access-title">State School Access Scheme</h2><p class="access-summary">One free mathematics mock interview for eligible students at UK state-funded schools and sixth-form colleges, with personalised written feedback and preparation recommendations.</p><p class="access-assurance">No obligation to purchase additional sessions.</p></div>
       <a class="resource-button" href="access-scheme-application.html">Apply for a free mock interview</a>
     </div>
     <details class="access-details">
@@ -26,10 +26,12 @@ SECTION = '''
       </ul></div>
         <div class="access-verification">
       <h3>Eligibility and verification</h3>
+      <p>The access scheme is intended primarily for students attending non-selective state schools and sixth-form colleges who have limited access to specialist Oxbridge interview preparation.</p>
+      <p>Students attending specialist mathematics schools are not eligible for free mock interviews under this scheme.</p>
       <p>To verify eligibility, simply ask any teacher at your current school or college to email <a href="mailto:arijasadmaths@gmail.com">arijasadmaths@gmail.com</a> from their official school email address, confirming your full name and current enrolment.</p>
       <p>No formal reference, proof of household income or additional supporting documents are required.</p>
       <p>You can apply before your teacher’s confirmation arrives. Your booking will only be confirmed once verification is received and a time is agreed, subject to availability.</p>
-      <p>This initiative is open to new, existing and previous students, including those who have previously booked paid sessions.</p>
+      <p>This initiative is open to eligible new, existing and previous students, including those who have previously booked paid sessions.</p>
       <p>Each eligible student may receive one free mock interview, subject to availability.</p></div>
       </div>
       <p class="access-terms">Students who have previously paid remain eligible for their free mock interview.</p>
